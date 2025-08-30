@@ -10,7 +10,6 @@
     "changefreq": "weekly"
   },
   "homepages": [],
-  "source_base_path": "/Users/simonas/Personal/Projects/UiScaler/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -28,7 +27,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.CoreUiScaler.html",
-          "hash": "n1JyVHshSzbmGbzdEeXs//A6Es9GWsT9w8NXvF1W/YE="
+          "hash": "r+64To0mRMs3lvvR6nk1Zr5dSgLj60uSCQLsA1yVnjU="
         }
       },
       "is_incremental": false,
@@ -40,7 +39,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.Editor.EditorScalingMode.html",
-          "hash": "Wf9PznJxyTN0NA9csRX/yUYbck9jXvTIYXZJbrpoqfk="
+          "hash": "6nEsOezN25TkzUm2vLrCfUHt4Ejh62IvqzOZGaus4ek="
         }
       },
       "is_incremental": false,
@@ -52,7 +51,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.Editor.SimulatedSafeAreaPadding.html",
-          "hash": "shgdSIqfY35BPKPE4uFzBORshFFEUugWdiS6CScAjEI="
+          "hash": "OyHhXntH8Y4ie2ZflJRDMcFr6AqnJNxY2xfF4nhqeT0="
         }
       },
       "is_incremental": false,
@@ -64,7 +63,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.Editor.UiScalerEditorGlobalSettings.html",
-          "hash": "yceRaQwZmw2YGnGv1fLIMAIWQ32xLJ8Y5U0uRHZPa+U="
+          "hash": "xkHA8uLJAA3/EC2cbjhvboxXrCkd+Aovy79tJyESq0w="
         }
       },
       "is_incremental": false,
@@ -76,7 +75,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.Editor.html",
-          "hash": "g6FfArdiCh0tWuDNGbQQabZRDY1pZgdwzJvSlZRl8oc="
+          "hash": "P9rC7TA/FXe3duq27TcehEyGv1ytHjSuRxvDlS6zlNA="
         }
       },
       "is_incremental": false,
@@ -88,7 +87,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.UiScalerAlignment.html",
-          "hash": "Oq538pY4K35E8x3GIVbkp3z1He2Lw1gLAuAhtVRW5J0="
+          "hash": "tJ14T3wsdv/9AUWwluDRurldCryphk8IsyFJOXpGa1g="
         }
       },
       "is_incremental": false,
@@ -100,7 +99,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.UiScalerBehaviour.html",
-          "hash": "4XKlrnpvEu+96cKXq9TpeYwBSilT7CwTQw2Vc7tP5KM="
+          "hash": "EyM/4ivhuNq3XR26UWYBTHuqGqhIpQ9Nrh71dgsFA1Y="
         }
       },
       "is_incremental": false,
@@ -112,7 +111,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.UiScalerGroupSo.html",
-          "hash": "GcuomLkrDT0vPB2XRxty4tkT3ei2IUsk02SBwTR/HFg="
+          "hash": "4qA/KknlPkvzytRqRviTh/T3z3NNwL/nYyDY76guy00="
         }
       },
       "is_incremental": false,
@@ -124,7 +123,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.UiScalerGroups.html",
-          "hash": "w9FJXyQHDeWRfbiaEChNe8TzmVmjD92+jf9Y3FH8tqA="
+          "hash": "qHr2p+kcE4n5ZcIWXhVTq26onrRExBWpsHhWCEc33/s="
         }
       },
       "is_incremental": false,
@@ -136,7 +135,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.html",
-          "hash": "8Acn85SI5QmC6RgHEouYdfLrl2O2wZO6oexVEuGuDOM="
+          "hash": "pGYj1+D3cE/dcVPxCBJDWjt1qFadl7NdGZlpBe1xX04="
         }
       },
       "is_incremental": false,
@@ -148,7 +147,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.UiScalerGroupsSaveData.html",
-          "hash": "AVkbI5aEENNrSE3TuPn4mp8wXnyiAH5BCjCHccPgoU4="
+          "hash": "t5X8f3w47G5dgxgSdAnbRlrnjYk1ySaQgz2xjApO+xo="
         }
       },
       "is_incremental": false,
@@ -160,7 +159,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.UiScalerOptions.html",
-          "hash": "Tw19oY8YkG0NYO/yeXOTeopBqgSThCG84CrFiijyPnU="
+          "hash": "/1Dg9UuR8X7A92FM/2B74N4YkZTfR3zX4rHteuGZ+bU="
         }
       },
       "is_incremental": false,
@@ -172,7 +171,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UiScaler.html",
-          "hash": "ixPs16nbcmoRymnfnqDeguun3/N1YVCs9t1b7kZlq8w="
+          "hash": "41MypKs+HK64CUk+QKhQJ86mvHdnc0GBF27rTX8orSE="
         }
       },
       "is_incremental": false,
@@ -196,7 +195,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "X2RvLFzA2dufpMc4jD+rJ99795mZLy1eZMUzef7+tsA="
+          "hash": "hPcWDZIJ+RalBKATocLjn8cnUIZtoa4Hg+NYMBZXX7s="
         }
       },
       "is_incremental": false,
@@ -208,7 +207,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/custom_ui_scaler.html",
-          "hash": "2zZH9UYSMcuWO3uQOQTCY928UdZ7n7vv17TJgnhO4W8="
+          "hash": "VHZTEnf7uJApHpFKZCjC1tLmU+dxPCM1x6ogGxao0sw="
         }
       },
       "is_incremental": false,
@@ -220,7 +219,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/getting_started.html",
-          "hash": "sz8O4oV0zUuExFMoiXPCI+NpSDXVSmAQK6HM3+1svK0="
+          "hash": "onEBV6O4uW/87h5Y+8/gzGytEAZSoE9BrWU7YxhMX9s="
         }
       },
       "is_incremental": false,
@@ -232,7 +231,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/smart_expander_component.html",
-          "hash": "4hmI6Mkln93rTBQUcSbiSvdoLWnNs9VdsdThMxoWzYE="
+          "hash": "X6v6tOYPm02xWBlfkY0pffxM6SC65HN5xwFXMbN3KvA="
         }
       },
       "is_incremental": false,
@@ -244,7 +243,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/smart_ui_scaler_component.html",
-          "hash": "uc/u6qJnylIIo7kee48LK9OG5dMvkgilFYtcw0MwWgY="
+          "hash": "oKP1noIPz3vaJzg3heHLX4p7L8+ATEIjBNCps+ikpJU="
         }
       },
       "is_incremental": false,
@@ -256,7 +255,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/smart_ui_scaler_window.html",
-          "hash": "MU64Jdq6fxZaVNVJiDm3pdlfeKQS57pBWR2Z3v92FIU="
+          "hash": "otIbgZ65Hk4CLFT2Qw5/tNf2CVk6M5tzsKqEVOkhwgs="
         }
       },
       "is_incremental": false,
@@ -280,7 +279,18 @@
       "output": {
         ".html": {
           "relative_path": "manual/ui_scaler_groups.html",
-          "hash": "a7V28esurdSmoGP1cvIULwisVO1c+ja1SvCGj+zr2a8="
+          "hash": "ZYK3Up9AOwdKKjCrRYb/bzOlM8LrrA2/3VqT+vQYZ70="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "resources/favicon.ico"
         }
       },
       "is_incremental": false,
@@ -354,10 +364,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "resources/logo.png",
+      "source_relative_path": "resources/logo.svg",
       "output": {
         "resource": {
-          "relative_path": "resources/logo.png"
+          "relative_path": "resources/logo.svg"
         }
       },
       "is_incremental": false,
