@@ -2,121 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.CoreUiScaler.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.Editor.EditorScalingMode.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.Editor.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.Editor.SimulatedSafeAreaPadding.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.Editor.UiScalerEditorGlobalSettings.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.UiScalerAlignment.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.UiScalerBehaviour.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.UiScalerGroups.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.UiScalerGroupSo.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.UiScalerGroupsSaveData.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/api/UiScaler.UiScalerOptions.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/index.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/manual/custom_ui_scaler.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/manual/getting_started.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/manual/smart_expander_component.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/manual/smart_size_limiter_component.html</loc>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/manual/smart_ui_scaler_component.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/manual/smart_ui_scaler_window.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/manual/smart_ui_scaler_editor_window.html</loc>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://simonaszab.github.io/smart-ui-scaler-v1.0/manual/ui_scaler_groups.html</loc>
-    <lastmod>2025-08-30T08:04:54+03:00</lastmod>
+    <lastmod>2025-09-25T03:20:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -239,11 +239,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/smart_ui_scaler_component.md",
+      "source_relative_path": "manual/smart_size_limiter_component.md",
       "output": {
         ".html": {
-          "relative_path": "manual/smart_ui_scaler_component.html",
-          "hash": "oKP1noIPz3vaJzg3heHLX4p7L8+ATEIjBNCps+ikpJU="
+          "relative_path": "manual/smart_size_limiter_component.html",
+          "hash": "MB0LPf2+Q17fvPJGOll7fGGhseg+v8RsS1JljLCcUP0="
         }
       },
       "is_incremental": false,
@@ -251,11 +251,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/smart_ui_scaler_window.md",
+      "source_relative_path": "manual/smart_ui_scaler_component.md",
       "output": {
         ".html": {
-          "relative_path": "manual/smart_ui_scaler_window.html",
-          "hash": "otIbgZ65Hk4CLFT2Qw5/tNf2CVk6M5tzsKqEVOkhwgs="
+          "relative_path": "manual/smart_ui_scaler_component.html",
+          "hash": "mxRo6rCzAMbb/pfKHkK5v4jdmNM6OJZ9cJAYbKdLYRE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/smart_ui_scaler_editor_window.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/smart_ui_scaler_editor_window.html",
+          "hash": "EnwJhY3FwDVednvOvDBgnbhA89KUr8EqTYT7E6mV91k="
         }
       },
       "is_incremental": false,
@@ -267,7 +279,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "oiYal7JCMNYFv8BHV4x9dI1y9HGqaFww8BOgUlA3CwM="
+          "hash": "Wm5nJ0dtvUqRQPMvG47Fc7ugKLRsP1PEo4xMH+X9sNM="
         }
       },
       "is_incremental": false,
@@ -408,6 +420,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/smart_size_limiter_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_size_limiter_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/smart_ui_scaler_component_1.png",
       "output": {
         "resource": {
@@ -521,7 +544,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 8,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
