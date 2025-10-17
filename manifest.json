@@ -23,11 +23,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.CoreUiScaler.yml",
+      "source_relative_path": "api/SmartUIScaler.CoreUIScaler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UiScaler.CoreUiScaler.html",
-          "hash": "r+64To0mRMs3lvvR6nk1Zr5dSgLj60uSCQLsA1yVnjU="
+          "relative_path": "api/SmartUIScaler.CoreUIScaler.html",
+          "hash": "9BMY5o1dE9feiswDRGIehH4c2Zz7f8jeqrLBr1uPN9Q="
         }
       },
       "is_incremental": false,
@@ -35,11 +35,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.Editor.EditorScalingMode.yml",
+      "source_relative_path": "api/SmartUIScaler.UIScalerAlignment.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UiScaler.Editor.EditorScalingMode.html",
-          "hash": "6nEsOezN25TkzUm2vLrCfUHt4Ejh62IvqzOZGaus4ek="
+          "relative_path": "api/SmartUIScaler.UIScalerAlignment.html",
+          "hash": "nr2zDuMIR/Dp5Si2OL9vpjHILPcrgr/iW/DXfo721+g="
         }
       },
       "is_incremental": false,
@@ -47,11 +47,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.Editor.SimulatedSafeAreaPadding.yml",
+      "source_relative_path": "api/SmartUIScaler.UIScalerBehaviour.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UiScaler.Editor.SimulatedSafeAreaPadding.html",
-          "hash": "OyHhXntH8Y4ie2ZflJRDMcFr6AqnJNxY2xfF4nhqeT0="
+          "relative_path": "api/SmartUIScaler.UIScalerBehaviour.html",
+          "hash": "X/BjFLpqq+j1tl7aj5mUJO21sBK/n6zrmbdSi8GJsf0="
         }
       },
       "is_incremental": false,
@@ -59,11 +59,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.Editor.UiScalerEditorGlobalSettings.yml",
+      "source_relative_path": "api/SmartUIScaler.UIScalerGroupSo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UiScaler.Editor.UiScalerEditorGlobalSettings.html",
-          "hash": "xkHA8uLJAA3/EC2cbjhvboxXrCkd+Aovy79tJyESq0w="
+          "relative_path": "api/SmartUIScaler.UIScalerGroupSo.html",
+          "hash": "1Mg7gznOyfeNz6W5loigFHXC6u3pcmKAONWcRppJxQ0="
         }
       },
       "is_incremental": false,
@@ -71,11 +71,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.Editor.yml",
+      "source_relative_path": "api/SmartUIScaler.UIScalerGroups.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UiScaler.Editor.html",
-          "hash": "P9rC7TA/FXe3duq27TcehEyGv1ytHjSuRxvDlS6zlNA="
+          "relative_path": "api/SmartUIScaler.UIScalerGroups.html",
+          "hash": "hteRO3TpV8uHVNEB8C3lbDjz73c2gIuf6PEe3RSfWvQ="
         }
       },
       "is_incremental": false,
@@ -83,11 +83,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.UiScalerAlignment.yml",
+      "source_relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UiScaler.UiScalerAlignment.html",
-          "hash": "tJ14T3wsdv/9AUWwluDRurldCryphk8IsyFJOXpGa1g="
+          "relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.html",
+          "hash": "KL7+MU2ARlA7d6w4o39o26xUoE6w//SKp68sppIQt1Y="
         }
       },
       "is_incremental": false,
@@ -95,11 +95,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.UiScalerBehaviour.yml",
+      "source_relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UiScaler.UiScalerBehaviour.html",
-          "hash": "EyM/4ivhuNq3XR26UWYBTHuqGqhIpQ9Nrh71dgsFA1Y="
+          "relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.html",
+          "hash": "Xp0GsIug9V+uUpjEicIxAGe4SfUX/FQt2G4bTweeNyg="
         }
       },
       "is_incremental": false,
@@ -107,11 +107,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.UiScalerGroupSo.yml",
+      "source_relative_path": "api/SmartUIScaler.UIScalerOptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UiScaler.UiScalerGroupSo.html",
-          "hash": "4qA/KknlPkvzytRqRviTh/T3z3NNwL/nYyDY76guy00="
+          "relative_path": "api/SmartUIScaler.UIScalerOptions.html",
+          "hash": "F8JJ7xNgmNr6oAIuAHELDXwR2i4RIpFAyD4vq8JZ8J8="
         }
       },
       "is_incremental": false,
@@ -119,59 +119,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.UiScalerGroups.yml",
+      "source_relative_path": "api/SmartUIScaler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UiScaler.UiScalerGroups.html",
-          "hash": "qHr2p+kcE4n5ZcIWXhVTq26onrRExBWpsHhWCEc33/s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.html",
-          "hash": "pGYj1+D3cE/dcVPxCBJDWjt1qFadl7NdGZlpBe1xX04="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.UiScalerGroupsSaveData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UiScaler.UiScalerGroupsSaveData.html",
-          "hash": "t5X8f3w47G5dgxgSdAnbRlrnjYk1ySaQgz2xjApO+xo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.UiScalerOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UiScaler.UiScalerOptions.html",
-          "hash": "/1Dg9UuR8X7A92FM/2B74N4YkZTfR3zX4rHteuGZ+bU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UiScaler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UiScaler.html",
-          "hash": "41MypKs+HK64CUk+QKhQJ86mvHdnc0GBF27rTX8orSE="
+          "relative_path": "api/SmartUIScaler.html",
+          "hash": "Z2je88DHz9VmoqjAZ6T9ornFKSMCxP6PBvzLWU4rSK0="
         }
       },
       "is_incremental": false,
@@ -183,7 +135,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "PP+5hKXp9AKvMzMlULD/GGzc50/HwOIYbO9ALNJibqY="
+          "hash": "hi/3gmX4Z7WduYQB1gD5D/iB50coAMcnl6HuIR8ojmg="
         }
       },
       "is_incremental": false,
@@ -195,7 +147,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "hPcWDZIJ+RalBKATocLjn8cnUIZtoa4Hg+NYMBZXX7s="
+          "hash": "dHQ7a5rQ8Rshf0/qDSPUHHik/DoGCabKzW5scOQ0/AM="
         }
       },
       "is_incremental": false,
@@ -207,7 +159,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/custom_ui_scaler.html",
-          "hash": "VHZTEnf7uJApHpFKZCjC1tLmU+dxPCM1x6ogGxao0sw="
+          "hash": "0NucP7fSVxKTSnF4qSmGMt9OiG+EIexpxg/xj6Z6fOc="
         }
       },
       "is_incremental": false,
@@ -219,7 +171,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/getting_started.html",
-          "hash": "onEBV6O4uW/87h5Y+8/gzGytEAZSoE9BrWU7YxhMX9s="
+          "hash": "dpaTRMg8XD6wOLt0OnJ2z7gAis+g0x1ayht/OGyFVR8="
         }
       },
       "is_incremental": false,
@@ -227,23 +179,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/smart_expander_component.md",
+      "source_relative_path": "manual/smart_ui_expander_component.md",
       "output": {
         ".html": {
-          "relative_path": "manual/smart_expander_component.html",
-          "hash": "X6v6tOYPm02xWBlfkY0pffxM6SC65HN5xwFXMbN3KvA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/smart_size_limiter_component.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/smart_size_limiter_component.html",
-          "hash": "MB0LPf2+Q17fvPJGOll7fGGhseg+v8RsS1JljLCcUP0="
+          "relative_path": "manual/smart_ui_expander_component.html",
+          "hash": "Oo5R02Ifpd+Emj+B6klkx2I9+0FxFpXws50FFTgzmzo="
         }
       },
       "is_incremental": false,
@@ -255,7 +195,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/smart_ui_scaler_component.html",
-          "hash": "mxRo6rCzAMbb/pfKHkK5v4jdmNM6OJZ9cJAYbKdLYRE="
+          "hash": "Da5tMwI7ZmWGQXWcalGU5JHezP1KrjeoWbXogQZ1WDY="
         }
       },
       "is_incremental": false,
@@ -267,7 +207,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/smart_ui_scaler_editor_window.html",
-          "hash": "EnwJhY3FwDVednvOvDBgnbhA89KUr8EqTYT7E6mV91k="
+          "hash": "r7mZxlyUORvnu4edBcUWKASVKrS1pUT5/RDX+/oZM1E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/smart_ui_size_limiter_component.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/smart_ui_size_limiter_component.html",
+          "hash": "Jjp5HWwQ4qfffqP7rwDFFrXXwY2vIo0jsjikl9woTis="
         }
       },
       "is_incremental": false,
@@ -279,7 +231,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "Wm5nJ0dtvUqRQPMvG47Fc7ugKLRsP1PEo4xMH+X9sNM="
+          "hash": "JQPUZE8vgqcjlxeJkLMVrmWDjMthMUwfb36PARpKXC8="
         }
       },
       "is_incremental": false,
@@ -291,7 +243,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/ui_scaler_groups.html",
-          "hash": "ZYK3Up9AOwdKKjCrRYb/bzOlM8LrrA2/3VqT+vQYZ70="
+          "hash": "X8TvX8/poTuz65yybb/RxIlkKqwydVn8U6cUrV7ZxXM="
         }
       },
       "is_incremental": false,
@@ -523,7 +475,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "vIPRa6adrWlJtJFi6KACd0NFgTSoDcZiWeWvk5czWkY="
+          "hash": "nc4tFNH2CdPr2L4d+eOcDhuOBwRTNzME513sf1Y2jKg="
         }
       },
       "is_incremental": false,
@@ -550,7 +502,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 13,
+          "total_file_count": 9,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

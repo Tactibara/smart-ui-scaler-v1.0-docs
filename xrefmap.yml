@@ -1,710 +1,620 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: UiScaler
-  name: UiScaler
-  href: api/UiScaler.html
-  commentId: N:UiScaler
-  fullName: UiScaler
-  nameWithType: UiScaler
-- uid: UiScaler.CoreUiScaler
-  name: CoreUiScaler
-  href: api/UiScaler.CoreUiScaler.html
-  commentId: T:UiScaler.CoreUiScaler
-  fullName: UiScaler.CoreUiScaler
-  nameWithType: CoreUiScaler
-- uid: UiScaler.CoreUiScaler.Awake
+- uid: SmartUIScaler
+  name: SmartUIScaler
+  href: api/SmartUIScaler.html
+  commentId: N:SmartUIScaler
+  fullName: SmartUIScaler
+  nameWithType: SmartUIScaler
+- uid: SmartUIScaler.CoreUIScaler
+  name: CoreUIScaler
+  href: api/SmartUIScaler.CoreUIScaler.html
+  commentId: T:SmartUIScaler.CoreUIScaler
+  fullName: SmartUIScaler.CoreUIScaler
+  nameWithType: CoreUIScaler
+- uid: SmartUIScaler.CoreUIScaler.Awake
   name: Awake()
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_Awake
-  commentId: M:UiScaler.CoreUiScaler.Awake
-  fullName: UiScaler.CoreUiScaler.Awake()
-  nameWithType: CoreUiScaler.Awake()
-- uid: UiScaler.CoreUiScaler.Awake*
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_Awake
+  commentId: M:SmartUIScaler.CoreUIScaler.Awake
+  fullName: SmartUIScaler.CoreUIScaler.Awake()
+  nameWithType: CoreUIScaler.Awake()
+- uid: SmartUIScaler.CoreUIScaler.Awake*
   name: Awake
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_Awake_
-  commentId: Overload:UiScaler.CoreUiScaler.Awake
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_Awake_
+  commentId: Overload:SmartUIScaler.CoreUIScaler.Awake
   isSpec: "True"
-  fullName: UiScaler.CoreUiScaler.Awake
-  nameWithType: CoreUiScaler.Awake
-- uid: UiScaler.CoreUiScaler.GetScreenRect
+  fullName: SmartUIScaler.CoreUIScaler.Awake
+  nameWithType: CoreUIScaler.Awake
+- uid: SmartUIScaler.CoreUIScaler.GetScreenRect
   name: GetScreenRect()
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_GetScreenRect
-  commentId: M:UiScaler.CoreUiScaler.GetScreenRect
-  fullName: UiScaler.CoreUiScaler.GetScreenRect()
-  nameWithType: CoreUiScaler.GetScreenRect()
-- uid: UiScaler.CoreUiScaler.GetScreenRect*
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_GetScreenRect
+  commentId: M:SmartUIScaler.CoreUIScaler.GetScreenRect
+  fullName: SmartUIScaler.CoreUIScaler.GetScreenRect()
+  nameWithType: CoreUIScaler.GetScreenRect()
+- uid: SmartUIScaler.CoreUIScaler.GetScreenRect*
   name: GetScreenRect
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_GetScreenRect_
-  commentId: Overload:UiScaler.CoreUiScaler.GetScreenRect
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_GetScreenRect_
+  commentId: Overload:SmartUIScaler.CoreUIScaler.GetScreenRect
   isSpec: "True"
-  fullName: UiScaler.CoreUiScaler.GetScreenRect
-  nameWithType: CoreUiScaler.GetScreenRect
-- uid: UiScaler.CoreUiScaler.OnDestroy
+  fullName: SmartUIScaler.CoreUIScaler.GetScreenRect
+  nameWithType: CoreUIScaler.GetScreenRect
+- uid: SmartUIScaler.CoreUIScaler.OnDestroy
   name: OnDestroy()
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_OnDestroy
-  commentId: M:UiScaler.CoreUiScaler.OnDestroy
-  fullName: UiScaler.CoreUiScaler.OnDestroy()
-  nameWithType: CoreUiScaler.OnDestroy()
-- uid: UiScaler.CoreUiScaler.OnDestroy*
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_OnDestroy
+  commentId: M:SmartUIScaler.CoreUIScaler.OnDestroy
+  fullName: SmartUIScaler.CoreUIScaler.OnDestroy()
+  nameWithType: CoreUIScaler.OnDestroy()
+- uid: SmartUIScaler.CoreUIScaler.OnDestroy*
   name: OnDestroy
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_OnDestroy_
-  commentId: Overload:UiScaler.CoreUiScaler.OnDestroy
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_OnDestroy_
+  commentId: Overload:SmartUIScaler.CoreUIScaler.OnDestroy
   isSpec: "True"
-  fullName: UiScaler.CoreUiScaler.OnDestroy
-  nameWithType: CoreUiScaler.OnDestroy
-- uid: UiScaler.CoreUiScaler.OnPreWillRenderCanvases
+  fullName: SmartUIScaler.CoreUIScaler.OnDestroy
+  nameWithType: CoreUIScaler.OnDestroy
+- uid: SmartUIScaler.CoreUIScaler.OnPreWillRenderCanvases
   name: OnPreWillRenderCanvases()
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_OnPreWillRenderCanvases
-  commentId: M:UiScaler.CoreUiScaler.OnPreWillRenderCanvases
-  fullName: UiScaler.CoreUiScaler.OnPreWillRenderCanvases()
-  nameWithType: CoreUiScaler.OnPreWillRenderCanvases()
-- uid: UiScaler.CoreUiScaler.OnPreWillRenderCanvases*
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_OnPreWillRenderCanvases
+  commentId: M:SmartUIScaler.CoreUIScaler.OnPreWillRenderCanvases
+  fullName: SmartUIScaler.CoreUIScaler.OnPreWillRenderCanvases()
+  nameWithType: CoreUIScaler.OnPreWillRenderCanvases()
+- uid: SmartUIScaler.CoreUIScaler.OnPreWillRenderCanvases*
   name: OnPreWillRenderCanvases
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_OnPreWillRenderCanvases_
-  commentId: Overload:UiScaler.CoreUiScaler.OnPreWillRenderCanvases
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_OnPreWillRenderCanvases_
+  commentId: Overload:SmartUIScaler.CoreUIScaler.OnPreWillRenderCanvases
   isSpec: "True"
-  fullName: UiScaler.CoreUiScaler.OnPreWillRenderCanvases
-  nameWithType: CoreUiScaler.OnPreWillRenderCanvases
-- uid: UiScaler.CoreUiScaler.Resize
+  fullName: SmartUIScaler.CoreUIScaler.OnPreWillRenderCanvases
+  nameWithType: CoreUIScaler.OnPreWillRenderCanvases
+- uid: SmartUIScaler.CoreUIScaler.Resize
   name: Resize()
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_Resize
-  commentId: M:UiScaler.CoreUiScaler.Resize
-  fullName: UiScaler.CoreUiScaler.Resize()
-  nameWithType: CoreUiScaler.Resize()
-- uid: UiScaler.CoreUiScaler.Resize*
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_Resize
+  commentId: M:SmartUIScaler.CoreUIScaler.Resize
+  fullName: SmartUIScaler.CoreUIScaler.Resize()
+  nameWithType: CoreUIScaler.Resize()
+- uid: SmartUIScaler.CoreUIScaler.Resize*
   name: Resize
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_Resize_
-  commentId: Overload:UiScaler.CoreUiScaler.Resize
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_Resize_
+  commentId: Overload:SmartUIScaler.CoreUIScaler.Resize
   isSpec: "True"
-  fullName: UiScaler.CoreUiScaler.Resize
-  nameWithType: CoreUiScaler.Resize
-- uid: UiScaler.CoreUiScaler.ScreenRectToWorldRect(Rect)
+  fullName: SmartUIScaler.CoreUIScaler.Resize
+  nameWithType: CoreUIScaler.Resize
+- uid: SmartUIScaler.CoreUIScaler.ScreenRectToWorldRect(Rect)
   name: ScreenRectToWorldRect(Rect)
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_ScreenRectToWorldRect_Rect_
-  commentId: M:UiScaler.CoreUiScaler.ScreenRectToWorldRect(Rect)
-  fullName: UiScaler.CoreUiScaler.ScreenRectToWorldRect(Rect)
-  nameWithType: CoreUiScaler.ScreenRectToWorldRect(Rect)
-- uid: UiScaler.CoreUiScaler.ScreenRectToWorldRect*
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_ScreenRectToWorldRect_Rect_
+  commentId: M:SmartUIScaler.CoreUIScaler.ScreenRectToWorldRect(Rect)
+  fullName: SmartUIScaler.CoreUIScaler.ScreenRectToWorldRect(Rect)
+  nameWithType: CoreUIScaler.ScreenRectToWorldRect(Rect)
+- uid: SmartUIScaler.CoreUIScaler.ScreenRectToWorldRect*
   name: ScreenRectToWorldRect
-  href: api/UiScaler.CoreUiScaler.html#UiScaler_CoreUiScaler_ScreenRectToWorldRect_
-  commentId: Overload:UiScaler.CoreUiScaler.ScreenRectToWorldRect
+  href: api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_ScreenRectToWorldRect_
+  commentId: Overload:SmartUIScaler.CoreUIScaler.ScreenRectToWorldRect
   isSpec: "True"
-  fullName: UiScaler.CoreUiScaler.ScreenRectToWorldRect
-  nameWithType: CoreUiScaler.ScreenRectToWorldRect
-- uid: UiScaler.Editor
-  name: UiScaler.Editor
-  href: api/UiScaler.Editor.html
-  commentId: N:UiScaler.Editor
-  fullName: UiScaler.Editor
-  nameWithType: UiScaler.Editor
-- uid: UiScaler.Editor.EditorScalingMode
-  name: EditorScalingMode
-  href: api/UiScaler.Editor.EditorScalingMode.html
-  commentId: T:UiScaler.Editor.EditorScalingMode
-  fullName: UiScaler.Editor.EditorScalingMode
-  nameWithType: EditorScalingMode
-- uid: UiScaler.Editor.EditorScalingMode.FittedReferenceResolution
-  name: FittedReferenceResolution
-  href: api/UiScaler.Editor.EditorScalingMode.html#UiScaler_Editor_EditorScalingMode_FittedReferenceResolution
-  commentId: F:UiScaler.Editor.EditorScalingMode.FittedReferenceResolution
-  fullName: UiScaler.Editor.EditorScalingMode.FittedReferenceResolution
-  nameWithType: EditorScalingMode.FittedReferenceResolution
-- uid: UiScaler.Editor.EditorScalingMode.Preview
-  name: Preview
-  href: api/UiScaler.Editor.EditorScalingMode.html#UiScaler_Editor_EditorScalingMode_Preview
-  commentId: F:UiScaler.Editor.EditorScalingMode.Preview
-  fullName: UiScaler.Editor.EditorScalingMode.Preview
-  nameWithType: EditorScalingMode.Preview
-- uid: UiScaler.Editor.EditorScalingMode.ReferenceResolution
-  name: ReferenceResolution
-  href: api/UiScaler.Editor.EditorScalingMode.html#UiScaler_Editor_EditorScalingMode_ReferenceResolution
-  commentId: F:UiScaler.Editor.EditorScalingMode.ReferenceResolution
-  fullName: UiScaler.Editor.EditorScalingMode.ReferenceResolution
-  nameWithType: EditorScalingMode.ReferenceResolution
-- uid: UiScaler.Editor.SimulatedSafeAreaPadding
-  name: SimulatedSafeAreaPadding
-  href: api/UiScaler.Editor.SimulatedSafeAreaPadding.html
-  commentId: T:UiScaler.Editor.SimulatedSafeAreaPadding
-  fullName: UiScaler.Editor.SimulatedSafeAreaPadding
-  nameWithType: SimulatedSafeAreaPadding
-- uid: UiScaler.Editor.SimulatedSafeAreaPadding.Bottom
+  fullName: SmartUIScaler.CoreUIScaler.ScreenRectToWorldRect
+  nameWithType: CoreUIScaler.ScreenRectToWorldRect
+- uid: SmartUIScaler.UIScalerAlignment
+  name: UIScalerAlignment
+  href: api/SmartUIScaler.UIScalerAlignment.html
+  commentId: T:SmartUIScaler.UIScalerAlignment
+  fullName: SmartUIScaler.UIScalerAlignment
+  nameWithType: UIScalerAlignment
+- uid: SmartUIScaler.UIScalerAlignment.Bottom
   name: Bottom
-  href: api/UiScaler.Editor.SimulatedSafeAreaPadding.html#UiScaler_Editor_SimulatedSafeAreaPadding_Bottom
-  commentId: F:UiScaler.Editor.SimulatedSafeAreaPadding.Bottom
-  fullName: UiScaler.Editor.SimulatedSafeAreaPadding.Bottom
-  nameWithType: SimulatedSafeAreaPadding.Bottom
-- uid: UiScaler.Editor.SimulatedSafeAreaPadding.Left
-  name: Left
-  href: api/UiScaler.Editor.SimulatedSafeAreaPadding.html#UiScaler_Editor_SimulatedSafeAreaPadding_Left
-  commentId: F:UiScaler.Editor.SimulatedSafeAreaPadding.Left
-  fullName: UiScaler.Editor.SimulatedSafeAreaPadding.Left
-  nameWithType: SimulatedSafeAreaPadding.Left
-- uid: UiScaler.Editor.SimulatedSafeAreaPadding.Right
-  name: Right
-  href: api/UiScaler.Editor.SimulatedSafeAreaPadding.html#UiScaler_Editor_SimulatedSafeAreaPadding_Right
-  commentId: F:UiScaler.Editor.SimulatedSafeAreaPadding.Right
-  fullName: UiScaler.Editor.SimulatedSafeAreaPadding.Right
-  nameWithType: SimulatedSafeAreaPadding.Right
-- uid: UiScaler.Editor.SimulatedSafeAreaPadding.Top
-  name: Top
-  href: api/UiScaler.Editor.SimulatedSafeAreaPadding.html#UiScaler_Editor_SimulatedSafeAreaPadding_Top
-  commentId: F:UiScaler.Editor.SimulatedSafeAreaPadding.Top
-  fullName: UiScaler.Editor.SimulatedSafeAreaPadding.Top
-  nameWithType: SimulatedSafeAreaPadding.Top
-- uid: UiScaler.Editor.UiScalerEditorGlobalSettings
-  name: UiScalerEditorGlobalSettings
-  href: api/UiScaler.Editor.UiScalerEditorGlobalSettings.html
-  commentId: T:UiScaler.Editor.UiScalerEditorGlobalSettings
-  fullName: UiScaler.Editor.UiScalerEditorGlobalSettings
-  nameWithType: UiScalerEditorGlobalSettings
-- uid: UiScaler.Editor.UiScalerEditorGlobalSettings.IsSafeAreaSimulationEnabled
-  name: IsSafeAreaSimulationEnabled
-  href: api/UiScaler.Editor.UiScalerEditorGlobalSettings.html#UiScaler_Editor_UiScalerEditorGlobalSettings_IsSafeAreaSimulationEnabled
-  commentId: F:UiScaler.Editor.UiScalerEditorGlobalSettings.IsSafeAreaSimulationEnabled
-  fullName: UiScaler.Editor.UiScalerEditorGlobalSettings.IsSafeAreaSimulationEnabled
-  nameWithType: UiScalerEditorGlobalSettings.IsSafeAreaSimulationEnabled
-- uid: UiScaler.Editor.UiScalerEditorGlobalSettings.LastChangedFrame
-  name: LastChangedFrame
-  href: api/UiScaler.Editor.UiScalerEditorGlobalSettings.html#UiScaler_Editor_UiScalerEditorGlobalSettings_LastChangedFrame
-  commentId: F:UiScaler.Editor.UiScalerEditorGlobalSettings.LastChangedFrame
-  fullName: UiScaler.Editor.UiScalerEditorGlobalSettings.LastChangedFrame
-  nameWithType: UiScalerEditorGlobalSettings.LastChangedFrame
-- uid: UiScaler.Editor.UiScalerEditorGlobalSettings.ScalingMode
-  name: ScalingMode
-  href: api/UiScaler.Editor.UiScalerEditorGlobalSettings.html#UiScaler_Editor_UiScalerEditorGlobalSettings_ScalingMode
-  commentId: F:UiScaler.Editor.UiScalerEditorGlobalSettings.ScalingMode
-  fullName: UiScaler.Editor.UiScalerEditorGlobalSettings.ScalingMode
-  nameWithType: UiScalerEditorGlobalSettings.ScalingMode
-- uid: UiScaler.Editor.UiScalerEditorGlobalSettings.SimulatedSafeAreaPadding
-  name: SimulatedSafeAreaPadding
-  href: api/UiScaler.Editor.UiScalerEditorGlobalSettings.html#UiScaler_Editor_UiScalerEditorGlobalSettings_SimulatedSafeAreaPadding
-  commentId: F:UiScaler.Editor.UiScalerEditorGlobalSettings.SimulatedSafeAreaPadding
-  fullName: UiScaler.Editor.UiScalerEditorGlobalSettings.SimulatedSafeAreaPadding
-  nameWithType: UiScalerEditorGlobalSettings.SimulatedSafeAreaPadding
-- uid: UiScaler.UiScalerAlignment
-  name: UiScalerAlignment
-  href: api/UiScaler.UiScalerAlignment.html
-  commentId: T:UiScaler.UiScalerAlignment
-  fullName: UiScaler.UiScalerAlignment
-  nameWithType: UiScalerAlignment
-- uid: UiScaler.UiScalerAlignment.Bottom
-  name: Bottom
-  href: api/UiScaler.UiScalerAlignment.html#UiScaler_UiScalerAlignment_Bottom
-  commentId: F:UiScaler.UiScalerAlignment.Bottom
-  fullName: UiScaler.UiScalerAlignment.Bottom
-  nameWithType: UiScalerAlignment.Bottom
-- uid: UiScaler.UiScalerAlignment.BottomLeft
+  href: api/SmartUIScaler.UIScalerAlignment.html#SmartUIScaler_UIScalerAlignment_Bottom
+  commentId: F:SmartUIScaler.UIScalerAlignment.Bottom
+  fullName: SmartUIScaler.UIScalerAlignment.Bottom
+  nameWithType: UIScalerAlignment.Bottom
+- uid: SmartUIScaler.UIScalerAlignment.BottomLeft
   name: BottomLeft
-  href: api/UiScaler.UiScalerAlignment.html#UiScaler_UiScalerAlignment_BottomLeft
-  commentId: F:UiScaler.UiScalerAlignment.BottomLeft
-  fullName: UiScaler.UiScalerAlignment.BottomLeft
-  nameWithType: UiScalerAlignment.BottomLeft
-- uid: UiScaler.UiScalerAlignment.BottomRight
+  href: api/SmartUIScaler.UIScalerAlignment.html#SmartUIScaler_UIScalerAlignment_BottomLeft
+  commentId: F:SmartUIScaler.UIScalerAlignment.BottomLeft
+  fullName: SmartUIScaler.UIScalerAlignment.BottomLeft
+  nameWithType: UIScalerAlignment.BottomLeft
+- uid: SmartUIScaler.UIScalerAlignment.BottomRight
   name: BottomRight
-  href: api/UiScaler.UiScalerAlignment.html#UiScaler_UiScalerAlignment_BottomRight
-  commentId: F:UiScaler.UiScalerAlignment.BottomRight
-  fullName: UiScaler.UiScalerAlignment.BottomRight
-  nameWithType: UiScalerAlignment.BottomRight
-- uid: UiScaler.UiScalerAlignment.Center
+  href: api/SmartUIScaler.UIScalerAlignment.html#SmartUIScaler_UIScalerAlignment_BottomRight
+  commentId: F:SmartUIScaler.UIScalerAlignment.BottomRight
+  fullName: SmartUIScaler.UIScalerAlignment.BottomRight
+  nameWithType: UIScalerAlignment.BottomRight
+- uid: SmartUIScaler.UIScalerAlignment.Center
   name: Center
-  href: api/UiScaler.UiScalerAlignment.html#UiScaler_UiScalerAlignment_Center
-  commentId: F:UiScaler.UiScalerAlignment.Center
-  fullName: UiScaler.UiScalerAlignment.Center
-  nameWithType: UiScalerAlignment.Center
-- uid: UiScaler.UiScalerAlignment.Left
+  href: api/SmartUIScaler.UIScalerAlignment.html#SmartUIScaler_UIScalerAlignment_Center
+  commentId: F:SmartUIScaler.UIScalerAlignment.Center
+  fullName: SmartUIScaler.UIScalerAlignment.Center
+  nameWithType: UIScalerAlignment.Center
+- uid: SmartUIScaler.UIScalerAlignment.Left
   name: Left
-  href: api/UiScaler.UiScalerAlignment.html#UiScaler_UiScalerAlignment_Left
-  commentId: F:UiScaler.UiScalerAlignment.Left
-  fullName: UiScaler.UiScalerAlignment.Left
-  nameWithType: UiScalerAlignment.Left
-- uid: UiScaler.UiScalerAlignment.Right
+  href: api/SmartUIScaler.UIScalerAlignment.html#SmartUIScaler_UIScalerAlignment_Left
+  commentId: F:SmartUIScaler.UIScalerAlignment.Left
+  fullName: SmartUIScaler.UIScalerAlignment.Left
+  nameWithType: UIScalerAlignment.Left
+- uid: SmartUIScaler.UIScalerAlignment.Right
   name: Right
-  href: api/UiScaler.UiScalerAlignment.html#UiScaler_UiScalerAlignment_Right
-  commentId: F:UiScaler.UiScalerAlignment.Right
-  fullName: UiScaler.UiScalerAlignment.Right
-  nameWithType: UiScalerAlignment.Right
-- uid: UiScaler.UiScalerAlignment.Top
+  href: api/SmartUIScaler.UIScalerAlignment.html#SmartUIScaler_UIScalerAlignment_Right
+  commentId: F:SmartUIScaler.UIScalerAlignment.Right
+  fullName: SmartUIScaler.UIScalerAlignment.Right
+  nameWithType: UIScalerAlignment.Right
+- uid: SmartUIScaler.UIScalerAlignment.Top
   name: Top
-  href: api/UiScaler.UiScalerAlignment.html#UiScaler_UiScalerAlignment_Top
-  commentId: F:UiScaler.UiScalerAlignment.Top
-  fullName: UiScaler.UiScalerAlignment.Top
-  nameWithType: UiScalerAlignment.Top
-- uid: UiScaler.UiScalerAlignment.TopLeft
+  href: api/SmartUIScaler.UIScalerAlignment.html#SmartUIScaler_UIScalerAlignment_Top
+  commentId: F:SmartUIScaler.UIScalerAlignment.Top
+  fullName: SmartUIScaler.UIScalerAlignment.Top
+  nameWithType: UIScalerAlignment.Top
+- uid: SmartUIScaler.UIScalerAlignment.TopLeft
   name: TopLeft
-  href: api/UiScaler.UiScalerAlignment.html#UiScaler_UiScalerAlignment_TopLeft
-  commentId: F:UiScaler.UiScalerAlignment.TopLeft
-  fullName: UiScaler.UiScalerAlignment.TopLeft
-  nameWithType: UiScalerAlignment.TopLeft
-- uid: UiScaler.UiScalerAlignment.TopRight
+  href: api/SmartUIScaler.UIScalerAlignment.html#SmartUIScaler_UIScalerAlignment_TopLeft
+  commentId: F:SmartUIScaler.UIScalerAlignment.TopLeft
+  fullName: SmartUIScaler.UIScalerAlignment.TopLeft
+  nameWithType: UIScalerAlignment.TopLeft
+- uid: SmartUIScaler.UIScalerAlignment.TopRight
   name: TopRight
-  href: api/UiScaler.UiScalerAlignment.html#UiScaler_UiScalerAlignment_TopRight
-  commentId: F:UiScaler.UiScalerAlignment.TopRight
-  fullName: UiScaler.UiScalerAlignment.TopRight
-  nameWithType: UiScalerAlignment.TopRight
-- uid: UiScaler.UiScalerBehaviour
-  name: UiScalerBehaviour
-  href: api/UiScaler.UiScalerBehaviour.html
-  commentId: T:UiScaler.UiScalerBehaviour
-  fullName: UiScaler.UiScalerBehaviour
-  nameWithType: UiScalerBehaviour
-- uid: UiScaler.UiScalerBehaviour.Awake
+  href: api/SmartUIScaler.UIScalerAlignment.html#SmartUIScaler_UIScalerAlignment_TopRight
+  commentId: F:SmartUIScaler.UIScalerAlignment.TopRight
+  fullName: SmartUIScaler.UIScalerAlignment.TopRight
+  nameWithType: UIScalerAlignment.TopRight
+- uid: SmartUIScaler.UIScalerBehaviour
+  name: UIScalerBehaviour
+  href: api/SmartUIScaler.UIScalerBehaviour.html
+  commentId: T:SmartUIScaler.UIScalerBehaviour
+  fullName: SmartUIScaler.UIScalerBehaviour
+  nameWithType: UIScalerBehaviour
+- uid: SmartUIScaler.UIScalerBehaviour.Awake
   name: Awake()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_Awake
-  commentId: M:UiScaler.UiScalerBehaviour.Awake
-  fullName: UiScaler.UiScalerBehaviour.Awake()
-  nameWithType: UiScalerBehaviour.Awake()
-- uid: UiScaler.UiScalerBehaviour.Awake*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_Awake
+  commentId: M:SmartUIScaler.UIScalerBehaviour.Awake
+  fullName: SmartUIScaler.UIScalerBehaviour.Awake()
+  nameWithType: UIScalerBehaviour.Awake()
+- uid: SmartUIScaler.UIScalerBehaviour.Awake*
   name: Awake
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_Awake_
-  commentId: Overload:UiScaler.UiScalerBehaviour.Awake
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_Awake_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.Awake
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.Awake
-  nameWithType: UiScalerBehaviour.Awake
-- uid: UiScaler.UiScalerBehaviour.GetFirstParentCoreUiScaler
-  name: GetFirstParentCoreUiScaler()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_GetFirstParentCoreUiScaler
-  commentId: M:UiScaler.UiScalerBehaviour.GetFirstParentCoreUiScaler
-  fullName: UiScaler.UiScalerBehaviour.GetFirstParentCoreUiScaler()
-  nameWithType: UiScalerBehaviour.GetFirstParentCoreUiScaler()
-- uid: UiScaler.UiScalerBehaviour.GetFirstParentCoreUiScaler*
-  name: GetFirstParentCoreUiScaler
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_GetFirstParentCoreUiScaler_
-  commentId: Overload:UiScaler.UiScalerBehaviour.GetFirstParentCoreUiScaler
+  fullName: SmartUIScaler.UIScalerBehaviour.Awake
+  nameWithType: UIScalerBehaviour.Awake
+- uid: SmartUIScaler.UIScalerBehaviour.GetFirstParentCoreUIScaler
+  name: GetFirstParentCoreUIScaler()
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_GetFirstParentCoreUIScaler
+  commentId: M:SmartUIScaler.UIScalerBehaviour.GetFirstParentCoreUIScaler
+  fullName: SmartUIScaler.UIScalerBehaviour.GetFirstParentCoreUIScaler()
+  nameWithType: UIScalerBehaviour.GetFirstParentCoreUIScaler()
+- uid: SmartUIScaler.UIScalerBehaviour.GetFirstParentCoreUIScaler*
+  name: GetFirstParentCoreUIScaler
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_GetFirstParentCoreUIScaler_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.GetFirstParentCoreUIScaler
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.GetFirstParentCoreUiScaler
-  nameWithType: UiScalerBehaviour.GetFirstParentCoreUiScaler
-- uid: UiScaler.UiScalerBehaviour.GetScreenSafeAreaRect
+  fullName: SmartUIScaler.UIScalerBehaviour.GetFirstParentCoreUIScaler
+  nameWithType: UIScalerBehaviour.GetFirstParentCoreUIScaler
+- uid: SmartUIScaler.UIScalerBehaviour.GetScreenSafeAreaRect
   name: GetScreenSafeAreaRect()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_GetScreenSafeAreaRect
-  commentId: M:UiScaler.UiScalerBehaviour.GetScreenSafeAreaRect
-  fullName: UiScaler.UiScalerBehaviour.GetScreenSafeAreaRect()
-  nameWithType: UiScalerBehaviour.GetScreenSafeAreaRect()
-- uid: UiScaler.UiScalerBehaviour.GetScreenSafeAreaRect*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_GetScreenSafeAreaRect
+  commentId: M:SmartUIScaler.UIScalerBehaviour.GetScreenSafeAreaRect
+  fullName: SmartUIScaler.UIScalerBehaviour.GetScreenSafeAreaRect()
+  nameWithType: UIScalerBehaviour.GetScreenSafeAreaRect()
+- uid: SmartUIScaler.UIScalerBehaviour.GetScreenSafeAreaRect*
   name: GetScreenSafeAreaRect
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_GetScreenSafeAreaRect_
-  commentId: Overload:UiScaler.UiScalerBehaviour.GetScreenSafeAreaRect
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_GetScreenSafeAreaRect_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.GetScreenSafeAreaRect
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.GetScreenSafeAreaRect
-  nameWithType: UiScalerBehaviour.GetScreenSafeAreaRect
-- uid: UiScaler.UiScalerBehaviour.LocalToWorldPoints(Transform,Vector3,Vector3)
+  fullName: SmartUIScaler.UIScalerBehaviour.GetScreenSafeAreaRect
+  nameWithType: UIScalerBehaviour.GetScreenSafeAreaRect
+- uid: SmartUIScaler.UIScalerBehaviour.LocalToWorldPoints(Transform,Vector3,Vector3)
   name: LocalToWorldPoints(Transform, Vector3, Vector3)
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_LocalToWorldPoints_Transform_Vector3_Vector3_
-  commentId: M:UiScaler.UiScalerBehaviour.LocalToWorldPoints(Transform,Vector3,Vector3)
-  fullName: UiScaler.UiScalerBehaviour.LocalToWorldPoints(Transform, Vector3, Vector3)
-  nameWithType: UiScalerBehaviour.LocalToWorldPoints(Transform, Vector3, Vector3)
-- uid: UiScaler.UiScalerBehaviour.LocalToWorldPoints*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_LocalToWorldPoints_Transform_Vector3_Vector3_
+  commentId: M:SmartUIScaler.UIScalerBehaviour.LocalToWorldPoints(Transform,Vector3,Vector3)
+  fullName: SmartUIScaler.UIScalerBehaviour.LocalToWorldPoints(Transform, Vector3, Vector3)
+  nameWithType: UIScalerBehaviour.LocalToWorldPoints(Transform, Vector3, Vector3)
+- uid: SmartUIScaler.UIScalerBehaviour.LocalToWorldPoints*
   name: LocalToWorldPoints
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_LocalToWorldPoints_
-  commentId: Overload:UiScaler.UiScalerBehaviour.LocalToWorldPoints
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_LocalToWorldPoints_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.LocalToWorldPoints
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.LocalToWorldPoints
-  nameWithType: UiScalerBehaviour.LocalToWorldPoints
-- uid: UiScaler.UiScalerBehaviour.OnDestroy
+  fullName: SmartUIScaler.UIScalerBehaviour.LocalToWorldPoints
+  nameWithType: UIScalerBehaviour.LocalToWorldPoints
+- uid: SmartUIScaler.UIScalerBehaviour.OnDestroy
   name: OnDestroy()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnDestroy
-  commentId: M:UiScaler.UiScalerBehaviour.OnDestroy
-  fullName: UiScaler.UiScalerBehaviour.OnDestroy()
-  nameWithType: UiScalerBehaviour.OnDestroy()
-- uid: UiScaler.UiScalerBehaviour.OnDestroy*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnDestroy
+  commentId: M:SmartUIScaler.UIScalerBehaviour.OnDestroy
+  fullName: SmartUIScaler.UIScalerBehaviour.OnDestroy()
+  nameWithType: UIScalerBehaviour.OnDestroy()
+- uid: SmartUIScaler.UIScalerBehaviour.OnDestroy*
   name: OnDestroy
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnDestroy_
-  commentId: Overload:UiScaler.UiScalerBehaviour.OnDestroy
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnDestroy_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.OnDestroy
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.OnDestroy
-  nameWithType: UiScalerBehaviour.OnDestroy
-- uid: UiScaler.UiScalerBehaviour.OnDisable
+  fullName: SmartUIScaler.UIScalerBehaviour.OnDestroy
+  nameWithType: UIScalerBehaviour.OnDestroy
+- uid: SmartUIScaler.UIScalerBehaviour.OnDisable
   name: OnDisable()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnDisable
-  commentId: M:UiScaler.UiScalerBehaviour.OnDisable
-  fullName: UiScaler.UiScalerBehaviour.OnDisable()
-  nameWithType: UiScalerBehaviour.OnDisable()
-- uid: UiScaler.UiScalerBehaviour.OnDisable*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnDisable
+  commentId: M:SmartUIScaler.UIScalerBehaviour.OnDisable
+  fullName: SmartUIScaler.UIScalerBehaviour.OnDisable()
+  nameWithType: UIScalerBehaviour.OnDisable()
+- uid: SmartUIScaler.UIScalerBehaviour.OnDisable*
   name: OnDisable
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnDisable_
-  commentId: Overload:UiScaler.UiScalerBehaviour.OnDisable
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnDisable_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.OnDisable
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.OnDisable
-  nameWithType: UiScalerBehaviour.OnDisable
-- uid: UiScaler.UiScalerBehaviour.OnEnable
+  fullName: SmartUIScaler.UIScalerBehaviour.OnDisable
+  nameWithType: UIScalerBehaviour.OnDisable
+- uid: SmartUIScaler.UIScalerBehaviour.OnEnable
   name: OnEnable()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnEnable
-  commentId: M:UiScaler.UiScalerBehaviour.OnEnable
-  fullName: UiScaler.UiScalerBehaviour.OnEnable()
-  nameWithType: UiScalerBehaviour.OnEnable()
-- uid: UiScaler.UiScalerBehaviour.OnEnable*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnEnable
+  commentId: M:SmartUIScaler.UIScalerBehaviour.OnEnable
+  fullName: SmartUIScaler.UIScalerBehaviour.OnEnable()
+  nameWithType: UIScalerBehaviour.OnEnable()
+- uid: SmartUIScaler.UIScalerBehaviour.OnEnable*
   name: OnEnable
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnEnable_
-  commentId: Overload:UiScaler.UiScalerBehaviour.OnEnable
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnEnable_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.OnEnable
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.OnEnable
-  nameWithType: UiScalerBehaviour.OnEnable
-- uid: UiScaler.UiScalerBehaviour.OnPreWillRenderCanvases
+  fullName: SmartUIScaler.UIScalerBehaviour.OnEnable
+  nameWithType: UIScalerBehaviour.OnEnable
+- uid: SmartUIScaler.UIScalerBehaviour.OnPreWillRenderCanvases
   name: OnPreWillRenderCanvases()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnPreWillRenderCanvases
-  commentId: M:UiScaler.UiScalerBehaviour.OnPreWillRenderCanvases
-  fullName: UiScaler.UiScalerBehaviour.OnPreWillRenderCanvases()
-  nameWithType: UiScalerBehaviour.OnPreWillRenderCanvases()
-- uid: UiScaler.UiScalerBehaviour.OnPreWillRenderCanvases*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnPreWillRenderCanvases
+  commentId: M:SmartUIScaler.UIScalerBehaviour.OnPreWillRenderCanvases
+  fullName: SmartUIScaler.UIScalerBehaviour.OnPreWillRenderCanvases()
+  nameWithType: UIScalerBehaviour.OnPreWillRenderCanvases()
+- uid: SmartUIScaler.UIScalerBehaviour.OnPreWillRenderCanvases*
   name: OnPreWillRenderCanvases
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnPreWillRenderCanvases_
-  commentId: Overload:UiScaler.UiScalerBehaviour.OnPreWillRenderCanvases
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnPreWillRenderCanvases_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.OnPreWillRenderCanvases
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.OnPreWillRenderCanvases
-  nameWithType: UiScalerBehaviour.OnPreWillRenderCanvases
-- uid: UiScaler.UiScalerBehaviour.OnTransformParentChanged
+  fullName: SmartUIScaler.UIScalerBehaviour.OnPreWillRenderCanvases
+  nameWithType: UIScalerBehaviour.OnPreWillRenderCanvases
+- uid: SmartUIScaler.UIScalerBehaviour.OnTransformParentChanged
   name: OnTransformParentChanged()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnTransformParentChanged
-  commentId: M:UiScaler.UiScalerBehaviour.OnTransformParentChanged
-  fullName: UiScaler.UiScalerBehaviour.OnTransformParentChanged()
-  nameWithType: UiScalerBehaviour.OnTransformParentChanged()
-- uid: UiScaler.UiScalerBehaviour.OnTransformParentChanged*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnTransformParentChanged
+  commentId: M:SmartUIScaler.UIScalerBehaviour.OnTransformParentChanged
+  fullName: SmartUIScaler.UIScalerBehaviour.OnTransformParentChanged()
+  nameWithType: UIScalerBehaviour.OnTransformParentChanged()
+- uid: SmartUIScaler.UIScalerBehaviour.OnTransformParentChanged*
   name: OnTransformParentChanged
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_OnTransformParentChanged_
-  commentId: Overload:UiScaler.UiScalerBehaviour.OnTransformParentChanged
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_OnTransformParentChanged_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.OnTransformParentChanged
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.OnTransformParentChanged
-  nameWithType: UiScalerBehaviour.OnTransformParentChanged
-- uid: UiScaler.UiScalerBehaviour.RectTransform
+  fullName: SmartUIScaler.UIScalerBehaviour.OnTransformParentChanged
+  nameWithType: UIScalerBehaviour.OnTransformParentChanged
+- uid: SmartUIScaler.UIScalerBehaviour.RectTransform
   name: RectTransform
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_RectTransform
-  commentId: F:UiScaler.UiScalerBehaviour.RectTransform
-  fullName: UiScaler.UiScalerBehaviour.RectTransform
-  nameWithType: UiScalerBehaviour.RectTransform
-- uid: UiScaler.UiScalerBehaviour.Resize
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_RectTransform
+  commentId: F:SmartUIScaler.UIScalerBehaviour.RectTransform
+  fullName: SmartUIScaler.UIScalerBehaviour.RectTransform
+  nameWithType: UIScalerBehaviour.RectTransform
+- uid: SmartUIScaler.UIScalerBehaviour.Resize
   name: Resize()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_Resize
-  commentId: M:UiScaler.UiScalerBehaviour.Resize
-  fullName: UiScaler.UiScalerBehaviour.Resize()
-  nameWithType: UiScalerBehaviour.Resize()
-- uid: UiScaler.UiScalerBehaviour.Resize*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_Resize
+  commentId: M:SmartUIScaler.UIScalerBehaviour.Resize
+  fullName: SmartUIScaler.UIScalerBehaviour.Resize()
+  nameWithType: UIScalerBehaviour.Resize()
+- uid: SmartUIScaler.UIScalerBehaviour.Resize*
   name: Resize
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_Resize_
-  commentId: Overload:UiScaler.UiScalerBehaviour.Resize
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_Resize_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.Resize
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.Resize
-  nameWithType: UiScalerBehaviour.Resize
-- uid: UiScaler.UiScalerBehaviour.SetRectTransformDefaults
+  fullName: SmartUIScaler.UIScalerBehaviour.Resize
+  nameWithType: UIScalerBehaviour.Resize
+- uid: SmartUIScaler.UIScalerBehaviour.SetRectTransformDefaults
   name: SetRectTransformDefaults()
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_SetRectTransformDefaults
-  commentId: M:UiScaler.UiScalerBehaviour.SetRectTransformDefaults
-  fullName: UiScaler.UiScalerBehaviour.SetRectTransformDefaults()
-  nameWithType: UiScalerBehaviour.SetRectTransformDefaults()
-- uid: UiScaler.UiScalerBehaviour.SetRectTransformDefaults*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_SetRectTransformDefaults
+  commentId: M:SmartUIScaler.UIScalerBehaviour.SetRectTransformDefaults
+  fullName: SmartUIScaler.UIScalerBehaviour.SetRectTransformDefaults()
+  nameWithType: UIScalerBehaviour.SetRectTransformDefaults()
+- uid: SmartUIScaler.UIScalerBehaviour.SetRectTransformDefaults*
   name: SetRectTransformDefaults
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_SetRectTransformDefaults_
-  commentId: Overload:UiScaler.UiScalerBehaviour.SetRectTransformDefaults
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_SetRectTransformDefaults_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.SetRectTransformDefaults
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.SetRectTransformDefaults
-  nameWithType: UiScalerBehaviour.SetRectTransformDefaults
-- uid: UiScaler.UiScalerBehaviour.WorldRectToLocalRect(Transform,Rect)
+  fullName: SmartUIScaler.UIScalerBehaviour.SetRectTransformDefaults
+  nameWithType: UIScalerBehaviour.SetRectTransformDefaults
+- uid: SmartUIScaler.UIScalerBehaviour.WorldRectToLocalRect(Transform,Rect)
   name: WorldRectToLocalRect(Transform, Rect)
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_WorldRectToLocalRect_Transform_Rect_
-  commentId: M:UiScaler.UiScalerBehaviour.WorldRectToLocalRect(Transform,Rect)
-  fullName: UiScaler.UiScalerBehaviour.WorldRectToLocalRect(Transform, Rect)
-  nameWithType: UiScalerBehaviour.WorldRectToLocalRect(Transform, Rect)
-- uid: UiScaler.UiScalerBehaviour.WorldRectToLocalRect*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_WorldRectToLocalRect_Transform_Rect_
+  commentId: M:SmartUIScaler.UIScalerBehaviour.WorldRectToLocalRect(Transform,Rect)
+  fullName: SmartUIScaler.UIScalerBehaviour.WorldRectToLocalRect(Transform, Rect)
+  nameWithType: UIScalerBehaviour.WorldRectToLocalRect(Transform, Rect)
+- uid: SmartUIScaler.UIScalerBehaviour.WorldRectToLocalRect*
   name: WorldRectToLocalRect
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_WorldRectToLocalRect_
-  commentId: Overload:UiScaler.UiScalerBehaviour.WorldRectToLocalRect
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_WorldRectToLocalRect_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.WorldRectToLocalRect
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.WorldRectToLocalRect
-  nameWithType: UiScalerBehaviour.WorldRectToLocalRect
-- uid: UiScaler.UiScalerBehaviour.WorldToLocalPoints(Transform,Vector3,Vector3)
+  fullName: SmartUIScaler.UIScalerBehaviour.WorldRectToLocalRect
+  nameWithType: UIScalerBehaviour.WorldRectToLocalRect
+- uid: SmartUIScaler.UIScalerBehaviour.WorldToLocalPoints(Transform,Vector3,Vector3)
   name: WorldToLocalPoints(Transform, Vector3, Vector3)
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_WorldToLocalPoints_Transform_Vector3_Vector3_
-  commentId: M:UiScaler.UiScalerBehaviour.WorldToLocalPoints(Transform,Vector3,Vector3)
-  fullName: UiScaler.UiScalerBehaviour.WorldToLocalPoints(Transform, Vector3, Vector3)
-  nameWithType: UiScalerBehaviour.WorldToLocalPoints(Transform, Vector3, Vector3)
-- uid: UiScaler.UiScalerBehaviour.WorldToLocalPoints*
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_WorldToLocalPoints_Transform_Vector3_Vector3_
+  commentId: M:SmartUIScaler.UIScalerBehaviour.WorldToLocalPoints(Transform,Vector3,Vector3)
+  fullName: SmartUIScaler.UIScalerBehaviour.WorldToLocalPoints(Transform, Vector3, Vector3)
+  nameWithType: UIScalerBehaviour.WorldToLocalPoints(Transform, Vector3, Vector3)
+- uid: SmartUIScaler.UIScalerBehaviour.WorldToLocalPoints*
   name: WorldToLocalPoints
-  href: api/UiScaler.UiScalerBehaviour.html#UiScaler_UiScalerBehaviour_WorldToLocalPoints_
-  commentId: Overload:UiScaler.UiScalerBehaviour.WorldToLocalPoints
+  href: api/SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_WorldToLocalPoints_
+  commentId: Overload:SmartUIScaler.UIScalerBehaviour.WorldToLocalPoints
   isSpec: "True"
-  fullName: UiScaler.UiScalerBehaviour.WorldToLocalPoints
-  nameWithType: UiScalerBehaviour.WorldToLocalPoints
-- uid: UiScaler.UiScalerGroups
-  name: UiScalerGroups
-  href: api/UiScaler.UiScalerGroups.html
-  commentId: T:UiScaler.UiScalerGroups
-  fullName: UiScaler.UiScalerGroups
-  nameWithType: UiScalerGroups
-- uid: UiScaler.UiScalerGroups.AddGroupListener(UiScaler.UiScalerGroupSo,Action{UiScaler.UiScalerOptions},System.Boolean)
-  name: AddGroupListener(UiScalerGroupSo, Action<UiScalerOptions>, bool)
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_AddGroupListener_UiScaler_UiScalerGroupSo_Action_UiScaler_UiScalerOptions__System_Boolean_
-  commentId: M:UiScaler.UiScalerGroups.AddGroupListener(UiScaler.UiScalerGroupSo,Action{UiScaler.UiScalerOptions},System.Boolean)
-  name.vb: AddGroupListener(UiScalerGroupSo, Action(Of UiScalerOptions), Boolean)
-  fullName: UiScaler.UiScalerGroups.AddGroupListener(UiScaler.UiScalerGroupSo, Action<UiScaler.UiScalerOptions>, bool)
-  fullName.vb: UiScaler.UiScalerGroups.AddGroupListener(UiScaler.UiScalerGroupSo, Action(Of UiScaler.UiScalerOptions), Boolean)
-  nameWithType: UiScalerGroups.AddGroupListener(UiScalerGroupSo, Action<UiScalerOptions>, bool)
-  nameWithType.vb: UiScalerGroups.AddGroupListener(UiScalerGroupSo, Action(Of UiScalerOptions), Boolean)
-- uid: UiScaler.UiScalerGroups.AddGroupListener*
+  fullName: SmartUIScaler.UIScalerBehaviour.WorldToLocalPoints
+  nameWithType: UIScalerBehaviour.WorldToLocalPoints
+- uid: SmartUIScaler.UIScalerGroups
+  name: UIScalerGroups
+  href: api/SmartUIScaler.UIScalerGroups.html
+  commentId: T:SmartUIScaler.UIScalerGroups
+  fullName: SmartUIScaler.UIScalerGroups
+  nameWithType: UIScalerGroups
+- uid: SmartUIScaler.UIScalerGroups.AddGroupListener(SmartUIScaler.UIScalerGroupSo,Action{SmartUIScaler.UIScalerOptions},System.Boolean)
+  name: AddGroupListener(UIScalerGroupSo, Action<UIScalerOptions>, bool)
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_AddGroupListener_SmartUIScaler_UIScalerGroupSo_Action_SmartUIScaler_UIScalerOptions__System_Boolean_
+  commentId: M:SmartUIScaler.UIScalerGroups.AddGroupListener(SmartUIScaler.UIScalerGroupSo,Action{SmartUIScaler.UIScalerOptions},System.Boolean)
+  name.vb: AddGroupListener(UIScalerGroupSo, Action(Of UIScalerOptions), Boolean)
+  fullName: SmartUIScaler.UIScalerGroups.AddGroupListener(SmartUIScaler.UIScalerGroupSo, Action<SmartUIScaler.UIScalerOptions>, bool)
+  fullName.vb: SmartUIScaler.UIScalerGroups.AddGroupListener(SmartUIScaler.UIScalerGroupSo, Action(Of SmartUIScaler.UIScalerOptions), Boolean)
+  nameWithType: UIScalerGroups.AddGroupListener(UIScalerGroupSo, Action<UIScalerOptions>, bool)
+  nameWithType.vb: UIScalerGroups.AddGroupListener(UIScalerGroupSo, Action(Of UIScalerOptions), Boolean)
+- uid: SmartUIScaler.UIScalerGroups.AddGroupListener*
   name: AddGroupListener
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_AddGroupListener_
-  commentId: Overload:UiScaler.UiScalerGroups.AddGroupListener
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_AddGroupListener_
+  commentId: Overload:SmartUIScaler.UIScalerGroups.AddGroupListener
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroups.AddGroupListener
-  nameWithType: UiScalerGroups.AddGroupListener
-- uid: UiScaler.UiScalerGroups.GetSaveData
+  fullName: SmartUIScaler.UIScalerGroups.AddGroupListener
+  nameWithType: UIScalerGroups.AddGroupListener
+- uid: SmartUIScaler.UIScalerGroups.GetSaveData
   name: GetSaveData()
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_GetSaveData
-  commentId: M:UiScaler.UiScalerGroups.GetSaveData
-  fullName: UiScaler.UiScalerGroups.GetSaveData()
-  nameWithType: UiScalerGroups.GetSaveData()
-- uid: UiScaler.UiScalerGroups.GetSaveData*
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_GetSaveData
+  commentId: M:SmartUIScaler.UIScalerGroups.GetSaveData
+  fullName: SmartUIScaler.UIScalerGroups.GetSaveData()
+  nameWithType: UIScalerGroups.GetSaveData()
+- uid: SmartUIScaler.UIScalerGroups.GetSaveData*
   name: GetSaveData
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_GetSaveData_
-  commentId: Overload:UiScaler.UiScalerGroups.GetSaveData
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_GetSaveData_
+  commentId: Overload:SmartUIScaler.UIScalerGroups.GetSaveData
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroups.GetSaveData
-  nameWithType: UiScalerGroups.GetSaveData
-- uid: UiScaler.UiScalerGroups.LoadFromPlayerPrefs(System.String)
+  fullName: SmartUIScaler.UIScalerGroups.GetSaveData
+  nameWithType: UIScalerGroups.GetSaveData
+- uid: SmartUIScaler.UIScalerGroups.LoadFromPlayerPrefs(System.String)
   name: LoadFromPlayerPrefs(string)
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_LoadFromPlayerPrefs_System_String_
-  commentId: M:UiScaler.UiScalerGroups.LoadFromPlayerPrefs(System.String)
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_LoadFromPlayerPrefs_System_String_
+  commentId: M:SmartUIScaler.UIScalerGroups.LoadFromPlayerPrefs(System.String)
   name.vb: LoadFromPlayerPrefs(String)
-  fullName: UiScaler.UiScalerGroups.LoadFromPlayerPrefs(string)
-  fullName.vb: UiScaler.UiScalerGroups.LoadFromPlayerPrefs(String)
-  nameWithType: UiScalerGroups.LoadFromPlayerPrefs(string)
-  nameWithType.vb: UiScalerGroups.LoadFromPlayerPrefs(String)
-- uid: UiScaler.UiScalerGroups.LoadFromPlayerPrefs*
+  fullName: SmartUIScaler.UIScalerGroups.LoadFromPlayerPrefs(string)
+  fullName.vb: SmartUIScaler.UIScalerGroups.LoadFromPlayerPrefs(String)
+  nameWithType: UIScalerGroups.LoadFromPlayerPrefs(string)
+  nameWithType.vb: UIScalerGroups.LoadFromPlayerPrefs(String)
+- uid: SmartUIScaler.UIScalerGroups.LoadFromPlayerPrefs*
   name: LoadFromPlayerPrefs
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_LoadFromPlayerPrefs_
-  commentId: Overload:UiScaler.UiScalerGroups.LoadFromPlayerPrefs
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_LoadFromPlayerPrefs_
+  commentId: Overload:SmartUIScaler.UIScalerGroups.LoadFromPlayerPrefs
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroups.LoadFromPlayerPrefs
-  nameWithType: UiScalerGroups.LoadFromPlayerPrefs
-- uid: UiScaler.UiScalerGroups.PlayerPrefsSaveKey
+  fullName: SmartUIScaler.UIScalerGroups.LoadFromPlayerPrefs
+  nameWithType: UIScalerGroups.LoadFromPlayerPrefs
+- uid: SmartUIScaler.UIScalerGroups.PlayerPrefsSaveKey
   name: PlayerPrefsSaveKey
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_PlayerPrefsSaveKey
-  commentId: F:UiScaler.UiScalerGroups.PlayerPrefsSaveKey
-  fullName: UiScaler.UiScalerGroups.PlayerPrefsSaveKey
-  nameWithType: UiScalerGroups.PlayerPrefsSaveKey
-- uid: UiScaler.UiScalerGroups.RemoveGroupListener(UiScaler.UiScalerGroupSo,Action{UiScaler.UiScalerOptions})
-  name: RemoveGroupListener(UiScalerGroupSo, Action<UiScalerOptions>)
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_RemoveGroupListener_UiScaler_UiScalerGroupSo_Action_UiScaler_UiScalerOptions__
-  commentId: M:UiScaler.UiScalerGroups.RemoveGroupListener(UiScaler.UiScalerGroupSo,Action{UiScaler.UiScalerOptions})
-  name.vb: RemoveGroupListener(UiScalerGroupSo, Action(Of UiScalerOptions))
-  fullName: UiScaler.UiScalerGroups.RemoveGroupListener(UiScaler.UiScalerGroupSo, Action<UiScaler.UiScalerOptions>)
-  fullName.vb: UiScaler.UiScalerGroups.RemoveGroupListener(UiScaler.UiScalerGroupSo, Action(Of UiScaler.UiScalerOptions))
-  nameWithType: UiScalerGroups.RemoveGroupListener(UiScalerGroupSo, Action<UiScalerOptions>)
-  nameWithType.vb: UiScalerGroups.RemoveGroupListener(UiScalerGroupSo, Action(Of UiScalerOptions))
-- uid: UiScaler.UiScalerGroups.RemoveGroupListener*
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_PlayerPrefsSaveKey
+  commentId: F:SmartUIScaler.UIScalerGroups.PlayerPrefsSaveKey
+  fullName: SmartUIScaler.UIScalerGroups.PlayerPrefsSaveKey
+  nameWithType: UIScalerGroups.PlayerPrefsSaveKey
+- uid: SmartUIScaler.UIScalerGroups.RemoveGroupListener(SmartUIScaler.UIScalerGroupSo,Action{SmartUIScaler.UIScalerOptions})
+  name: RemoveGroupListener(UIScalerGroupSo, Action<UIScalerOptions>)
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_RemoveGroupListener_SmartUIScaler_UIScalerGroupSo_Action_SmartUIScaler_UIScalerOptions__
+  commentId: M:SmartUIScaler.UIScalerGroups.RemoveGroupListener(SmartUIScaler.UIScalerGroupSo,Action{SmartUIScaler.UIScalerOptions})
+  name.vb: RemoveGroupListener(UIScalerGroupSo, Action(Of UIScalerOptions))
+  fullName: SmartUIScaler.UIScalerGroups.RemoveGroupListener(SmartUIScaler.UIScalerGroupSo, Action<SmartUIScaler.UIScalerOptions>)
+  fullName.vb: SmartUIScaler.UIScalerGroups.RemoveGroupListener(SmartUIScaler.UIScalerGroupSo, Action(Of SmartUIScaler.UIScalerOptions))
+  nameWithType: UIScalerGroups.RemoveGroupListener(UIScalerGroupSo, Action<UIScalerOptions>)
+  nameWithType.vb: UIScalerGroups.RemoveGroupListener(UIScalerGroupSo, Action(Of UIScalerOptions))
+- uid: SmartUIScaler.UIScalerGroups.RemoveGroupListener*
   name: RemoveGroupListener
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_RemoveGroupListener_
-  commentId: Overload:UiScaler.UiScalerGroups.RemoveGroupListener
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_RemoveGroupListener_
+  commentId: Overload:SmartUIScaler.UIScalerGroups.RemoveGroupListener
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroups.RemoveGroupListener
-  nameWithType: UiScalerGroups.RemoveGroupListener
-- uid: UiScaler.UiScalerGroups.SaveToPlayerPrefs(System.String)
+  fullName: SmartUIScaler.UIScalerGroups.RemoveGroupListener
+  nameWithType: UIScalerGroups.RemoveGroupListener
+- uid: SmartUIScaler.UIScalerGroups.SaveToPlayerPrefs(System.String)
   name: SaveToPlayerPrefs(string)
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_SaveToPlayerPrefs_System_String_
-  commentId: M:UiScaler.UiScalerGroups.SaveToPlayerPrefs(System.String)
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SaveToPlayerPrefs_System_String_
+  commentId: M:SmartUIScaler.UIScalerGroups.SaveToPlayerPrefs(System.String)
   name.vb: SaveToPlayerPrefs(String)
-  fullName: UiScaler.UiScalerGroups.SaveToPlayerPrefs(string)
-  fullName.vb: UiScaler.UiScalerGroups.SaveToPlayerPrefs(String)
-  nameWithType: UiScalerGroups.SaveToPlayerPrefs(string)
-  nameWithType.vb: UiScalerGroups.SaveToPlayerPrefs(String)
-- uid: UiScaler.UiScalerGroups.SaveToPlayerPrefs*
+  fullName: SmartUIScaler.UIScalerGroups.SaveToPlayerPrefs(string)
+  fullName.vb: SmartUIScaler.UIScalerGroups.SaveToPlayerPrefs(String)
+  nameWithType: UIScalerGroups.SaveToPlayerPrefs(string)
+  nameWithType.vb: UIScalerGroups.SaveToPlayerPrefs(String)
+- uid: SmartUIScaler.UIScalerGroups.SaveToPlayerPrefs*
   name: SaveToPlayerPrefs
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_SaveToPlayerPrefs_
-  commentId: Overload:UiScaler.UiScalerGroups.SaveToPlayerPrefs
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SaveToPlayerPrefs_
+  commentId: Overload:SmartUIScaler.UIScalerGroups.SaveToPlayerPrefs
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroups.SaveToPlayerPrefs
-  nameWithType: UiScalerGroups.SaveToPlayerPrefs
-- uid: UiScaler.UiScalerGroups.SetGroupContentScale(UiScaler.UiScalerGroupSo,System.Single)
-  name: SetGroupContentScale(UiScalerGroupSo, float)
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_SetGroupContentScale_UiScaler_UiScalerGroupSo_System_Single_
-  commentId: M:UiScaler.UiScalerGroups.SetGroupContentScale(UiScaler.UiScalerGroupSo,System.Single)
-  name.vb: SetGroupContentScale(UiScalerGroupSo, Single)
-  fullName: UiScaler.UiScalerGroups.SetGroupContentScale(UiScaler.UiScalerGroupSo, float)
-  fullName.vb: UiScaler.UiScalerGroups.SetGroupContentScale(UiScaler.UiScalerGroupSo, Single)
-  nameWithType: UiScalerGroups.SetGroupContentScale(UiScalerGroupSo, float)
-  nameWithType.vb: UiScalerGroups.SetGroupContentScale(UiScalerGroupSo, Single)
-- uid: UiScaler.UiScalerGroups.SetGroupContentScale*
+  fullName: SmartUIScaler.UIScalerGroups.SaveToPlayerPrefs
+  nameWithType: UIScalerGroups.SaveToPlayerPrefs
+- uid: SmartUIScaler.UIScalerGroups.SetGroupContentScale(SmartUIScaler.UIScalerGroupSo,System.Single)
+  name: SetGroupContentScale(UIScalerGroupSo, float)
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetGroupContentScale_SmartUIScaler_UIScalerGroupSo_System_Single_
+  commentId: M:SmartUIScaler.UIScalerGroups.SetGroupContentScale(SmartUIScaler.UIScalerGroupSo,System.Single)
+  name.vb: SetGroupContentScale(UIScalerGroupSo, Single)
+  fullName: SmartUIScaler.UIScalerGroups.SetGroupContentScale(SmartUIScaler.UIScalerGroupSo, float)
+  fullName.vb: SmartUIScaler.UIScalerGroups.SetGroupContentScale(SmartUIScaler.UIScalerGroupSo, Single)
+  nameWithType: UIScalerGroups.SetGroupContentScale(UIScalerGroupSo, float)
+  nameWithType.vb: UIScalerGroups.SetGroupContentScale(UIScalerGroupSo, Single)
+- uid: SmartUIScaler.UIScalerGroups.SetGroupContentScale*
   name: SetGroupContentScale
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_SetGroupContentScale_
-  commentId: Overload:UiScaler.UiScalerGroups.SetGroupContentScale
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetGroupContentScale_
+  commentId: Overload:SmartUIScaler.UIScalerGroups.SetGroupContentScale
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroups.SetGroupContentScale
-  nameWithType: UiScalerGroups.SetGroupContentScale
-- uid: UiScaler.UiScalerGroups.SetGroupExpandProgress(UiScaler.UiScalerGroupSo,System.Single)
-  name: SetGroupExpandProgress(UiScalerGroupSo, float)
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_SetGroupExpandProgress_UiScaler_UiScalerGroupSo_System_Single_
-  commentId: M:UiScaler.UiScalerGroups.SetGroupExpandProgress(UiScaler.UiScalerGroupSo,System.Single)
-  name.vb: SetGroupExpandProgress(UiScalerGroupSo, Single)
-  fullName: UiScaler.UiScalerGroups.SetGroupExpandProgress(UiScaler.UiScalerGroupSo, float)
-  fullName.vb: UiScaler.UiScalerGroups.SetGroupExpandProgress(UiScaler.UiScalerGroupSo, Single)
-  nameWithType: UiScalerGroups.SetGroupExpandProgress(UiScalerGroupSo, float)
-  nameWithType.vb: UiScalerGroups.SetGroupExpandProgress(UiScalerGroupSo, Single)
-- uid: UiScaler.UiScalerGroups.SetGroupExpandProgress*
+  fullName: SmartUIScaler.UIScalerGroups.SetGroupContentScale
+  nameWithType: UIScalerGroups.SetGroupContentScale
+- uid: SmartUIScaler.UIScalerGroups.SetGroupExpandProgress(SmartUIScaler.UIScalerGroupSo,System.Single)
+  name: SetGroupExpandProgress(UIScalerGroupSo, float)
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetGroupExpandProgress_SmartUIScaler_UIScalerGroupSo_System_Single_
+  commentId: M:SmartUIScaler.UIScalerGroups.SetGroupExpandProgress(SmartUIScaler.UIScalerGroupSo,System.Single)
+  name.vb: SetGroupExpandProgress(UIScalerGroupSo, Single)
+  fullName: SmartUIScaler.UIScalerGroups.SetGroupExpandProgress(SmartUIScaler.UIScalerGroupSo, float)
+  fullName.vb: SmartUIScaler.UIScalerGroups.SetGroupExpandProgress(SmartUIScaler.UIScalerGroupSo, Single)
+  nameWithType: UIScalerGroups.SetGroupExpandProgress(UIScalerGroupSo, float)
+  nameWithType.vb: UIScalerGroups.SetGroupExpandProgress(UIScalerGroupSo, Single)
+- uid: SmartUIScaler.UIScalerGroups.SetGroupExpandProgress*
   name: SetGroupExpandProgress
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_SetGroupExpandProgress_
-  commentId: Overload:UiScaler.UiScalerGroups.SetGroupExpandProgress
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetGroupExpandProgress_
+  commentId: Overload:SmartUIScaler.UIScalerGroups.SetGroupExpandProgress
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroups.SetGroupExpandProgress
-  nameWithType: UiScalerGroups.SetGroupExpandProgress
-- uid: UiScaler.UiScalerGroups.SetSaveData(UiScaler.UiScalerGroupsSaveData)
-  name: SetSaveData(UiScalerGroupsSaveData)
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_SetSaveData_UiScaler_UiScalerGroupsSaveData_
-  commentId: M:UiScaler.UiScalerGroups.SetSaveData(UiScaler.UiScalerGroupsSaveData)
-  fullName: UiScaler.UiScalerGroups.SetSaveData(UiScaler.UiScalerGroupsSaveData)
-  nameWithType: UiScalerGroups.SetSaveData(UiScalerGroupsSaveData)
-- uid: UiScaler.UiScalerGroups.SetSaveData*
+  fullName: SmartUIScaler.UIScalerGroups.SetGroupExpandProgress
+  nameWithType: UIScalerGroups.SetGroupExpandProgress
+- uid: SmartUIScaler.UIScalerGroups.SetSaveData(SmartUIScaler.UIScalerGroupsSaveData)
+  name: SetSaveData(UIScalerGroupsSaveData)
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetSaveData_SmartUIScaler_UIScalerGroupsSaveData_
+  commentId: M:SmartUIScaler.UIScalerGroups.SetSaveData(SmartUIScaler.UIScalerGroupsSaveData)
+  fullName: SmartUIScaler.UIScalerGroups.SetSaveData(SmartUIScaler.UIScalerGroupsSaveData)
+  nameWithType: UIScalerGroups.SetSaveData(UIScalerGroupsSaveData)
+- uid: SmartUIScaler.UIScalerGroups.SetSaveData*
   name: SetSaveData
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_SetSaveData_
-  commentId: Overload:UiScaler.UiScalerGroups.SetSaveData
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetSaveData_
+  commentId: Overload:SmartUIScaler.UIScalerGroups.SetSaveData
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroups.SetSaveData
-  nameWithType: UiScalerGroups.SetSaveData
-- uid: UiScaler.UiScalerGroups.StoreSaveDataToPlayerPrefs(System.String)
+  fullName: SmartUIScaler.UIScalerGroups.SetSaveData
+  nameWithType: UIScalerGroups.SetSaveData
+- uid: SmartUIScaler.UIScalerGroups.StoreSaveDataToPlayerPrefs(System.String)
   name: StoreSaveDataToPlayerPrefs(string)
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_StoreSaveDataToPlayerPrefs_System_String_
-  commentId: M:UiScaler.UiScalerGroups.StoreSaveDataToPlayerPrefs(System.String)
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_StoreSaveDataToPlayerPrefs_System_String_
+  commentId: M:SmartUIScaler.UIScalerGroups.StoreSaveDataToPlayerPrefs(System.String)
   name.vb: StoreSaveDataToPlayerPrefs(String)
-  fullName: UiScaler.UiScalerGroups.StoreSaveDataToPlayerPrefs(string)
-  fullName.vb: UiScaler.UiScalerGroups.StoreSaveDataToPlayerPrefs(String)
-  nameWithType: UiScalerGroups.StoreSaveDataToPlayerPrefs(string)
-  nameWithType.vb: UiScalerGroups.StoreSaveDataToPlayerPrefs(String)
-- uid: UiScaler.UiScalerGroups.StoreSaveDataToPlayerPrefs*
+  fullName: SmartUIScaler.UIScalerGroups.StoreSaveDataToPlayerPrefs(string)
+  fullName.vb: SmartUIScaler.UIScalerGroups.StoreSaveDataToPlayerPrefs(String)
+  nameWithType: UIScalerGroups.StoreSaveDataToPlayerPrefs(string)
+  nameWithType.vb: UIScalerGroups.StoreSaveDataToPlayerPrefs(String)
+- uid: SmartUIScaler.UIScalerGroups.StoreSaveDataToPlayerPrefs*
   name: StoreSaveDataToPlayerPrefs
-  href: api/UiScaler.UiScalerGroups.html#UiScaler_UiScalerGroups_StoreSaveDataToPlayerPrefs_
-  commentId: Overload:UiScaler.UiScalerGroups.StoreSaveDataToPlayerPrefs
+  href: api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_StoreSaveDataToPlayerPrefs_
+  commentId: Overload:SmartUIScaler.UIScalerGroups.StoreSaveDataToPlayerPrefs
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroups.StoreSaveDataToPlayerPrefs
-  nameWithType: UiScalerGroups.StoreSaveDataToPlayerPrefs
-- uid: UiScaler.UiScalerGroupSo
-  name: UiScalerGroupSo
-  href: api/UiScaler.UiScalerGroupSo.html
-  commentId: T:UiScaler.UiScalerGroupSo
-  fullName: UiScaler.UiScalerGroupSo
-  nameWithType: UiScalerGroupSo
-- uid: UiScaler.UiScalerGroupSo.DefaultOptions
+  fullName: SmartUIScaler.UIScalerGroups.StoreSaveDataToPlayerPrefs
+  nameWithType: UIScalerGroups.StoreSaveDataToPlayerPrefs
+- uid: SmartUIScaler.UIScalerGroupSo
+  name: UIScalerGroupSo
+  href: api/SmartUIScaler.UIScalerGroupSo.html
+  commentId: T:SmartUIScaler.UIScalerGroupSo
+  fullName: SmartUIScaler.UIScalerGroupSo
+  nameWithType: UIScalerGroupSo
+- uid: SmartUIScaler.UIScalerGroupSo.DefaultOptions
   name: DefaultOptions
-  href: api/UiScaler.UiScalerGroupSo.html#UiScaler_UiScalerGroupSo_DefaultOptions
-  commentId: P:UiScaler.UiScalerGroupSo.DefaultOptions
-  fullName: UiScaler.UiScalerGroupSo.DefaultOptions
-  nameWithType: UiScalerGroupSo.DefaultOptions
-- uid: UiScaler.UiScalerGroupSo.DefaultOptions*
+  href: api/SmartUIScaler.UIScalerGroupSo.html#SmartUIScaler_UIScalerGroupSo_DefaultOptions
+  commentId: P:SmartUIScaler.UIScalerGroupSo.DefaultOptions
+  fullName: SmartUIScaler.UIScalerGroupSo.DefaultOptions
+  nameWithType: UIScalerGroupSo.DefaultOptions
+- uid: SmartUIScaler.UIScalerGroupSo.DefaultOptions*
   name: DefaultOptions
-  href: api/UiScaler.UiScalerGroupSo.html#UiScaler_UiScalerGroupSo_DefaultOptions_
-  commentId: Overload:UiScaler.UiScalerGroupSo.DefaultOptions
+  href: api/SmartUIScaler.UIScalerGroupSo.html#SmartUIScaler_UIScalerGroupSo_DefaultOptions_
+  commentId: Overload:SmartUIScaler.UIScalerGroupSo.DefaultOptions
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroupSo.DefaultOptions
-  nameWithType: UiScalerGroupSo.DefaultOptions
-- uid: UiScaler.UiScalerGroupSo.SetContentScale(System.Single)
+  fullName: SmartUIScaler.UIScalerGroupSo.DefaultOptions
+  nameWithType: UIScalerGroupSo.DefaultOptions
+- uid: SmartUIScaler.UIScalerGroupSo.SetContentScale(System.Single)
   name: SetContentScale(float)
-  href: api/UiScaler.UiScalerGroupSo.html#UiScaler_UiScalerGroupSo_SetContentScale_System_Single_
-  commentId: M:UiScaler.UiScalerGroupSo.SetContentScale(System.Single)
+  href: api/SmartUIScaler.UIScalerGroupSo.html#SmartUIScaler_UIScalerGroupSo_SetContentScale_System_Single_
+  commentId: M:SmartUIScaler.UIScalerGroupSo.SetContentScale(System.Single)
   name.vb: SetContentScale(Single)
-  fullName: UiScaler.UiScalerGroupSo.SetContentScale(float)
-  fullName.vb: UiScaler.UiScalerGroupSo.SetContentScale(Single)
-  nameWithType: UiScalerGroupSo.SetContentScale(float)
-  nameWithType.vb: UiScalerGroupSo.SetContentScale(Single)
-- uid: UiScaler.UiScalerGroupSo.SetContentScale*
+  fullName: SmartUIScaler.UIScalerGroupSo.SetContentScale(float)
+  fullName.vb: SmartUIScaler.UIScalerGroupSo.SetContentScale(Single)
+  nameWithType: UIScalerGroupSo.SetContentScale(float)
+  nameWithType.vb: UIScalerGroupSo.SetContentScale(Single)
+- uid: SmartUIScaler.UIScalerGroupSo.SetContentScale*
   name: SetContentScale
-  href: api/UiScaler.UiScalerGroupSo.html#UiScaler_UiScalerGroupSo_SetContentScale_
-  commentId: Overload:UiScaler.UiScalerGroupSo.SetContentScale
+  href: api/SmartUIScaler.UIScalerGroupSo.html#SmartUIScaler_UIScalerGroupSo_SetContentScale_
+  commentId: Overload:SmartUIScaler.UIScalerGroupSo.SetContentScale
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroupSo.SetContentScale
-  nameWithType: UiScalerGroupSo.SetContentScale
-- uid: UiScaler.UiScalerGroupSo.SetExpandProgress(System.Single)
+  fullName: SmartUIScaler.UIScalerGroupSo.SetContentScale
+  nameWithType: UIScalerGroupSo.SetContentScale
+- uid: SmartUIScaler.UIScalerGroupSo.SetExpandProgress(System.Single)
   name: SetExpandProgress(float)
-  href: api/UiScaler.UiScalerGroupSo.html#UiScaler_UiScalerGroupSo_SetExpandProgress_System_Single_
-  commentId: M:UiScaler.UiScalerGroupSo.SetExpandProgress(System.Single)
+  href: api/SmartUIScaler.UIScalerGroupSo.html#SmartUIScaler_UIScalerGroupSo_SetExpandProgress_System_Single_
+  commentId: M:SmartUIScaler.UIScalerGroupSo.SetExpandProgress(System.Single)
   name.vb: SetExpandProgress(Single)
-  fullName: UiScaler.UiScalerGroupSo.SetExpandProgress(float)
-  fullName.vb: UiScaler.UiScalerGroupSo.SetExpandProgress(Single)
-  nameWithType: UiScalerGroupSo.SetExpandProgress(float)
-  nameWithType.vb: UiScalerGroupSo.SetExpandProgress(Single)
-- uid: UiScaler.UiScalerGroupSo.SetExpandProgress*
+  fullName: SmartUIScaler.UIScalerGroupSo.SetExpandProgress(float)
+  fullName.vb: SmartUIScaler.UIScalerGroupSo.SetExpandProgress(Single)
+  nameWithType: UIScalerGroupSo.SetExpandProgress(float)
+  nameWithType.vb: UIScalerGroupSo.SetExpandProgress(Single)
+- uid: SmartUIScaler.UIScalerGroupSo.SetExpandProgress*
   name: SetExpandProgress
-  href: api/UiScaler.UiScalerGroupSo.html#UiScaler_UiScalerGroupSo_SetExpandProgress_
-  commentId: Overload:UiScaler.UiScalerGroupSo.SetExpandProgress
+  href: api/SmartUIScaler.UIScalerGroupSo.html#SmartUIScaler_UIScalerGroupSo_SetExpandProgress_
+  commentId: Overload:SmartUIScaler.UIScalerGroupSo.SetExpandProgress
   isSpec: "True"
-  fullName: UiScaler.UiScalerGroupSo.SetExpandProgress
-  nameWithType: UiScalerGroupSo.SetExpandProgress
-- uid: UiScaler.UiScalerGroupsSaveData
-  name: UiScalerGroupsSaveData
-  href: api/UiScaler.UiScalerGroupsSaveData.html
-  commentId: T:UiScaler.UiScalerGroupsSaveData
-  fullName: UiScaler.UiScalerGroupsSaveData
-  nameWithType: UiScalerGroupsSaveData
-- uid: UiScaler.UiScalerGroupsSaveData.GroupOptions
+  fullName: SmartUIScaler.UIScalerGroupSo.SetExpandProgress
+  nameWithType: UIScalerGroupSo.SetExpandProgress
+- uid: SmartUIScaler.UIScalerGroupsSaveData
+  name: UIScalerGroupsSaveData
+  href: api/SmartUIScaler.UIScalerGroupsSaveData.html
+  commentId: T:SmartUIScaler.UIScalerGroupsSaveData
+  fullName: SmartUIScaler.UIScalerGroupsSaveData
+  nameWithType: UIScalerGroupsSaveData
+- uid: SmartUIScaler.UIScalerGroupsSaveData.GroupOptions
   name: GroupOptions
-  href: api/UiScaler.UiScalerGroupsSaveData.html#UiScaler_UiScalerGroupsSaveData_GroupOptions
-  commentId: F:UiScaler.UiScalerGroupsSaveData.GroupOptions
-  fullName: UiScaler.UiScalerGroupsSaveData.GroupOptions
-  nameWithType: UiScalerGroupsSaveData.GroupOptions
-- uid: UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions
-  name: UiScalerGroupsSaveData.UiScalerGroupOptions
-  href: api/UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.html
-  commentId: T:UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions
-  fullName: UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions
-  nameWithType: UiScalerGroupsSaveData.UiScalerGroupOptions
-- uid: UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.ContentScale
+  href: api/SmartUIScaler.UIScalerGroupsSaveData.html#SmartUIScaler_UIScalerGroupsSaveData_GroupOptions
+  commentId: F:SmartUIScaler.UIScalerGroupsSaveData.GroupOptions
+  fullName: SmartUIScaler.UIScalerGroupsSaveData.GroupOptions
+  nameWithType: UIScalerGroupsSaveData.GroupOptions
+- uid: SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions
+  name: UIScalerGroupsSaveData.UIScalerGroupOptions
+  href: api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.html
+  commentId: T:SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions
+  fullName: SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions
+  nameWithType: UIScalerGroupsSaveData.UIScalerGroupOptions
+- uid: SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.ContentScale
   name: ContentScale
-  href: api/UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.html#UiScaler_UiScalerGroupsSaveData_UiScalerGroupOptions_ContentScale
-  commentId: F:UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.ContentScale
-  fullName: UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.ContentScale
-  nameWithType: UiScalerGroupsSaveData.UiScalerGroupOptions.ContentScale
-- uid: UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.ExpandProgress
+  href: api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.html#SmartUIScaler_UIScalerGroupsSaveData_UIScalerGroupOptions_ContentScale
+  commentId: F:SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.ContentScale
+  fullName: SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.ContentScale
+  nameWithType: UIScalerGroupsSaveData.UIScalerGroupOptions.ContentScale
+- uid: SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.ExpandProgress
   name: ExpandProgress
-  href: api/UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.html#UiScaler_UiScalerGroupsSaveData_UiScalerGroupOptions_ExpandProgress
-  commentId: F:UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.ExpandProgress
-  fullName: UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.ExpandProgress
-  nameWithType: UiScalerGroupsSaveData.UiScalerGroupOptions.ExpandProgress
-- uid: UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.InstanceId
+  href: api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.html#SmartUIScaler_UIScalerGroupsSaveData_UIScalerGroupOptions_ExpandProgress
+  commentId: F:SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.ExpandProgress
+  fullName: SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.ExpandProgress
+  nameWithType: UIScalerGroupsSaveData.UIScalerGroupOptions.ExpandProgress
+- uid: SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.InstanceId
   name: InstanceId
-  href: api/UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.html#UiScaler_UiScalerGroupsSaveData_UiScalerGroupOptions_InstanceId
-  commentId: F:UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.InstanceId
-  fullName: UiScaler.UiScalerGroupsSaveData.UiScalerGroupOptions.InstanceId
-  nameWithType: UiScalerGroupsSaveData.UiScalerGroupOptions.InstanceId
-- uid: UiScaler.UiScalerOptions
-  name: UiScalerOptions
-  href: api/UiScaler.UiScalerOptions.html
-  commentId: T:UiScaler.UiScalerOptions
-  fullName: UiScaler.UiScalerOptions
-  nameWithType: UiScalerOptions
-- uid: UiScaler.UiScalerOptions.Alignment
+  href: api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.html#SmartUIScaler_UIScalerGroupsSaveData_UIScalerGroupOptions_InstanceId
+  commentId: F:SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.InstanceId
+  fullName: SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.InstanceId
+  nameWithType: UIScalerGroupsSaveData.UIScalerGroupOptions.InstanceId
+- uid: SmartUIScaler.UIScalerOptions
+  name: UIScalerOptions
+  href: api/SmartUIScaler.UIScalerOptions.html
+  commentId: T:SmartUIScaler.UIScalerOptions
+  fullName: SmartUIScaler.UIScalerOptions
+  nameWithType: UIScalerOptions
+- uid: SmartUIScaler.UIScalerOptions.Alignment
   name: Alignment
-  href: api/UiScaler.UiScalerOptions.html#UiScaler_UiScalerOptions_Alignment
-  commentId: F:UiScaler.UiScalerOptions.Alignment
-  fullName: UiScaler.UiScalerOptions.Alignment
-  nameWithType: UiScalerOptions.Alignment
-- uid: UiScaler.UiScalerOptions.ContentScale
+  href: api/SmartUIScaler.UIScalerOptions.html#SmartUIScaler_UIScalerOptions_Alignment
+  commentId: F:SmartUIScaler.UIScalerOptions.Alignment
+  fullName: SmartUIScaler.UIScalerOptions.Alignment
+  nameWithType: UIScalerOptions.Alignment
+- uid: SmartUIScaler.UIScalerOptions.ContentScale
   name: ContentScale
-  href: api/UiScaler.UiScalerOptions.html#UiScaler_UiScalerOptions_ContentScale
-  commentId: F:UiScaler.UiScalerOptions.ContentScale
-  fullName: UiScaler.UiScalerOptions.ContentScale
-  nameWithType: UiScalerOptions.ContentScale
-- uid: UiScaler.UiScalerOptions.Default
+  href: api/SmartUIScaler.UIScalerOptions.html#SmartUIScaler_UIScalerOptions_ContentScale
+  commentId: F:SmartUIScaler.UIScalerOptions.ContentScale
+  fullName: SmartUIScaler.UIScalerOptions.ContentScale
+  nameWithType: UIScalerOptions.ContentScale
+- uid: SmartUIScaler.UIScalerOptions.Default
   name: Default
-  href: api/UiScaler.UiScalerOptions.html#UiScaler_UiScalerOptions_Default
-  commentId: P:UiScaler.UiScalerOptions.Default
-  fullName: UiScaler.UiScalerOptions.Default
-  nameWithType: UiScalerOptions.Default
-- uid: UiScaler.UiScalerOptions.Default*
+  href: api/SmartUIScaler.UIScalerOptions.html#SmartUIScaler_UIScalerOptions_Default
+  commentId: P:SmartUIScaler.UIScalerOptions.Default
+  fullName: SmartUIScaler.UIScalerOptions.Default
+  nameWithType: UIScalerOptions.Default
+- uid: SmartUIScaler.UIScalerOptions.Default*
   name: Default
-  href: api/UiScaler.UiScalerOptions.html#UiScaler_UiScalerOptions_Default_
-  commentId: Overload:UiScaler.UiScalerOptions.Default
+  href: api/SmartUIScaler.UIScalerOptions.html#SmartUIScaler_UIScalerOptions_Default_
+  commentId: Overload:SmartUIScaler.UIScalerOptions.Default
   isSpec: "True"
-  fullName: UiScaler.UiScalerOptions.Default
-  nameWithType: UiScalerOptions.Default
-- uid: UiScaler.UiScalerOptions.ExpandProgress
+  fullName: SmartUIScaler.UIScalerOptions.Default
+  nameWithType: UIScalerOptions.Default
+- uid: SmartUIScaler.UIScalerOptions.ExpandProgress
   name: ExpandProgress
-  href: api/UiScaler.UiScalerOptions.html#UiScaler_UiScalerOptions_ExpandProgress
-  commentId: F:UiScaler.UiScalerOptions.ExpandProgress
-  fullName: UiScaler.UiScalerOptions.ExpandProgress
-  nameWithType: UiScalerOptions.ExpandProgress
-- uid: UiScaler.UiScalerOptions.ReferenceResolution
+  href: api/SmartUIScaler.UIScalerOptions.html#SmartUIScaler_UIScalerOptions_ExpandProgress
+  commentId: F:SmartUIScaler.UIScalerOptions.ExpandProgress
+  fullName: SmartUIScaler.UIScalerOptions.ExpandProgress
+  nameWithType: UIScalerOptions.ExpandProgress
+- uid: SmartUIScaler.UIScalerOptions.ReferenceResolution
   name: ReferenceResolution
-  href: api/UiScaler.UiScalerOptions.html#UiScaler_UiScalerOptions_ReferenceResolution
-  commentId: F:UiScaler.UiScalerOptions.ReferenceResolution
-  fullName: UiScaler.UiScalerOptions.ReferenceResolution
-  nameWithType: UiScalerOptions.ReferenceResolution
-- uid: UiScaler.UiScalerOptions.UseSafeArea
+  href: api/SmartUIScaler.UIScalerOptions.html#SmartUIScaler_UIScalerOptions_ReferenceResolution
+  commentId: F:SmartUIScaler.UIScalerOptions.ReferenceResolution
+  fullName: SmartUIScaler.UIScalerOptions.ReferenceResolution
+  nameWithType: UIScalerOptions.ReferenceResolution
+- uid: SmartUIScaler.UIScalerOptions.UseSafeArea
   name: UseSafeArea
-  href: api/UiScaler.UiScalerOptions.html#UiScaler_UiScalerOptions_UseSafeArea
-  commentId: F:UiScaler.UiScalerOptions.UseSafeArea
-  fullName: UiScaler.UiScalerOptions.UseSafeArea
-  nameWithType: UiScalerOptions.UseSafeArea
+  href: api/SmartUIScaler.UIScalerOptions.html#SmartUIScaler_UIScalerOptions_UseSafeArea
+  commentId: F:SmartUIScaler.UIScalerOptions.UseSafeArea
+  fullName: SmartUIScaler.UIScalerOptions.UseSafeArea
+  nameWithType: UIScalerOptions.UseSafeArea

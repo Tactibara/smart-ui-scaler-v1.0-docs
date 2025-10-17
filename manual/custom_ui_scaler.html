@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Custom Ui Scaler | Smart Ui Scaler plugin </title>
+      <title>Custom UI Scaler | Smart UI Scaler plugin </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Custom Ui Scaler | Smart Ui Scaler plugin ">
+      <meta name="title" content="Custom UI Scaler | Smart UI Scaler plugin ">
     
       <link rel="shortcut icon" href="../resources/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -76,12 +76,12 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="custom-ui-scaler">Custom Ui Scaler</h1>
+<h1 id="custom-ui-scaler">Custom UI Scaler</h1>
 
-<p>Custom Ui Scaler needs to be created when parent canvas has Camera Screen Space Render Mode and attached camera renders to Render Texture, as Smart Ui Scaler cant receive the screen space area of the rendered image of the canvas.</p>
-<p>To create a Custom Ui Scaler extend the <a class="xref" href="../api/UiScaler.CoreUiScaler.html">CoreUiScaler</a>.</p>
-<p>These two methos must be implemented:</p>
-<p>Provide screen space Rect of the Render Texture output image.</p>
+<p>Custom UI Scaler needs to be created when parent Canvas has &quot;Camera Screen Space&quot; Render Mode and attached camera renders to Render Texture, as Smart UI Scaler component cant receive the screen space area of the rendered image of the Canvas.</p>
+<p>To create a Custom UI Scaler extend the <a class="xref" href="../api/SmartUIScaler.CoreUIScaler.html">CoreUIScaler</a>.</p>
+<p>These two methods must be implemented:</p>
+<p>Provide the screen space Rect of the Render Textures output image.</p>
 <pre><code>protected abstract Rect GetScreenRect()
 </code></pre>
 <p>Convert screen space Rect to world space Rect.</p>
@@ -108,7 +108,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-      Smart Ui Scaler plugin v1.0
+      Smart UI Scaler plugin v1.0
       
           </div>
         </div>
