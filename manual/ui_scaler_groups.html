@@ -1,131 +1,138 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>UI Scaler groups | Smart UI Scaler plugin </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="UI Scaler groups | Smart UI Scaler plugin ">
-    
-      <link rel="shortcut icon" href="../resources/favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      
+      
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/blob/main/Documentation-v1.0/manual/ui_scaler_groups.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../resources/logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+
+        <article data-uid="">
 <h1 id="ui-scaler-groups">UI Scaler groups</h1>
 
 <p>UI Scaler Groups are used to share and control UI Scaler options between UI Scalers. UI Scaler Groups are controlled through their scriptable objects. To create a UI Scaler Group scriptable object Right Click on Project Window then navigate to &quot;SmartUIScaler&quot; &gt; &quot;UIScalerGroup&quot;.</p>
 <img src="../resources/ui_scaler_groups_1.png" style="width:70%">
 <br><br>
-UI Scaler Group scriptable object has the "Default Options" dropdown fields that can be changed in the inspector. As the name suggests, these options are used initially. Once they are changed through UI Scaler Group scriptable object scripting API they will be overwritten.
+The UI Scaler Group scriptable object has a "Default Options" dropdown with the same fields as the Smart UI Scaler component. These are the options every UI Scaler in the group starts with. At runtime they can be changed through the scripting API and the changed values apply to all UI Scalers in the group.
 <br><br>
 <img src="../resources/ui_scaler_groups_2.png" style="width:70%">
 <br><br>
-To assign a Smart UI Scaler to this group drag UI Scaler Group scriptable object into Smart UI Scaler "Group" field. Smart UI Scaler "Options" field will disappear as these options will no longer be used.
+To assign a Smart UI Scaler to this group drag UI Scaler Group scriptable object into Smart UI Scaler "Group" field. The Smart UI Scaler "Options" field disappears, as the group options are used instead.
 <br><br>
 <img src="../resources/ui_scaler_groups_3.png" style="width:70%">
 <br><br>
-UI Scaler Group options can be changed through scripting API using the UI Scaler Group scriptable object reference (<a class="xref" href="../api/SmartUIScaler.UIScalerGroupSo.html">UIScalerGroupSo</a> API). Once the options are changed - all active UI Scalers will automatically update. Check out the Demo 2 inside the plugin, where a complete UI Scaler Group example is showcased.
-<br><br>
-Initially UI Scaler Group options are not saved and loaded. To have persistent UI Scaler Group options the easiest way is to use UI Scaler Groups Persistence Manager component. Just add this component to an empty GameObject in the first scene in your project. It works by saving the options into PlayerPrefs when the game is closed and loads these options when this component awakes.
+UI Scaler Group options can be changed through scripting API using the UI Scaler Group scriptable object reference (<a class="xref" href="../api/SmartUIScaler.UIScalerGroupSo.html">UIScalerGroupSo</a> API). Once the options are changed - all active UI Scalers will automatically update. Check out the Demo 9 inside the plugin, where a complete UI Scaler Group example is showcased.
+<h2 id="save-id-field">Save Id field</h2>
+<p>The &quot;Save Id&quot; field identifies the group in saved data. It is generated when the scriptable object is created, so renaming or moving the asset does not affect saved settings. The &quot;New&quot; button generates a fresh Save Id, which detaches the group from any settings saved under the old one.</p>
+<p>The editor keeps Save Ids unique across the project and shows a warning when two groups share one, because only one of them would be saved.</p>
+<h2 id="persistence">Persistence</h2>
+<p>Initially UI Scaler Group options are not saved and loaded. To have persistent UI Scaler Group options the easiest way is to use UI Scaler Groups Persistence Manager component. Just add this component to an empty GameObject in the first scene in your project. It loads the options from PlayerPrefs when it awakes and saves them when the game is paused or closed. The &quot;Save Key&quot; field is the PlayerPrefs key used for this.
 <br><br>
 <img src="../resources/ui_scaler_groups_4.png" style="width:70%">
 <br><br>
-For more advanced scenarios a custom saving and loading can be implemented through <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html">UIScalerGroups</a> class <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_GetSaveData">GetSaveData()</a> and <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetSaveData_SmartUIScaler_UIScalerGroupsSaveData_">SetSaveData(UIScalerGroupsSaveData)</a> static methods.
-</article>
-          </div>
+For more advanced scenarios a custom saving and loading can be implemented through <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html">UIScalerGroups</a> class <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_GetSaveData">GetSaveData()</a> and <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetSaveData_SmartUIScaler_UIScalerGroupsSaveData_">SetSaveData(UIScalerGroupsSaveData)</a> static methods.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Settings saved by version 1.0 are not restored after upgrading to 1.1.0. Version 1.0 identified groups differently, so each group starts from its &quot;Default Options&quot; once and is saved in the new format from then on.</p>
+</div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
-        </div>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      Smart UI Scaler plugin v1.0
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.0
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

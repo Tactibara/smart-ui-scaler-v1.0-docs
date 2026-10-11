@@ -1,15 +1,16 @@
 {
+  "docfx_version": "2.81.0+ba844df625370a6bd7c1ecab0d0ec4d1d9128ac4",
   "sitemap": {
     "fileOptions": {
       "api/*": {
-        "baseUrl": "https://simonaszab.github.io/smart-ui-scaler-v1.0/",
+        "baseUrl": "https://tactibara.github.io/smart-ui-scaler-v1.0-docs/",
         "changefreq": "daily"
       }
     },
-    "baseUrl": "https://simonaszab.github.io/smart-ui-scaler-v1.0/",
+    "baseUrl": "https://tactibara.github.io/smart-ui-scaler-v1.0-docs/",
     "changefreq": "weekly"
   },
-  "homepages": [],
+  "source_base_path": "C:/Users/Simonas/Personal/Repos/UiScaler/Documentation-v1.0",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,127 +19,159 @@
         "resource": {
           "relative_path": "index.json"
         }
-      },
-      "is_incremental": false
+      }
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.CoreUIScaler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SmartUIScaler.CoreUIScaler.html",
-          "hash": "9BMY5o1dE9feiswDRGIehH4c2Zz7f8jeqrLBr1uPN9Q="
+          "relative_path": "api/SmartUIScaler.CoreUIScaler.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.CoreUIScaler",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.CoreUIScaler.yml\" sourcestartlinenumber=\"1\">Base class of UIScaler components with core scaling logic.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SmartUIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SmartUIManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SmartUIManager",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SmartUIManager.yml\" sourcestartlinenumber=\"1\">Entry point for external code that needs to stay in sync with UIScaler updates.\nDrives UIScaler updates in play mode and in edit mode.\nCreated automatically and must not be added to a GameObject manually.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.UIScalerAlignment.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SmartUIScaler.UIScalerAlignment.html",
-          "hash": "nr2zDuMIR/Dp5Si2OL9vpjHILPcrgr/iW/DXfo721+g="
+          "relative_path": "api/SmartUIScaler.UIScalerAlignment.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.UIScalerAlignment",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerAlignment.yml\" sourcestartlinenumber=\"1\">Used for aligning UIScaler inside provided screen area.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.UIScalerBehaviour.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SmartUIScaler.UIScalerBehaviour.html",
-          "hash": "X/BjFLpqq+j1tl7aj5mUJO21sBK/n6zrmbdSi8GJsf0="
+          "relative_path": "api/SmartUIScaler.UIScalerBehaviour.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.UIScalerBehaviour",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerBehaviour.yml\" sourcestartlinenumber=\"1\">Base class of every UIScaler related components.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.UIScalerGroupSo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SmartUIScaler.UIScalerGroupSo.html",
-          "hash": "1Mg7gznOyfeNz6W5loigFHXC6u3pcmKAONWcRppJxQ0="
+          "relative_path": "api/SmartUIScaler.UIScalerGroupSo.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.UIScalerGroupSo",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerGroupSo.yml\" sourcestartlinenumber=\"1\">UIScaler group scriptable object.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.UIScalerGroups.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SmartUIScaler.UIScalerGroups.html",
-          "hash": "hteRO3TpV8uHVNEB8C3lbDjz73c2gIuf6PEe3RSfWvQ="
+          "relative_path": "api/SmartUIScaler.UIScalerGroups.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.UIScalerGroups",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerGroups.yml\" sourcestartlinenumber=\"1\">UIScaler groups manager.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.html",
-          "hash": "KL7+MU2ARlA7d6w4o39o26xUoE6w//SKp68sppIQt1Y="
+          "relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.yml\" sourcestartlinenumber=\"1\">UIScaler group options save data.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.html",
-          "hash": "Xp0GsIug9V+uUpjEicIxAGe4SfUX/FQt2G4bTweeNyg="
+          "relative_path": "api/SmartUIScaler.UIScalerGroupsSaveData.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.UIScalerGroupsSaveData",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerGroupsSaveData.yml\" sourcestartlinenumber=\"1\">UIScaler groups save data.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.UIScalerOptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SmartUIScaler.UIScalerOptions.html",
-          "hash": "F8JJ7xNgmNr6oAIuAHELDXwR2i4RIpFAyD4vq8JZ8J8="
+          "relative_path": "api/SmartUIScaler.UIScalerOptions.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.UIScalerOptions",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerOptions.yml\" sourcestartlinenumber=\"1\">UIScaler options.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SmartUIScaler.html",
-          "hash": "Z2je88DHz9VmoqjAZ6T9ornFKSMCxP6PBvzLWU4rSK0="
+          "relative_path": "api/SmartUIScaler.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler",
+      "Summary": null
     },
     {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "hi/3gmX4Z7WduYQB1gD5D/iB50coAMcnl6HuIR8ojmg="
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -146,11 +179,9 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "dHQ7a5rQ8Rshf0/qDSPUHHik/DoGCabKzW5scOQ0/AM="
+          "relative_path": "index.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -158,11 +189,19 @@
       "source_relative_path": "manual/custom_ui_scaler.md",
       "output": {
         ".html": {
-          "relative_path": "manual/custom_ui_scaler.html",
-          "hash": "0NucP7fSVxKTSnF4qSmGMt9OiG+EIexpxg/xj6Z6fOc="
+          "relative_path": "manual/custom_ui_scaler.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/demos.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/demos.html"
+        }
+      },
       "version": ""
     },
     {
@@ -170,11 +209,19 @@
       "source_relative_path": "manual/getting_started.md",
       "output": {
         ".html": {
-          "relative_path": "manual/getting_started.html",
-          "hash": "dpaTRMg8XD6wOLt0OnJ2z7gAis+g0x1ayht/OGyFVR8="
+          "relative_path": "manual/getting_started.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/release_notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/release_notes.html"
+        }
+      },
       "version": ""
     },
     {
@@ -182,11 +229,19 @@
       "source_relative_path": "manual/smart_ui_expander_component.md",
       "output": {
         ".html": {
-          "relative_path": "manual/smart_ui_expander_component.html",
-          "hash": "Oo5R02Ifpd+Emj+B6klkx2I9+0FxFpXws50FFTgzmzo="
+          "relative_path": "manual/smart_ui_expander_component.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/smart_ui_manager.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/smart_ui_manager.html"
+        }
+      },
       "version": ""
     },
     {
@@ -194,11 +249,9 @@
       "source_relative_path": "manual/smart_ui_scaler_component.md",
       "output": {
         ".html": {
-          "relative_path": "manual/smart_ui_scaler_component.html",
-          "hash": "Da5tMwI7ZmWGQXWcalGU5JHezP1KrjeoWbXogQZ1WDY="
+          "relative_path": "manual/smart_ui_scaler_component.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -206,11 +259,9 @@
       "source_relative_path": "manual/smart_ui_scaler_editor_window.md",
       "output": {
         ".html": {
-          "relative_path": "manual/smart_ui_scaler_editor_window.html",
-          "hash": "r7mZxlyUORvnu4edBcUWKASVKrS1pUT5/RDX+/oZM1E="
+          "relative_path": "manual/smart_ui_scaler_editor_window.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -218,11 +269,9 @@
       "source_relative_path": "manual/smart_ui_size_limiter_component.md",
       "output": {
         ".html": {
-          "relative_path": "manual/smart_ui_size_limiter_component.html",
-          "hash": "Jjp5HWwQ4qfffqP7rwDFFrXXwY2vIo0jsjikl9woTis="
+          "relative_path": "manual/smart_ui_size_limiter_component.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -230,11 +279,12 @@
       "source_relative_path": "manual/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "manual/toc.html",
-          "hash": "JQPUZE8vgqcjlxeJkLMVrmWDjMthMUwfb36PARpKXC8="
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -242,11 +292,9 @@
       "source_relative_path": "manual/ui_scaler_groups.md",
       "output": {
         ".html": {
-          "relative_path": "manual/ui_scaler_groups.html",
-          "hash": "X8TvX8/poTuz65yybb/RxIlkKqwydVn8U6cUrV7ZxXM="
+          "relative_path": "manual/ui_scaler_groups.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -257,7 +305,6 @@
           "relative_path": "resources/favicon.ico"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -268,7 +315,6 @@
           "relative_path": "resources/getting_started_1.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -279,7 +325,6 @@
           "relative_path": "resources/getting_started_2.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -290,7 +335,6 @@
           "relative_path": "resources/getting_started_3.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -301,7 +345,6 @@
           "relative_path": "resources/getting_started_4.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -312,7 +355,6 @@
           "relative_path": "resources/getting_started_5.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -323,7 +365,6 @@
           "relative_path": "resources/getting_started_6.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -334,7 +375,6 @@
           "relative_path": "resources/logo.svg"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -345,7 +385,6 @@
           "relative_path": "resources/smart_expander_component_1.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -356,7 +395,6 @@
           "relative_path": "resources/smart_expander_component_2.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -367,7 +405,6 @@
           "relative_path": "resources/smart_expander_component_3.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -378,7 +415,6 @@
           "relative_path": "resources/smart_size_limiter_1.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -389,7 +425,6 @@
           "relative_path": "resources/smart_ui_scaler_component_1.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -400,7 +435,6 @@
           "relative_path": "resources/smart_ui_scaler_window_1.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -411,7 +445,6 @@
           "relative_path": "resources/smart_ui_scaler_window_2.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -422,7 +455,6 @@
           "relative_path": "resources/smart_ui_scaler_window_3.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -433,7 +465,6 @@
           "relative_path": "resources/ui_scaler_groups_1.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -444,7 +475,6 @@
           "relative_path": "resources/ui_scaler_groups_2.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -455,7 +485,6 @@
           "relative_path": "resources/ui_scaler_groups_3.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -466,7 +495,6 @@
           "relative_path": "resources/ui_scaler_groups_4.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -474,65 +502,15 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "nc4tFNH2CdPr2L4d+eOcDhuOBwRTNzME513sf1Y2jKg="
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     }
   ],
-  "incremental_info": [
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because config changed.",
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ConfigChanged"
-      },
-      "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 8,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 9,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
-        "incrementalPhase": "postProcessing",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {}
-    }
-  ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

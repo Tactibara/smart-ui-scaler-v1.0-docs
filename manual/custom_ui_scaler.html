@@ -1,122 +1,158 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Custom UI Scaler | Smart UI Scaler plugin </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Custom UI Scaler | Smart UI Scaler plugin ">
-    
-      <link rel="shortcut icon" href="../resources/favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      
+      
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/blob/main/Documentation-v1.0/manual/custom_ui_scaler.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../resources/logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+
+        <article data-uid="">
 <h1 id="custom-ui-scaler">Custom UI Scaler</h1>
 
-<p>Custom UI Scaler needs to be created when parent Canvas has &quot;Camera Screen Space&quot; Render Mode and attached camera renders to Render Texture, as Smart UI Scaler component cant receive the screen space area of the rendered image of the Canvas.</p>
-<p>To create a Custom UI Scaler extend the <a class="xref" href="../api/SmartUIScaler.CoreUIScaler.html">CoreUIScaler</a>.</p>
-<p>These two methods must be implemented:</p>
-<p>Provide the screen space Rect of the Render Textures output image.</p>
+<p>A custom UI Scaler is needed when the parent Canvas has &quot;Camera Screen Space&quot; Render Mode and the attached camera renders into a Render Texture. The Smart UI Scaler component cannot know where the rendered image ends up on the screen, so a custom UI Scaler provides that information.</p>
+<p>Demo 11 contains a complete implementation, <code>RenderTextureUIScaler</code>, for a canvas rendered into a Render Texture and shown by a RawImage. Use it as the reference for the steps below.</p>
+<h2 id="implementation">Implementation</h2>
+<p>Extend <a class="xref" href="../api/SmartUIScaler.CoreUIScaler.html">CoreUIScaler</a> and implement these two methods:</p>
+<p>Provide the screen space Rect of the area where the Render Texture is shown.</p>
 <pre><code>protected abstract Rect GetScreenRect()
 </code></pre>
-<p>Convert screen space Rect to world space Rect.</p>
+<p>Convert a screen space Rect to a world space Rect inside the Render Texture's Canvas.</p>
 <pre><code>protected abstract Rect ScreenRectToWorldRect(Rect screenRect)
 </code></pre>
-</article>
-          </div>
+<p>Mark the class with <code>[ExecuteAlways]</code> so that the custom UI Scaler also works in Edit Mode, like the built-in components do.</p>
+<h2 id="detecting-changes">Detecting changes</h2>
+<p>A UI Scaler resizes only when its Rect Transform has changed, which is what happens when the Canvas resizes. When the provided screen Rect can change on its own, for example because the RawImage moves on the screen, the custom UI Scaler has to request a resize itself. Override <code>OnPreWillRenderCanvases</code>, compare the current screen Rect with the previous one and set <code>transform.hasChanged = true</code> before calling the base method:</p>
+<pre><code>protected override void OnPreWillRenderCanvases()
+{
+	var screenRect = GetScreenRect();
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
-        </div>
+	if (screenRect != _lastScreenRect)
+	{
+		_lastScreenRect = screenRect;
+		transform.hasChanged = true;
+	}
+
+	base.OnPreWillRenderCanvases();
+}
+</code></pre>
+<h2 id="inspector">Inspector</h2>
+<p>The Group and Options fields of a UI Scaler are drawn by a custom inspector. To show them on a custom UI Scaler, add a nested editor class that extends <code>CoreUIScalerEditor</code> and append the custom fields after the base inspector:</p>
+<pre><code>#if UNITY_EDITOR
+[UnityEditor.CustomEditor(typeof(MyUIScaler))]
+class Editor : CoreUIScalerEditor
+{
+	public override void OnInspectorGUI()
+	{
+		base.OnInspectorGUI();
+
+		serializedObject.Update();
+		UnityEditor.EditorGUILayout.PropertyField(serializedObject.FindProperty(&quot;_outputImage&quot;));
+		serializedObject.ApplyModifiedProperties();
+	}
+}
+#endif
+</code></pre>
+<h2 id="safe-area">Safe area</h2>
+<p>The &quot;Use Safe Area&quot; option intersects the provided screen Rect with the screen's safe area, so it only makes sense when the screen Rect is in real screen coordinates. Demo 11 uses it this way: the inner UI Scaler only occupies the part of the image that is inside both the screen and the safe area. Turn the option off when the output is not shown directly on the screen.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      Smart UI Scaler plugin v1.0
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.0
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
