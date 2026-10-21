@@ -89,7 +89,7 @@
 
 
   <h1 id="SmartUIScaler_CoreUIScaler" data-uid="SmartUIScaler.CoreUIScaler" class="text-break">
-Class CoreUIScaler  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class CoreUIScaler  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -122,6 +122,12 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
   </dl>
 
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="SmartUIScaler.SmartUICanvasScaler.html">SmartUICanvasScaler</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
@@ -154,9 +160,49 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
       <a class="xref" href="SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_WorldToLocalPoints_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_">UIScalerBehaviour.WorldToLocalPoints(Transform, Vector3, Vector3)</a>
     </div>
     <div>
+      <a class="xref" href="SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_GetWholeScreenRect">UIScalerBehaviour.GetWholeScreenRect()</a>
+    </div>
+    <div>
       <a class="xref" href="SmartUIScaler.UIScalerBehaviour.html#SmartUIScaler_UIScalerBehaviour_GetScreenSafeAreaRect">UIScalerBehaviour.GetScreenSafeAreaRect()</a>
     </div>
   </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SmartUIScaler_CoreUIScaler_ScreenArea_" data-uid="SmartUIScaler.CoreUIScaler.ScreenArea*"></a>
+
+  <h3 id="SmartUIScaler_CoreUIScaler_ScreenArea" data-uid="SmartUIScaler.CoreUIScaler.ScreenArea">
+  ScreenArea
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Screen area the UIScaler was fitted to by its last resize, in screen pixels, after the safe area clamp.
+Zero until the first resize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect ScreenArea { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
 
 
 
@@ -167,11 +213,51 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
 </h2>
 
 
+  <a id="SmartUIScaler_CoreUIScaler_AddResizedListener_" data-uid="SmartUIScaler.CoreUIScaler.AddResizedListener*"></a>
+
+  <h3 id="SmartUIScaler_CoreUIScaler_AddResizedListener_System_Action_System_Boolean_" data-uid="SmartUIScaler.CoreUIScaler.AddResizedListener(System.Action,System.Boolean)">
+  AddResizedListener(Action, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a listener invoked after the UIScaler RectTransform was updated by a resize, before the child UIScaler
+behaviours are resized and before the canvas layout is rebuilt, so objects activated by the listener are
+fitted in the same frame. The SmartUIAspectSwitch components of this UIScaler have already switched their
+layouts when it is invoked. A listener that throws is logged and does not stop the other listeners.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddResizedListener(Action listener, bool invokeIfResized = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>Listener to add.</p>
+</dd>
+    <dt><code>invokeIfResized</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Invoke the listener immediately when the UIScaler was resized at least once, so a listener added after the
+first resize does not wait for the next one.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="SmartUIScaler_CoreUIScaler_GetScreenRect_" data-uid="SmartUIScaler.CoreUIScaler.GetScreenRect*"></a>
 
   <h3 id="SmartUIScaler_CoreUIScaler_GetScreenRect" data-uid="SmartUIScaler.CoreUIScaler.GetScreenRect">
   GetScreenRect()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L207"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called to receive the provided screen area rect.</p>
@@ -204,7 +290,7 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SmartUIScaler_CoreUIScaler_OnDisable" data-uid="SmartUIScaler.CoreUIScaler.OnDisable">
   OnDisable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -230,7 +316,7 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SmartUIScaler_CoreUIScaler_OnEnable" data-uid="SmartUIScaler.CoreUIScaler.OnEnable">
   OnEnable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -256,7 +342,7 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SmartUIScaler_CoreUIScaler_OnPreWillRenderCanvases" data-uid="SmartUIScaler.CoreUIScaler.OnPreWillRenderCanvases">
   OnPreWillRenderCanvases()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event that is called just before Canvas rendering happens.</p>
@@ -279,11 +365,44 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <a id="SmartUIScaler_CoreUIScaler_RemoveResizedListener_" data-uid="SmartUIScaler.CoreUIScaler.RemoveResizedListener*"></a>
+
+  <h3 id="SmartUIScaler_CoreUIScaler_RemoveResizedListener_System_Action_" data-uid="SmartUIScaler.CoreUIScaler.RemoveResizedListener(System.Action)">
+  RemoveResizedListener(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a listener added with <a class="xref" href="SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_AddResizedListener_System_Action_System_Boolean_">AddResizedListener(Action, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveResizedListener(Action listener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>Listener to remove.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="SmartUIScaler_CoreUIScaler_Reset_" data-uid="SmartUIScaler.CoreUIScaler.Reset*"></a>
 
   <h3 id="SmartUIScaler_CoreUIScaler_Reset" data-uid="SmartUIScaler.CoreUIScaler.Reset">
   Reset()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -309,7 +428,7 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SmartUIScaler_CoreUIScaler_Resize" data-uid="SmartUIScaler.CoreUIScaler.Resize">
   Resize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Method where main resize logic should be implemented.</p>
@@ -336,7 +455,7 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SmartUIScaler_CoreUIScaler_ScreenRectToWorldRect_UnityEngine_Rect_" data-uid="SmartUIScaler.CoreUIScaler.ScreenRectToWorldRect(UnityEngine.Rect)">
   ScreenRectToWorldRect(Rect)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/CoreUIScaler.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called to convert provided screen area rect into world rect.</p>
@@ -388,7 +507,7 @@ Class CoreUIScaler  <a class="header-action link-secondary" title="View source" 
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

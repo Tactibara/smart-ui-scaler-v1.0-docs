@@ -88,7 +88,7 @@
 <h1 id="staying-in-sync-with-ui-scalers">Staying in sync with UI Scalers</h1>
 
 <p>UI Scalers are resized by <a class="xref" href="../api/SmartUIScaler.SmartUIManager.html">SmartUIManager</a> just before the canvases are rendered, after all <code>Update()</code> and <code>LateUpdate()</code> calls of the frame. Code that reads a UI Scaler's size or position in <code>Update()</code> therefore sees the values of the previous frame, which shows as a one frame lag whenever the screen, the safe area or the camera viewport changes.</p>
-<p>To read UI Scaler sizes in the same frame they were updated, subscribe to <a class="xref" href="../api/SmartUIScaler.SmartUIManager.html#SmartUIScaler_SmartUIManager_AfterScalersUpdatedEvent">AfterScalersUpdatedEvent</a>. It is invoked every frame right after all UI Scalers have been updated, in Play Mode and in Edit Mode.</p>
+<p>To read UI Scaler sizes in the same frame they were updated, subscribe to <a class="xref" href="../api/SmartUIScaler.SmartUIManager.html#SmartUIScaler_SmartUIManager_AfterScalersUpdatedEvent">AfterScalersUpdatedEvent</a>. It is invoked every frame right after all UI Scalers have been updated, in Play Mode and in Edit Mode. The Smart UI Mesh Fitters and Smart UI World Followers have already placed their objects and cameras by then, so the event also sees their final positions.</p>
 <pre><code>using SmartUIScaler;
 using UnityEngine;
 
@@ -113,7 +113,10 @@ public class ScalerFollower : MonoBehaviour
 	}
 }
 </code></pre>
-<p>Demo 12 shows the difference between a follower positioned in this event and one positioned in <code>Update()</code>.</p>
+<p>Demo 16 shows the difference between a follower positioned in this event and one positioned in <code>Update()</code>. For the full order of a frame and what each point can rely on, see <a href="lifecycle_and_update_order.html">Lifecycle and update order</a>.</p>
+<h2 id="listening-to-one-ui-scaler">Listening to one UI Scaler</h2>
+<p>To react to a single UI Scaler, add a listener with <a class="xref" href="../api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_AddResizedListener_System_Action_System_Boolean_">AddResizedListener(Action, bool)</a>. It is invoked only when that UI Scaler was resized, right after its Rect Transform was updated and before its child behaviours and the canvas layout are updated, so objects the listener activates are fitted in the same frame. A <a href="smart_ui_aspect_switch_component.html">Smart UI Aspect Switch</a> on the UI Scaler has already switched its layouts by then. By default a listener added after the first resize is invoked immediately. Remove it with <a class="xref" href="../api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_RemoveResizedListener_System_Action_">RemoveResizedListener(Action)</a>.</p>
+<p><a class="xref" href="../api/SmartUIScaler.CoreUIScaler.html#SmartUIScaler_CoreUIScaler_ScreenArea">ScreenArea</a> is the screen area, in screen pixels, that the UI Scaler was fitted to by its last resize, after the safe area was applied. Use it, for example, to choose a layout by the aspect ratio of the area instead of the whole screen.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p><code>SmartUIManager</code> is created automatically when the game starts and must not be added to a GameObject or destroyed manually.</p>
@@ -136,7 +139,7 @@ public class ScalerFollower : MonoBehaviour
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

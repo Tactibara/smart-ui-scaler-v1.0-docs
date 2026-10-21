@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Smart UI Aspect Switch component | Smart UI Scaler plugin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Smart UI Aspect Switch component | Smart UI Scaler plugin ">
+      
+      
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/blob/main/Documentation-v1.0/manual/smart_ui_aspect_switch_component.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="smart-ui-aspect-switch-component">Smart UI Aspect Switch component</h1>
+
+<p>Switches between layouts by the aspect ratio of the screen area of a UI Scaler. Use it when one layout cannot serve every screen shape, for example a wide layout with side panels for desktop and ultrawide screens, a standard layout for tablets and a tall layout for phones in portrait.</p>
+<p>Add the component to a UI Scaler, or to any object under one, and add an aspect variant for each layout.</p>
+<img src="../resources/smart_aspect_switch_1.png">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">First field of the variant row. Name of the variant, reported as the active variant name in code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Aspect ratio</td>
+<td style="text-align: left;">The two numbers next to the name. Smallest aspect ratio of the screen area this variant is used for, as width : height, for example 16 : 9. The value in brackets is the same ratio as a single number.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Layout</td>
+<td style="text-align: left;">Object that is activated while this variant is active and deactivated otherwise. Optional.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Activated Event</td>
+<td style="text-align: left;">Event invoked when this variant becomes active. Shown when the variant is expanded.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Deactivated Event</td>
+<td style="text-align: left;">Event invoked when this variant stops being active. Shown when the variant is expanded.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Active Variant Changed Event</td>
+<td style="text-align: left;">Below the variants. Invoked with the name of the new active variant whenever the active variant changes. It can call a method that takes a text directly, for example <code>Animator.SetTrigger</code> with a trigger per variant name, or the text of a label.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-the-variant-is-chosen">How the variant is chosen</h2>
+<p>The aspect ratio of the UI Scaler's screen area is width divided by height. The screen area is the safe area when the UI Scaler uses it, so a notch or a home indicator counts. The variant with the largest Aspect Ratio that is not wider than the screen area becomes active. When the screen area is thinner than every variant, the thinnest variant is used.</p>
+<p>Example with three variants, Tall 9 : 16, Standard 4 : 3 and Wide 16 : 9:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Screen area</th>
+<th style="text-align: left;">Active variant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">21 : 9 (2.33)</td>
+<td style="text-align: left;">Wide</td>
+</tr>
+<tr>
+<td style="text-align: left;">16 : 9 (1.78)</td>
+<td style="text-align: left;">Wide</td>
+</tr>
+<tr>
+<td style="text-align: left;">16 : 10 (1.60)</td>
+<td style="text-align: left;">Standard</td>
+</tr>
+<tr>
+<td style="text-align: left;">1 : 1 (1.00)</td>
+<td style="text-align: left;">Tall</td>
+</tr>
+<tr>
+<td style="text-align: left;">9 : 19.5 (0.46)</td>
+<td style="text-align: left;">Tall, the thinnest variant</td>
+</tr>
+</tbody>
+</table>
+<p>Keep the variants ordered from the thinnest to the widest. The inspector offers a &quot;Sort Aspect Variants&quot; button when they are not, and warns when two variants share the same ratio.</p>
+<p>The same UI Scaler with these three variants on a 16:9, a 4:3 and a 9:16 screen:</p>
+<p><img src="../resources/smart_aspect_switch_2.png" style="width:40%"> <img src="../resources/smart_aspect_switch_3.png" style="width:30%"> <img src="../resources/smart_aspect_switch_4.png" style="width:12.6%"></p>
+<h2 id="inspector">Inspector</h2>
+<ul>
+<li>The inspector shows the aspect ratio of the screen area and the active variant.</li>
+<li>Layouts are switched and the variant events invoked in Play Mode and in the &quot;Preview&quot; scaling mode of the <a href="smart_ui_scaler_editor_window.html">Smart UI Scaler editor window</a>. In the other scaling modes the layouts are left as they are, so each one can be edited.</li>
+<li>The inspector warns when no UI Scaler is found on the object or its parents, when a layout is the object itself or one of its parents, and when two variants use the same layout.</li>
+</ul>
+<h2 id="editing-each-layout-in-its-own-shape">Editing each layout in its own shape</h2>
+<p>In the &quot;Fitted Reference Resolution&quot; and &quot;Reference Resolution&quot; scaling modes, the inspector has an &quot;Edit Layout&quot; button for each variant. It shows the layout of the variant, hides the others, and sizes the UI Scaler exactly as it is sized in Play Mode on a screen with the aspect ratio of the variant, letterboxed in the Game view. A tall layout is then edited in a tall area, with the same Expand Progress, Content Scale and Alignment as on a device. The &quot;Reference Resolution&quot; button returns the UI Scaler to its reference resolution.</p>
+<p>Showing a layout can be undone, and the shape of the UI Scaler is only an editor preview: it is never saved and is cleared when the Aspect Switch is disabled, in &quot;Preview&quot; and in Play Mode.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Save the scene with all layouts inactive. A layout that is saved active runs <code>Awake()</code>, <code>OnEnable()</code>, <code>Start()</code> and one <code>Update()</code> of its scripts before the Aspect Switch deactivates it on a screen where another variant is used. With all layouts saved inactive, the Aspect Switch only activates the layout that is used, so only its scripts run. &quot;Edit Layout&quot; activates the layout it shows, so deactivate that layout again before saving. See <a href="lifecycle_and_update_order.html#layouts-of-the-smart-ui-aspect-switch-in-the-first-frame">Lifecycle and update order</a>.</p>
+</div>
+<h2 id="reacting-from-code">Reacting from code</h2>
+<p>Read the active variant with <code>ActiveVariant</code>, <code>ActiveVariantName</code> or <code>ActiveVariantIndex</code>, and get notified when it changes. The listener receives the new variant, and <code>PreviousVariant</code> tells which one was active before, so a transition can depend on its direction, for example from wide to tall:</p>
+<pre><code class="lang-csharp">using SmartUIScaler;
+using UnityEngine;
+
+public class MenuLayoutListener : MonoBehaviour
+{
+	[SerializeField]
+	private SmartUIAspectSwitch _aspectSwitch;
+
+	private void OnEnable()
+	{
+		_aspectSwitch.AddActiveVariantChangedListener(OnActiveVariantChanged);
+	}
+
+	private void OnDisable()
+	{
+		_aspectSwitch.RemoveActiveVariantChangedListener(OnActiveVariantChanged);
+	}
+
+	private void OnActiveVariantChanged(UIScalerAspectVariant active)
+	{
+		Debug.Log($&quot;Layout changed from {_aspectSwitch.PreviousVariant.Name ?? &quot;none&quot;} to {active.Name}&quot;);
+	}
+}
+</code></pre>
+<p>The listener is invoked right away when the active variant is already known, so a listener added late does not miss the current state. When no variant was active before, <code>PreviousVariant</code> is empty: its <code>Name</code> is null. Pass <code>false</code> as the second argument to only hear about later changes. The variants are read-only from code: their name, aspect ratio and layout can be read with <code>GetVariant</code>, and their events are wired in the inspector. To react to one variant from code, check the name in the listener, for example <code>if (active.Name == &quot;Tall&quot;)</code>.</p>
+<p>When the active variant changes, the order is: the layouts are switched, the deactivated event of the previous variant is invoked, then the activated event of the new one, then the Active Variant Changed event, then the listeners added from code. All of this happens before the Canvas layout is rebuilt in the same frame. The layouts are switched before the first frame is rendered. For what the scripts in a layout that was saved active receive in the first frame, see <a href="lifecycle_and_update_order.html#layouts-of-the-smart-ui-aspect-switch-in-the-first-frame">Lifecycle and update order</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In the editor the active variant is also resolved in the scaling modes other than &quot;Preview&quot;, so listeners added from code are invoked there too. Only the layouts and the variant events wait for Play Mode or &quot;Preview&quot;.</p>
+</div>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.2.0
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

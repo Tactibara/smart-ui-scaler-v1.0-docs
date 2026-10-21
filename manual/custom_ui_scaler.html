@@ -87,8 +87,8 @@
         <article data-uid="">
 <h1 id="custom-ui-scaler">Custom UI Scaler</h1>
 
-<p>A custom UI Scaler is needed when the parent Canvas has &quot;Camera Screen Space&quot; Render Mode and the attached camera renders into a Render Texture. The Smart UI Scaler component cannot know where the rendered image ends up on the screen, so a custom UI Scaler provides that information.</p>
-<p>Demo 11 contains a complete implementation, <code>RenderTextureUIScaler</code>, for a canvas rendered into a Render Texture and shown by a RawImage. Use it as the reference for the steps below.</p>
+<p>A custom UI Scaler is needed when the parent Canvas has &quot;Screen Space Camera&quot; Render Mode and the attached camera renders into a Render Texture. The Smart UI Canvas Scaler component cannot know where the rendered image ends up on the screen, so a custom UI Scaler provides that information.</p>
+<p>Demo 17 contains a complete implementation, <code>RenderTextureUIScaler</code>, for a canvas rendered into a Render Texture and shown by a RawImage. Use it as the reference for the steps below.</p>
 <h2 id="implementation">Implementation</h2>
 <p>Extend <a class="xref" href="../api/SmartUIScaler.CoreUIScaler.html">CoreUIScaler</a> and implement these two methods:</p>
 <p>Provide the screen space Rect of the area where the Render Texture is shown.</p>
@@ -131,7 +131,7 @@ class Editor : CoreUIScalerEditor
 #endif
 </code></pre>
 <h2 id="safe-area">Safe area</h2>
-<p>The &quot;Use Safe Area&quot; option intersects the provided screen Rect with the screen's safe area, so it only makes sense when the screen Rect is in real screen coordinates. Demo 11 uses it this way: the inner UI Scaler only occupies the part of the image that is inside both the screen and the safe area. Turn the option off when the output is not shown directly on the screen.</p>
+<p>The &quot;Use Safe Area&quot; option intersects the provided screen Rect with the screen's safe area, so it only makes sense when the screen Rect is in real screen coordinates. Demo 17 uses it this way: the inner UI Scaler only occupies the part of the image that is inside both the screen and the safe area. Turn the option off when the output is not shown directly on the screen.</p>
 
 </article>
 
@@ -150,7 +150,7 @@ class Editor : CoreUIScalerEditor
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

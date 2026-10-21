@@ -87,22 +87,20 @@
         <article data-uid="">
 <h1 id="smart-ui-scaler-editor-window">Smart UI Scaler editor window</h1>
 
-<p>The Smart UI Scaler window helps to test and debug UI layouts without entering Play Mode. It can be found under &quot;Tools&quot; &gt; &quot;Smart UI Scaler&quot;;</p>
-<img src="../resources/smart_ui_scaler_window_1.png" style="width:70%">
+<p>The Smart UI Scaler window helps to test and debug UI layouts without entering Play Mode. It can be found under &quot;Tools&quot; &gt; &quot;Smart UI Scaler&quot;. Its fields are grouped into the &quot;Edit Mode&quot;, &quot;Safe Area Simulation&quot; and &quot;Game View Overlays&quot; sections, and every field has a tooltip.</p>
+<img src="../resources/smart_ui_scaler_window_1.png">
 <h2 id="presets-field">Presets field</h2>
-<p>This field is used to apply preset values to Smart UI Scaler window using presets scriptable object.</p>
+<p>Assign a presets scriptable object to this field to fill in the window from it.</p>
 <p>To create a new presets scriptable object Right Click on Project Window then navigate to &quot;SmartUIScaler&quot; &gt; &quot;Editor&quot; &gt; &quot;UIScalerEditorPresets&quot;.</p>
-<img src="../resources/smart_ui_scaler_window_2.png" style="width:70%">
-<br><br>
+<img src="../resources/smart_ui_scaler_window_2.png">
 <div class="WARNING">
 <h5>Warning</h5>
 <p>UIScalerEditorPresets scriptable object should be placed inside &quot;Editor&quot; folder as this scriptable object only works in Editor.</p>
 </div>
-<p>Presets scriptable object has the same options as Smart UI Scaler window.</p>
-<img src="../resources/smart_ui_scaler_window_3.png" style="width:70%">
-<br><br>
-Presets options will be applied when Presets scriptable object is selected. They can be reapplied by pressing the "Reapply Presets" button.
-<p>The plugin ships with three presets in <code>Demos/Common/Editor</code>: &quot;Preview Presets&quot;, &quot;iPhone 12 Portrait Presets&quot; and &quot;iPhone 12 Landscape Presets&quot;. The iPhone presets enable the safe area simulation with the notch and home indicator paddings of that device.</p>
+<p>A presets scriptable object describes a device: it has the Simulate Safe Area and Area options of the Smart UI Scaler window. Applying it also switches the Scaling Mode to &quot;Preview&quot;, the only Edit Mode scaling mode that shows the simulated safe area. &quot;Show Safe Area Border&quot; and &quot;Shade Unsafe Area&quot; are set in the window only.</p>
+<img src="../resources/smart_ui_scaler_window_3.png">
+<p>The presets are applied as soon as the scriptable object is selected and can be applied again with the &quot;Reapply Presets&quot; button, for example after the fields were changed by hand.</p>
+<p>The plugin ships with three presets in <code>Demos/Common/Editor</code>: &quot;No Safe Area Presets&quot;, &quot;iPhone 12 Portrait Presets&quot; and &quot;iPhone 12 Landscape Presets&quot;. &quot;No Safe Area Presets&quot; previews the screen without a safe area, the iPhone presets enable the safe area simulation with the notch and home indicator paddings of that device.</p>
 <h2 id="scaling-mode-field">Scaling Mode field</h2>
 <p>Scaling Mode field controls how UI Scalers are scaled in Edit Mode.</p>
 <table>
@@ -129,13 +127,20 @@ Presets options will be applied when Presets scriptable object is selected. They
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>This field only works in Edit Mode and is ignored in Play Mode. The &quot;Fitted Reference Resolution&quot; and &quot;Reference Resolution&quot; modes center the UI Scaler inside its Canvas and ignore the Alignment option, which only applies in &quot;Preview&quot; mode and in Play Mode.</p>
+<p>This field only works in Edit Mode and is hidden in Play Mode. The &quot;Fitted Reference Resolution&quot; and &quot;Reference Resolution&quot; modes center the UI Scaler inside its Canvas and ignore the Alignment option, which only applies in &quot;Preview&quot; mode and in Play Mode.</p>
 </div>
+<p>While Scaling Mode is set to &quot;Preview&quot; in Edit Mode, the Scene view shows a reminder that layout editing is not safe, with an &quot;Exit Preview&quot; button that switches back to &quot;Fitted Reference Resolution&quot; for editing.</p>
 <h2 id="simulate-safe-area-and-area-fields">Simulate Safe Area and Area fields</h2>
-<p>These fields control the simulated screen safe area. To activate the safe area simulation enable the &quot;Simulate Safe Area&quot; toggle. The Area fields control the virtual displays borders padding around the safe area.</p>
+<p>These fields control the simulated screen safe area. To activate the safe area simulation enable the &quot;Simulate Safe Area&quot; toggle. The Area fields control the virtual displays borders padding around the safe area. The toggle and the Area fields can only be edited in the &quot;Preview&quot; scaling mode and in Play Mode, and the Area fields only while &quot;Simulate Safe Area&quot; is enabled. An Area field cannot go past the opposite edge of the Game view: the Top Area is at most the Game view height minus the Bottom Area, and the same for the other sides.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Safe area simulation fields also work in Play Mode.</p>
+</div>
+<h2 id="show-safe-area-border-field">Show Safe Area Border field</h2>
+<p>Draws the safe area in the Game view: a border around it and a shade over the margins outside it, on top of all Canvases. The shade can be turned off with the &quot;Shade Unsafe Area&quot; toggle below it. With &quot;Simulate Safe Area&quot; enabled, in the &quot;Preview&quot; scaling mode and in Play Mode, it shows the simulated safe area. Otherwise it shows the whole Game view, or the safe area of the simulated device in the Device Simulator. It is only drawn in the Editor, in Edit Mode and in Play Mode, and never in builds.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The border and the shade are drawn on top of the Game view, so they also appear in screenshots taken with ScreenCapture. Turn &quot;Show Safe Area Border&quot; off before taking screenshots.</p>
 </div>
 
 </article>
@@ -155,7 +160,7 @@ Presets options will be applied when Presets scriptable object is selected. They
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

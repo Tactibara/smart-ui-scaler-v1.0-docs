@@ -87,9 +87,8 @@
         <article data-uid="">
 <h1 id="smart-ui-size-limiter-component">Smart UI Size Limiter component</h1>
 
-<p>Limits the size of the Rect Transform to assigned min and max aspect ratios.</p>
-<img src="../resources/smart_size_limiter_1.png" style="width:70%">
-<br><br>
+<p>Keeps a layout, such as a lobby or a card grid, between a minimum and a maximum aspect ratio inside its parent, so it neither stretches on ultrawide screens nor gets squeezed on tall ones. The Rect Transform gets a fixed reference height and an aspect ratio limited to the assigned min and max values.</p>
+<img src="../resources/smart_size_limiter_1.png">
 <table>
 <thead>
 <tr>
@@ -100,7 +99,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Reference Height</td>
-<td style="text-align: left;">Height set on the Rect Transform and used to calculate the width for the current aspect ratio. Must be greater than 0.</td>
+<td style="text-align: left;">Height set on the Rect Transform and used to calculate the width for the current aspect ratio. Minimum is 1.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Min Aspect Ratio</td>
@@ -110,15 +109,19 @@
 <td style="text-align: left;">Max Aspect Ratio</td>
 <td style="text-align: left;">Maximum limit for aspect ratio. For unlimited max aspect ratio - set the value to 0.</td>
 </tr>
+<tr>
+<td style="text-align: left;">Alignment</td>
+<td style="text-align: left;">Where the limited Rect Transform sits inside the parent, from (0, 0) bottom left to (1, 1) top right. (0.5, 0.5) centers it, (1, 0) keeps it on the bottom right corner, values in between split the free space.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="how-it-works">How it works</h2>
-<p>Smart UI Size Limiter component depends on parent Rect Transform. It uses the parent Rect Transform's size to calculate the aspect ratio of its own Rect Transform. If the parent's aspect ratio is between the min and max limits the full parent size is occupied, otherwise the size is limited to the nearest limit.</p>
+<p>Smart UI Size Limiter component depends on parent Rect Transform. It uses the parent Rect Transform's size to calculate the aspect ratio of its own Rect Transform. If the parent's aspect ratio is between the min and max limits the full parent size is occupied, otherwise the size is limited to the nearest limit. The free space left in the parent is split by the Alignment field.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Smart UI Size Limiter component can work without UI Scaler in parent hierarchy.</p>
+<p>Smart UI Size Limiter component can work without UI Scaler in parent hierarchy. To keep it inside the safe area, place it under a UI Scaler with Use Safe Area enabled.</p>
 </div>
-<p>Demo 7 shows a lobby layout kept between a min and a max aspect ratio.</p>
+<p>Demo 8 shows a lobby layout kept between a min and a max aspect ratio.</p>
 
 </article>
 
@@ -137,7 +140,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

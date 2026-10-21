@@ -87,8 +87,40 @@
         <article data-uid="">
 <h1 id="release-notes">Release notes</h1>
 
-<h2 id="110">1.1.0</h2>
+<h2 id="120">1.2.0</h2>
 <h3 id="new">New</h3>
+<ul>
+<li>Smart UI Aspect Switch component switches between layouts, such as wide, standard and tall, by the aspect ratio of the UI Scaler's screen area, with events per layout and a listener for code. Each layout can be edited in its own shape: the inspector sizes the UI Scaler as on a screen with the layout's aspect ratio. See <a href="smart_ui_aspect_switch_component.html">Smart UI Aspect Switch component</a>.</li>
+<li>Smart UI Aspect Fitter component keeps images and backgrounds at their aspect ratio, anywhere between fitting inside the parent and covering it, with alignment, a focal point and the aspect ratio taken from the Image or RawImage. See <a href="smart_ui_aspect_fitter_component.html">Smart UI Aspect Fitter component</a>.</li>
+<li>Smart UI Size Limiter has an Alignment field that places the limited Rect Transform inside the parent, for example on the bottom right corner instead of the center. Existing Size Limiters stay centered.</li>
+<li>The Smart UI Scaler window has a &quot;Show Safe Area Border&quot; toggle that outlines the safe area in the Game view and shades the margins outside it, with a &quot;Shade Unsafe Area&quot; toggle for the shade. See <a href="smart_ui_scaler_editor_window.html">Smart UI Scaler editor window</a>.</li>
+<li>Smart UI World Follower component shows a world object, such as a 3D model, inside a Rect Transform of the UI through a camera of its own, also in camera stacks and partly off-screen. See <a href="smart_ui_world_follower_component.html">Smart UI World Follower component</a>.</li>
+<li>Smart UI Mesh Fitter component sizes and places a 3D object inside a Rect Transform, so lit meshes, such as a menu background and an emblem that casts a shadow on it, scale with the UI. See <a href="smart_ui_mesh_fitter_component.html">Smart UI Mesh Fitter component</a>.</li>
+<li>Smart UI Framing Bounds component describes the volume of a 3D object, such as a character, an item or a title, as a cylinder, a box or a sphere that can be rotated. A Smart UI World Follower keeps that volume inside its Target, with Framing Padding, Fit Height Only and smooth transitions, and a Smart UI Mesh Fitter fits it instead of measuring the Renderers, so moving and animated models keep the same size. Equipment with framing bounds of its own widens the framing, and the camera can be driven by Cinemachine or any other rig. See <a href="smart_ui_framing_bounds_component.html">Smart UI Framing Bounds component</a>.</li>
+<li>&quot;Safe Area Symmetry&quot; option for UI Scalers and UI Scaler groups mirrors the safe area inset of one side to the opposite side, so a UI Scaler stays centered and split screen UI Scalers keep the same scale. See <a href="smart_ui_scaler_component.html">Smart UI Canvas Scaler component</a>.</li>
+<li><code>CoreUIScaler.ScreenArea</code> reports the screen area a UI Scaler was fitted to, and <code>AddResizedListener</code> / <code>RemoveResizedListener</code> notify code when a UI Scaler was resized, in the same frame. See <a href="smart_ui_manager.html">Staying in sync with UI Scalers</a>.</li>
+<li>The <code>SMART_UI_SCALER</code> scripting define symbol is added to every platform when the plugin is imported, so code can check for the plugin with <code>#if SMART_UI_SCALER</code>. See <a href="scripting_define.html">Scripting define</a>.</li>
+<li>New demo scenes: Aspect Fitter, Aspect Switch, Mesh Fitter, World Follower and Character Framing. The Split Screen demo shows Safe Area Symmetry. The description panel of every demo can be hidden with Alt+Shift+I. See <a href="demos.html">Demo scenes</a>.</li>
+</ul>
+<h3 id="changes">Changes</h3>
+<ul>
+<li>The Smart UI Scaler component is renamed to Smart UI Canvas Scaler (class <code>SmartUICanvasScaler</code>). Existing scenes and prefabs keep working without changes.</li>
+<li>All components are public, so they can be added with <code>AddComponent&lt;T&gt;()</code> and found with <code>GetComponent&lt;T&gt;()</code>. Options without a public property are set in the Inspector.</li>
+<li>The Smart UI Scaler window keeps its settings when scripts are recompiled, is split into sections and has tooltips on every field. The Area fields are disabled outside &quot;Preview&quot; and Play Mode, and while &quot;Simulate Safe Area&quot; is off. An Area field cannot go past the opposite edge of the Game view. Presets no longer have a Scaling Mode: applying one switches to &quot;Preview&quot;. The &quot;PreviewPresets&quot; asset is renamed to &quot;No Safe Area Presets&quot;. In Preview mode the Scene view shows a reminder with an &quot;Exit Preview&quot; button.</li>
+</ul>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li>A UI Scaler that was disabled while its group options changed now applies the new options when it is enabled again.</li>
+<li>Adding or removing a listener of <code>SmartUIManager.AfterScalersUpdatedEvent</code> from inside a listener no longer causes an error.</li>
+<li>An exception thrown by a group listener is logged and no longer stops the other listeners.</li>
+<li>A Smart UI Expander, Size Limiter or nested UI Scaler whose component is disabled is no longer resized by the UI Scaler above it. It keeps its Rect Transform until it is enabled again.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When upgrading from 1.1.0, delete the <code>Assets/Plugins/SmartUIScaler</code> folder before importing 1.2.0. Importing a package never deletes files, and files that were moved or renamed in 1.2.0, such as the renumbered demos and the Smart UI Canvas Scaler script, would otherwise stay in the project next to their new copies. Your scenes, prefabs and UI Scaler group assets outside that folder keep working: they find the new scripts after the import.</p>
+</div>
+<h2 id="110">1.1.0</h2>
+<h3 id="new-1">New</h3>
 <ul>
 <li>Unity 6 support, tested up to Unity 6000.6. The minimum version stays Unity 2022.3.0.</li>
 <li><code>SmartUIManager.AfterScalersUpdatedEvent</code> is invoked every frame after all UI Scalers are updated. Use it to read UI Scaler sizes in the same frame. See <a href="smart_ui_manager.html">Staying in sync with UI Scalers</a>.</li>
@@ -96,7 +128,7 @@
 <li>UI Scaler Groups Persistence Manager also saves when the application is paused, so settings survive on mobile when the app is closed from the background.</li>
 <li>Twelve demo scenes, from the basic concepts to split screen and custom scalers. See <a href="demos.html">Demo scenes</a>.</li>
 </ul>
-<h3 id="changes">Changes</h3>
+<h3 id="changes-1">Changes</h3>
 <ul>
 <li>UI Scalers refit when the safe area changes without a resolution change, for example when a phone with a camera cutout is turned upside down.</li>
 <li>Content Scale is limited to a minimum of 0.1 and Expand Progress to the range 0 to 1.</li>
@@ -126,7 +158,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

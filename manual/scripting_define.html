@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Scripting define | Smart UI Scaler plugin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Scripting define | Smart UI Scaler plugin ">
+      
+      
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/blob/main/Documentation-v1.0/manual/scripting_define.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="scripting-define">Scripting define</h1>
+
+<p>Smart UI Scaler adds the <code>SMART_UI_SCALER</code> scripting define symbol to the Player Settings of every platform when the editor loads it. Code that should work with and without the plugin can check it, for example a shared HUD script or a plugin of your own that supports Smart UI Scaler as an option:</p>
+<pre><code class="lang-csharp">#if SMART_UI_SCALER
+using SmartUIScaler;
+#endif
+using UnityEngine;
+
+public class HudLayout : MonoBehaviour
+{
+	private void OnEnable()
+	{
+#if SMART_UI_SCALER
+		SmartUIManager.AfterScalersUpdatedEvent += OnScalersUpdated;
+#endif
+	}
+
+	private void OnDisable()
+	{
+#if SMART_UI_SCALER
+		SmartUIManager.AfterScalersUpdatedEvent -= OnScalersUpdated;
+#endif
+	}
+
+	private void OnScalersUpdated()
+	{
+	}
+}
+</code></pre>
+<p>The symbol is added once to each platform in Edit &gt; Project Settings &gt; Player &gt; Other Settings &gt; Scripting Define Symbols, next to the symbols that are already there. When it is already set, nothing is changed. Adding it makes Unity compile the scripts once more after the plugin is imported.</p>
+<p>If your code is in an assembly with its own assembly definition, add a reference to the <code>SmartUIScaler</code> assembly definition, so the code inside <code>#if SMART_UI_SCALER</code> can use the plugin's types.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Unity does not remove a scripting define symbol when the plugin that added it is deleted. After removing Smart UI Scaler from a project, also remove <code>SMART_UI_SCALER</code> from the Scripting Define Symbols of each platform, otherwise the code inside <code>#if SMART_UI_SCALER</code> is still compiled and cannot find the plugin.</p>
+</div>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.2.0
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

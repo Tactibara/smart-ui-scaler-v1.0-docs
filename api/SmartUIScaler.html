@@ -100,10 +100,92 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.SmartUIAspectFitter.html">SmartUIAspectFitter</a></dt>
+      <dd><p>Fits its RectTransform into the parent RectTransform with a fixed aspect ratio or the aspect ratio of its
+Image or RawImage, anywhere between fitting inside the parent and covering it.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html">SmartUIAspectSwitch</a></dt>
+      <dd><p>Switches aspect variants by the aspect ratio of a UIScaler screen area. Listens to the UIScaler on the same
+object, or the first parent one, and on every resize activates the layout of the matching variant and
+deactivates the layouts of the other variants. Objects that are not listed as layouts are left untouched.
+When the active variant changes the deactivated and activated events of the variants are invoked, then the
+Active Variant Changed event with the name of the new variant, then the listeners added with
+<a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_AddActiveVariantChangedListener_System_Action_SmartUIScaler_UIScalerAspectVariant__System_Boolean_">AddActiveVariantChangedListener(Action&lt;UIScalerAspectVariant&gt;, bool)</a>, so any other way of switching can be wired in the inspector or
+from code. In the editor layouts are switched and the inspector events invoked only in Preview scaling mode,
+the active variant is resolved in every mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.SmartUICanvasScaler.html">SmartUICanvasScaler</a></dt>
+      <dd><p>UIScaler that fits its RectTransform into the pixel area of the Canvas it is placed under.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.SmartUIExpander.html">SmartUIExpander</a></dt>
+      <dd><p>Expands its RectTransform from the parent RectTransform to the chosen borders of the Canvas. The whole
+RectTransform is driven by this component and recalculated on every resize: it covers the parent rectangle,
+and the chosen edges reach the Canvas borders.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.SmartUIFramingBounds.html">SmartUIFramingBounds</a></dt>
+      <dd><p>Describes the volume of a character or an object that a SmartUIWorldFollower keeps inside its target
+rectangle, or that a SmartUIMeshFitter fits into its parent RectTransform instead of measuring the Renderers.
+The volume is typed in by hand, so it can cover the animations and poses the object will use and does not
+change while they play. The values are in the space of the nearest SmartUIWorldFollower or SmartUIMeshFitter
+found on this GameObject or its parents, so framing bounds on equipment held in an animated hand stay still.
+All enabled framing bounds on that GameObject and its children are combined: equipping an item that has
+framing bounds of its own widens the framing, and removing it narrows the framing again. The values can be
+changed at runtime, also by animation clips.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="SmartUIScaler.SmartUIManager.html">SmartUIManager</a></dt>
       <dd><p>Entry point for external code that needs to stay in sync with UIScaler updates.
 Drives UIScaler updates in play mode and in edit mode.
 Created automatically and must not be added to a GameObject manually.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.SmartUIMeshFitter.html">SmartUIMeshFitter</a></dt>
+      <dd><p>Sizes and places a 3D object, for example a mesh or a whole model, inside the parent RectTransform, so it
+scales with the UI like any UI element. The bounds of all enabled Renderers on this GameObject and its
+children are fitted into the parent rectangle after the UIScalers are updated each frame. When
+SmartUIFramingBounds are found on this GameObject or its children, their typed-in volume is fitted instead, so
+an animated model keeps the same size while it moves. The back of the bounds is placed on the parent rectangle
+and moved toward the camera by Depth Offset, measured in UI units, so the depth and the offset scale together
+with the width and the height. Position and scale of the Transform are set by this component. Rotate a child
+object instead of this one: rotating this one around X or Y can skew it, because UIScalers do not scale depth.
+3D objects are drawn under Screen Space Camera and World Space canvases, not under Screen Space Overlay
+canvases.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.SmartUISizeLimiter.html">SmartUISizeLimiter</a></dt>
+      <dd><p>Fits its RectTransform into the parent RectTransform with a fixed reference height and a limited aspect ratio.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.SmartUIWorldFollower.html">SmartUIWorldFollower</a></dt>
+      <dd><p>Shows a world object inside a RectTransform through a camera of its own, for example a 3D model in a shop slot
+that lives inside a UIScaler. After the UIScalers are updated each frame the camera projection is shifted so the
+object's focus point lands in the center of the target rectangle and the camera's field of view (or orthographic
+size) covers the target height. With Move Camera on, the camera is also placed Distance behind the focus point
+along its forward direction, so the object is seen head-on. With Move Camera off, the camera transform is left
+to something else, for example Cinemachine, and only the projection follows the target. With Clip To Target on,
+the camera viewport is set to the on-screen part of the target, so nothing outside the target is drawn and a
+target partly off-screen is cut, not squeezed. Turn it off for an overlay camera in a URP camera stack, which
+ignores its own viewport: the camera then draws its whole viewport and its culling mask must show only the
+object. The camera belongs to this follower: give it a higher depth than the main camera or add it to the camera
+stack, and depth only clearing. A target with zero width or height is a point: the object is placed on it and
+the field of view (or orthographic size) covers the camera viewport height as usual. A camera with a target
+texture works in that texture's pixels, so the object can be shown in a target inside a Screen Space Camera
+canvas that renders into the same texture. When SmartUIFramingBounds are found on this GameObject or its
+children, the projection is also zoomed so their combined volume fits the target, Framing Padding away from
+its edges, and the center of that volume is used instead of the focus point. The camera's position, rotation
+and field of view then only decide the viewing angle and the perspective, not the size of the object.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -122,6 +204,12 @@ Created automatically and must not be added to a GameObject manually.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.UIScalerGroupsPersistenceManager.html">UIScalerGroupsPersistenceManager</a></dt>
+      <dd><p>Loads the UIScaler group options from PlayerPrefs on Awake and saves them when the application is paused or
+quit.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="SmartUIScaler.UIScalerGroupsSaveData.html">UIScalerGroupsSaveData</a></dt>
       <dd><p>UIScaler groups save data.</p>
 </dd>
@@ -135,6 +223,14 @@ Created automatically and must not be added to a GameObject manually.</p>
 Structs
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html">UIScalerAspectVariant</a></dt>
+      <dd><p>Named aspect ratio band of a <a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html">SmartUIAspectSwitch</a>. The variant with the largest
+<a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_MinAspectRatio">MinAspectRatio</a> that is not wider than the UIScaler screen area becomes active; a screen area
+thinner than every variant activates the thinnest one. The <a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_Layout">Layout</a> object is the default way of
+switching, the events allow any other reaction to be wired in the inspector.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="SmartUIScaler.UIScalerOptions.html">UIScalerOptions</a></dt>
       <dd><p>UIScaler options.</p>
 </dd>
@@ -142,6 +238,21 @@ Structs
     <h3 id="enums">
 Enums
 </h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.FramingShape.html">FramingShape</a></dt>
+      <dd><p>Shape of the volume described by SmartUIFramingBounds.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.MeshFitMode.html">MeshFitMode</a></dt>
+      <dd><p>How SmartUIMeshFitter sizes an object inside the parent RectTransform.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SmartUIScaler.SafeAreaSymmetry.html">SafeAreaSymmetry</a></dt>
+      <dd><p>Controls which safe area insets are mirrored to the opposite side of the screen.</p>
+</dd>
+    </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="SmartUIScaler.UIScalerAlignment.html">UIScalerAlignment</a></dt>
       <dd><p>Used for aligning UIScaler inside provided screen area.</p>
@@ -165,7 +276,7 @@ Enums
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

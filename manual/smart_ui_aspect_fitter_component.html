@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Smart UI Aspect Fitter component | Smart UI Scaler plugin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Smart UI Aspect Fitter component | Smart UI Scaler plugin ">
+      
+      
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/blob/main/Documentation-v1.0/manual/smart_ui_aspect_fitter_component.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="smart-ui-aspect-fitter-component">Smart UI Aspect Fitter component</h1>
+
+<p>Fits the Rect Transform into the parent Rect Transform with a set aspect ratio, anywhere between fitting inside the parent and covering it. Use it for images and backgrounds that must keep their proportions on every screen.</p>
+<img src="../resources/smart_aspect_fitter_1.png">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Use Content Aspect Ratio</td>
+<td style="text-align: left;">Take the aspect ratio from the texture of the RawImage, cropped by its UV Rect, or the sprite of the Image on the same GameObject. It follows the content when the texture or sprite changes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Aspect Ratio</td>
+<td style="text-align: left;">Width divided by height. Used when Use Content Aspect Ratio is off, or when the content has no texture or sprite. Shown in the Inspector only while Use Content Aspect Ratio is off.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Envelope Progress</td>
+<td style="text-align: left;">0 fits the Rect Transform inside the parent, the whole content is visible and empty space is left on two sides. 1 covers the whole parent, the content is cropped on two sides. Values in between do a bit of both.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alignment</td>
+<td style="text-align: left;">Where the Rect Transform sits inside the parent, from (0, 0) bottom left to (1, 1) top right. (0.5, 0.5) centers it, (1, 0) keeps it on the bottom right corner. When the content is larger than the parent, it decides which part is cropped.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Use Focal Point</td>
+<td style="text-align: left;">Keep a point of the content on the Alignment point of the parent while the content covers the parent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Focal Point</td>
+<td style="text-align: left;">The point of the content to keep, from (0, 0) bottom left to (1, 1) top right of the content.</td>
+</tr>
+</tbody>
+</table>
+<p>The same picture in three frames that follow the screen shape: Envelope Progress 0 fits the whole picture inside its frame, 1 covers the frame, and 1 with a focal point covers the frame while keeping the character in view.</p>
+<img src="../resources/smart_aspect_fitter_2.png">
+<h2 id="focal-point">Focal point</h2>
+<p>With a focal point the content is moved so that the chosen point, for example a character's face, stays on the Alignment point of the parent, which is the center by default. The content only stops following the focal point where moving further would uncover an edge of the parent.</p>
+<p>With Use Focal Point on, a selected Aspect Fitter shows the focal point as a yellow cross in the Scene view. Drag it onto the part of the content to keep. A cyan circle marks the Alignment point it is kept on.</p>
+<p>Without a focal point, Alignment decides alone which part of the content stays visible: (0.5, 0.5) crops evenly on both sides, (0, 0.5) keeps the left edge.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Smart UI Aspect Fitter component can work without UI Scaler in parent hierarchy. To keep it inside the safe area, place it under a UI Scaler with Use Safe Area enabled.</p>
+</div>
+<h2 id="covering-the-whole-screen">Covering the whole screen</h2>
+<p>To cover the whole screen with a picture, including the area outside the safe area, use two objects under the UI Scaler:</p>
+<ol>
+<li>A Rect Transform with a <a href="smart_ui_expander_component.html">Smart UI Expander</a> that expands to all four Canvas borders. Its rect is always the whole Canvas.</li>
+<li>Under it, a RawImage or Image with a Smart UI Aspect Fitter: Use Content Aspect Ratio on and Envelope Progress 1.</li>
+</ol>
+<p>The picture then covers the screen on every screen shape without being stretched, and Alignment or the Focal Point decide which part stays visible.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.2.0
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

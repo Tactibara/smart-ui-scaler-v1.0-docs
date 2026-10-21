@@ -87,8 +87,9 @@
         <article data-uid="">
 <h1 id="demo-scenes">Demo scenes</h1>
 
-<p>The plugin ships with twelve demo scenes under <code>Assets/Plugins/SmartUIScaler/Demos</code>, ordered from the most basic concept to the advanced ones. Every scene has an instructions panel that explains what to look at.</p>
+<p>The plugin ships with demo scenes under <code>Assets/Plugins/SmartUIScaler/Demos</code>, ordered from the most basic concept to the advanced ones. Every scene has a description panel that explains what to look at. Hide or show it with Alt+Shift+I in the Editor, in Edit Mode and in Play Mode. The shortcut can be changed in &quot;Edit&quot; &gt; &quot;Shortcuts&quot; under &quot;Smart UI Scaler&quot;. In Play Mode the button on its top right corner does the same. The choice is remembered for all demo scenes.</p>
 <p>Most demos are meant to be explored without entering Play Mode: open &quot;Tools&quot; &gt; &quot;Smart UI Scaler&quot;, set the Scaling Mode to &quot;Preview&quot; and change the Game view aspect ratio.</p>
+<p>Demos 13 to 15 use materials of the Built-in Render Pipeline. In a URP or HDRP project convert them with the render pipeline's material converter, otherwise they are drawn in magenta.</p>
 <table>
 <thead>
 <tr>
@@ -101,68 +102,93 @@
 <tr>
 <td style="text-align: left;">1</td>
 <td style="text-align: left;">Single Scaler</td>
-<td style="text-align: left;">One Smart UI Scaler with Expand Progress 1 that always fills the safe area. Markers stay anchored to its corners and edges while the aspect ratio changes.</td>
+<td style="text-align: left;">One Smart UI Canvas Scaler with Expand Progress 1 that always fills the safe area. Markers stay anchored to its corners and edges while the aspect ratio changes.</td>
 </tr>
 <tr>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">Reference Resolution and Safe Area</td>
-<td style="text-align: left;">The same HUD layout in a 1600 x 900 and in a 900 x 1600 Reference Resolution, both with Expand Progress 0, next to Use Safe Area on versus off. Enable &quot;Simulate Safe Area&quot; in the editor window to see the difference.</td>
+<td style="text-align: left;">The same HUD layout in a 1600 x 900 and in a 900 x 1600 Reference Resolution, both with Expand Progress 0, next to Use Safe Area on versus off. Enable &quot;Simulate Safe Area&quot; and &quot;Show Safe Area Border&quot; in the editor window to see the difference.</td>
 </tr>
 <tr>
 <td style="text-align: left;">3</td>
 <td style="text-align: left;">Alignment</td>
-<td style="text-align: left;">Nine Smart UI Scalers, one per Alignment value, each in its own Screen Space Camera canvas. In Play Mode every viewport animates between wide and tall.</td>
+<td style="text-align: left;">Nine Smart UI Canvas Scalers, one per Alignment value, each in its own Screen Space Camera canvas. In Play Mode every viewport animates between wide and tall.</td>
 </tr>
 <tr>
 <td style="text-align: left;">4</td>
 <td style="text-align: left;">Expand Progress</td>
-<td style="text-align: left;">Three centered Smart UI Scalers with Expand Progress 0, 0.5 and 1.</td>
+<td style="text-align: left;">Three centered Smart UI Canvas Scalers with Expand Progress 0, 0.5 and 1.</td>
 </tr>
 <tr>
 <td style="text-align: left;">5</td>
 <td style="text-align: left;">Content Scale</td>
-<td style="text-align: left;">Two Smart UI Scalers with Content Scale 1 and 0.5. The boxes shrink, the covered screen area stays the same.</td>
+<td style="text-align: left;">Two Smart UI Canvas Scalers with Content Scale 1 and 0.5. The boxes shrink, the covered screen area stays the same.</td>
 </tr>
 <tr>
 <td style="text-align: left;">6</td>
+<td style="text-align: left;">UI Scaler Groups</td>
+<td style="text-align: left;">A HUD and a portrait, two Smart UI Canvas Scalers bound to the same group. In Play Mode press Escape to open a menu whose sliders change the group's Expand Progress and Content Scale. The settings persist through PlayerPrefs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
 <td style="text-align: left;">Smart UI Expander</td>
 <td style="text-align: left;">A header background that uses Smart UI Expander to reach the canvas borders beyond the safe area.</td>
 </tr>
 <tr>
-<td style="text-align: left;">7</td>
+<td style="text-align: left;">8</td>
 <td style="text-align: left;">Smart UI Size Limiter</td>
 <td style="text-align: left;">A lobby layout kept between a min aspect ratio of 1.8 and a max aspect ratio of 2.5.</td>
 </tr>
 <tr>
-<td style="text-align: left;">8</td>
-<td style="text-align: left;">Nested Behaviours</td>
-<td style="text-align: left;">A Smart UI Expander and a Smart UI Size Limiter nested inside a Smart UI Scaler.</td>
-</tr>
-<tr>
 <td style="text-align: left;">9</td>
-<td style="text-align: left;">UI Scaler Groups</td>
-<td style="text-align: left;">A HUD and a portrait, two Smart UI Scalers bound to the same group. In Play Mode press Escape to open a menu whose sliders change the group's Expand Progress and Content Scale. The settings persist through PlayerPrefs.</td>
+<td style="text-align: left;">Nested Behaviours</td>
+<td style="text-align: left;">A Smart UI Expander and a Smart UI Size Limiter nested inside a Smart UI Canvas Scaler.</td>
 </tr>
 <tr>
 <td style="text-align: left;">10</td>
-<td style="text-align: left;">Split Screen</td>
-<td style="text-align: left;">Two Screen Space Camera canvases, one per split screen camera, each with its own Smart UI Scaler fitted to its camera viewport.</td>
+<td style="text-align: left;">Aspect Fitter</td>
+<td style="text-align: left;">The same picture inside three frames through Smart UI Aspect Fitters: Envelope Progress 0 shows the whole picture, Envelope Progress 1 covers the frame, and Envelope Progress 1 with a focal point keeps the character in view. See <a href="smart_ui_aspect_fitter_component.html">Smart UI Aspect Fitter component</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">11</td>
-<td style="text-align: left;">Custom UI Scaler</td>
-<td style="text-align: left;">A canvas rendered into a Render Texture and shown by a RawImage, with a custom UI Scaler inside that only uses the part of the image inside the screen and the safe area. See <a href="custom_ui_scaler.html">Custom UI Scaler</a>.</td>
+<td style="text-align: left;">Aspect Switch</td>
+<td style="text-align: left;">One Smart UI Canvas Scaler with a Smart UI Aspect Switch that activates a wide, a standard or a tall layout depending on the aspect ratio. See <a href="smart_ui_aspect_switch_component.html">Smart UI Aspect Switch component</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">12</td>
+<td style="text-align: left;">Split Screen</td>
+<td style="text-align: left;">Two split screen cameras, each with its own Smart UI Canvas Scaler fitted to its camera viewport, so both halves keep their layout on every screen shape. A toggle switches between scalers with Safe Area Symmetry None and Horizontal: with a simulated left safe area, None shrinks only the left scaler, Horizontal makes the right one give up the same width, so both keep the same scale and stay centered.</td>
+</tr>
+<tr>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">Mesh Fitter</td>
+<td style="text-align: left;">A lit menu background built from 3D objects: a normal-mapped tiled wall that a Smart UI Mesh Fitter in Envelope mode scales to cover the screen, and an emblem lifted off it with Depth Offset so it casts a shadow. Press Play to move the light. See <a href="smart_ui_mesh_fitter_component.html">Smart UI Mesh Fitter component</a>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">World Follower</td>
+<td style="text-align: left;">Three shop cards and a gold sphere, each showing a world object through a Smart UI World Follower: a centered cube, a capsule with a raised Focus Point, an object whose camera is moved by a script with Move Camera off, and the sphere on a point target. See <a href="smart_ui_world_follower_component.html">Smart UI World Follower component</a>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Character Framing</td>
+<td style="text-align: left;">A dress-up screen: a character in a room stays inside the area between the menu panels through a Smart UI World Follower with Smart UI Framing Bounds. Equipping items and raising the arms widen the framing smoothly, and a swaying camera shows that the framing holds from every angle. Press Play. See <a href="smart_ui_framing_bounds_component.html">Smart UI Framing Bounds component</a>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">16</td>
 <td style="text-align: left;">After Scalers Updated Event</td>
-<td style="text-align: left;">A Smart UI Scaler in an animated camera viewport, followed by two frames on another canvas: one positioned in <code>SmartUIManager.AfterScalersUpdatedEvent</code> stays in sync, one positioned in <code>Update()</code> trails a frame behind. See <a href="smart_ui_manager.html">Staying in sync with UI Scalers</a>.</td>
+<td style="text-align: left;">A Smart UI Canvas Scaler in an animated camera viewport, followed by two frames on another canvas: one positioned in <code>SmartUIManager.AfterScalersUpdatedEvent</code> stays in sync, one positioned in <code>Update()</code> trails a frame behind. See <a href="smart_ui_manager.html">Staying in sync with UI Scalers</a>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">17</td>
+<td style="text-align: left;">Custom UI Scaler</td>
+<td style="text-align: left;">A canvas rendered into a Render Texture and shown by a RawImage, with a custom UI Scaler inside that only uses the part of the image inside the screen and the safe area. See <a href="custom_ui_scaler.html">Custom UI Scaler</a>.</td>
 </tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The demos use TextMeshPro for their instruction panels. If the TextMeshPro essential resources are not in your project yet, Unity offers to import them when a demo scene is opened.</p>
+<p>The demos use TextMeshPro for their description panels. If the TextMeshPro essential resources are not in your project yet, Unity offers to import them when a demo scene is opened.</p>
 </div>
 
 </article>
@@ -182,7 +208,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

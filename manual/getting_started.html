@@ -87,33 +87,37 @@
         <article data-uid="">
 <h1 id="getting-started">Getting started</h1>
 
-<p>This guide walks you through setting up your first Smart UI Scaler.</p>
+<p>This guide walks you through setting up your first UI Scaler. In this manual a UI Scaler is a Rect Transform driven by a Smart UI Canvas Scaler component, or by a custom UI Scaler, and the components placed under it, such as the Smart UI Expander, are UI Scaler behaviours.</p>
 <ol>
 <li><p>Create a new GameObject inside your Canvas;</p>
 </li>
-<li><p>Add the Smart UI Scaler component to this GameObject. The Rect Transform of this GameObject will be driven by Smart UI Scaler and will automatically resize; <br><img src="../resources/getting_started_1.png" style="width:70%"></p>
+<li><p>Add the Smart UI Canvas Scaler component to this GameObject. The Rect Transform of this GameObject will be driven by the UI Scaler and will automatically resize; <br><img src="../resources/getting_started_1.png"></p>
 </li>
-<li><p>At first the Smart UI Scaler will work in &quot;Fitted Reference Resolution&quot; mode. You can see in Scene View that the Canvas is drawn with a gray border and the Smart UI Scaler with a green border. This mode is recommended for editing UI layouts inside Smart UI Scaler and to place objects without overlapping; <br><img src="../resources/getting_started_2.png" style="width:70%"></p>
+<li><p>At first the UI Scaler will work in &quot;Fitted Reference Resolution&quot; mode. You can see in Scene View that the Canvas is drawn with a gray border and the UI Scaler with a green border. This mode is recommended for editing UI layouts inside the UI Scaler, because the layout keeps its designed size; <br><img src="../resources/getting_started_2.png"></p>
 </li>
-<li><p>Let's add some UI objects to our Smart UI Scaler. As an example, here are four Raw Images anchored to the corners of the Smart UI Scaler; <br><img src="../resources/getting_started_3.png" style="width:70%"></p>
+<li><p>Let's add some UI objects to our UI Scaler. As an example, here are four Raw Images anchored to the corners of the UI Scaler; <br><img src="../resources/getting_started_3.png"></p>
 </li>
-<li><p>Now to test the Smart UI Scaler component with our UI layout open the &quot;Smart UI Scaler&quot; editor window under &quot;Tools&quot; &gt; &quot;Smart UI Scaler&quot;;  <br><img src="../resources/getting_started_4.png" style="width:70%"></p>
+<li><p>Now to test the UI Scaler with our UI layout open the &quot;Smart UI Scaler&quot; editor window under &quot;Tools&quot; &gt; &quot;Smart UI Scaler&quot;;  <br><img src="../resources/getting_started_4.png"></p>
 </li>
-<li><p>This window helps to test scaling without entering Play Mode. Change the Scaling Mode to &quot;Preview&quot;. This mode works exactly as it would in Play Mode; <br><img src="../resources/getting_started_5.png" style="width:70%"></p>
+<li><p>This window helps to test scaling without entering Play Mode. Change the Scaling Mode to &quot;Preview&quot;. This mode works exactly as it would in Play Mode; <br><img src="../resources/getting_started_5.png"></p>
 </li>
-<li><p>Our Smart UI Scaler now takes up the full area of the Canvas. Now you can test all the Smart UI Scaler component options to see them in effect; <br><img src="../resources/getting_started_6.png" style="width:70%"></p>
+<li><p>Our UI Scaler now takes up the full area of the Canvas. Now you can test all the Smart UI Canvas Scaler component options to see them in effect; <br><img src="../resources/getting_started_6.png"></p>
 </li>
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>In &quot;Preview&quot; mode the Smart UI Scaler border turns red. This is a reminder not to edit the inner UI layout in this mode, because the layout is scaled and its size depends on the Game view.</p>
+<p>In &quot;Preview&quot; mode the UI Scaler border turns red and the Scene view shows a reminder. This is a reminder not to edit the inner UI layout in this mode, because the layout is scaled and its size depends on the Game view.</p>
 </div>
 <ol start="8">
-<li>Change back the &quot;Scaling Mode&quot; in &quot;Smart UI Scaler&quot; editor window to &quot;Fitted Reference Resolution&quot;. The Smart UI Scaler resizes back to the reference resolution and you can continue to work on your UI layout. At this point you can remove the Canvas Scaler component from the Canvas, it is no longer needed.</li>
+<li>Change back the &quot;Scaling Mode&quot; in &quot;Smart UI Scaler&quot; editor window to &quot;Fitted Reference Resolution&quot;. The UI Scaler resizes back to the reference resolution and you can continue to work on your UI layout.</li>
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>As an alternative, closing the &quot;Smart UI Scaler&quot; window also resets the &quot;Scaling Mode&quot; to &quot;Fitted Reference Resolution&quot;.</p>
+<p>The Smart UI Canvas Scaler replaces Unity's Canvas Scaler component for everything inside the UI Scaler. The Canvas Scaler can stay on the Canvas, it has no effect on the UI Scaler and its content, but it is no longer needed and can be removed.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>As an alternative, closing the &quot;Smart UI Scaler&quot; window also resets the &quot;Scaling Mode&quot; to &quot;Fitted Reference Resolution&quot; and turns the safe area simulation and the safe area border off.</p>
 </div>
 <p>These steps cover the basics of creating and testing a UI layout. The <a href="demos.html">demo scenes</a> show every option in action.</p>
 
@@ -134,7 +138,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

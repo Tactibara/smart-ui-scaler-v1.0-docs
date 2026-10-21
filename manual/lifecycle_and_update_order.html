@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Lifecycle and update order | Smart UI Scaler plugin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Lifecycle and update order | Smart UI Scaler plugin ">
+      
+      
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/blob/main/Documentation-v1.0/manual/lifecycle_and_update_order.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="lifecycle-and-update-order">Lifecycle and update order</h1>
+
+<p>This page explains when the plugin's components do their work during a frame, what happens when they are enabled or disabled, and which values your own code can read at each point.</p>
+<h2 id="order-within-a-frame">Order within a frame</h2>
+<p>UI Scalers are not updated in <code>Update()</code> or <code>LateUpdate()</code>. <a class="xref" href="../api/SmartUIScaler.SmartUIManager.html">SmartUIManager</a> runs one pass just before the canvases are rendered. Unity's built-in Canvas Scaler uses this same point in the frame.</p>
+<ol>
+<li><code>Update()</code> and <code>LateUpdate()</code> of all scripts.</li>
+<li>The scaler pass:
+<ol>
+<li>The screen safe area is read.</li>
+<li>Every enabled UI Scaler and UI Scaler behaviour that needs it is resized. When a UI Scaler is resized, its own Rect Transform is updated first. Next, a <a href="smart_ui_aspect_switch_component.html">Smart UI Aspect Switch</a> on it switches layouts and invokes its events, and then the resized listeners added from code run. The Smart UI Expanders, Smart UI Size Limiters and Smart UI Aspect Fitters under it are resized last.</li>
+<li>The <a href="smart_ui_mesh_fitter_component.html">Smart UI Mesh Fitter</a> and the <a href="smart_ui_world_follower_component.html">Smart UI World Follower</a> place their objects and cameras, after all UI Scalers have their final size.</li>
+<li><a class="xref" href="../api/SmartUIScaler.SmartUIManager.html#SmartUIScaler_SmartUIManager_AfterScalersUpdatedEvent">AfterScalersUpdatedEvent</a> is invoked.</li>
+</ol>
+</li>
+<li>Unity rebuilds the canvas layout: Layout Groups, Content Size Fitters and graphics.</li>
+<li>The frame is rendered.</li>
+</ol>
+<p>Every step after <code>LateUpdate()</code> happens in the same frame, so the result is on screen in the frame where the screen changed.</p>
+<h2 id="what-your-code-can-rely-on">What your code can rely on</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Where your code runs</th>
+<th style="text-align: left;">What it sees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Awake()</code>, <code>OnEnable()</code>, <code>Start()</code> of the first frame</td>
+<td style="text-align: left;">Nothing is fitted yet. UI Scalers still have the size they were saved with.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Update()</code>, <code>LateUpdate()</code></td>
+<td style="text-align: left;">The sizes of the previous frame. A change of the screen in this frame is not applied yet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">A resized listener of a UI Scaler</td>
+<td style="text-align: left;">The final Rect Transform of that UI Scaler, and the layouts of its Aspect Switch. The behaviours under it, and other UI Scalers, may not be updated yet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">A listener of the Smart UI Aspect Switch</td>
+<td style="text-align: left;">The layouts are already switched.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SmartUIManager.AfterScalersUpdatedEvent</code></td>
+<td style="text-align: left;">All UI Scalers and their behaviours are final, and the Mesh Fitters and World Followers have placed their objects and cameras. Rect Transforms placed by Layout Groups or Content Size Fitters are rebuilt after this event, so they may still have the values of the previous frame.</td>
+</tr>
+</tbody>
+</table>
+<p>To read fitted sizes before the first frame is rendered, for example in <code>Start()</code>, call <code>Canvas.ForceUpdateCanvases()</code> first. It runs the scaler pass and the canvas layout rebuild immediately. Call it once and only where needed, as it updates every canvas.</p>
+<p>See <a href="smart_ui_manager.html">Staying in sync with UI Scalers</a> for <code>AfterScalersUpdatedEvent</code>, the resized listener and <code>ScreenArea</code>.</p>
+<h2 id="component-lifetime">Component lifetime</h2>
+<ul>
+<li><strong>Awake:</strong> a UI Scaler finds its parent and child UI Scaler behaviours. Nothing is resized.</li>
+<li><strong>OnEnable:</strong> a UI Scaler starts taking part in the scaler pass and takes control of its Rect Transform.</li>
+<li><strong>First scaler pass:</strong> a newly enabled UI Scaler is fitted in the first scaler pass after it was enabled, in the same frame. It is never fitted in <code>Awake()</code> or <code>Start()</code>.</li>
+<li><strong>OnDisable:</strong> the UI Scaler leaves the scaler pass and releases its Rect Transform, which keeps its last fitted values. Nothing else moves.</li>
+<li><strong>Enabled again:</strong> the UI Scaler is fitted in the next scaler pass if its options, its group's options or the screen changed while it was disabled.</li>
+</ul>
+<p>The Smart UI Expander, Smart UI Size Limiter and Smart UI Aspect Fitter follow the same rules. The Smart UI Mesh Fitter and the Smart UI World Follower start working in the first scaler pass after they are enabled, before <code>AfterScalersUpdatedEvent</code> is invoked. When disabled, the World Follower restores the projection and viewport of its camera. <a href="smart_ui_framing_bounds_component.html">Smart UI Framing Bounds</a> do not update anything themselves. They are read by the World Follower or Mesh Fitter they belong to, in that component's next update.</p>
+<h2 id="what-triggers-a-resize">What triggers a resize</h2>
+<p>A UI Scaler is resized in the scaler pass only when something changed, otherwise the pass only checks that nothing changed. These changes cause a resize:</p>
+<ul>
+<li>the screen resolution or the camera viewport of the Canvas;</li>
+<li>the screen safe area, also when only the safe area changes, for example when a phone is turned upside down;</li>
+<li>its options in the Inspector, or the options of its UI Scaler group, also when they are changed at runtime;</li>
+<li>its Transform or its parent, for example when it is moved to another parent;</li>
+<li>in the editor, the settings of the <a href="smart_ui_scaler_editor_window.html">Smart UI Scaler window</a>.</li>
+</ul>
+<p>To make a UI Scaler refit in the next scaler pass for any other reason, set <code>transform.hasChanged = true</code> on it.</p>
+<h2 id="layouts-of-the-smart-ui-aspect-switch-in-the-first-frame">Layouts of the Smart UI Aspect Switch in the first frame</h2>
+<p>The Smart UI Aspect Switch switches layouts inside the first scaler pass, before the first frame is rendered. The correct layout is visible from the first frame.</p>
+<p>A layout that was saved active is still active until that pass. Its scripts receive <code>Awake()</code>, <code>OnEnable()</code>, <code>Start()</code> and one <code>Update()</code> and <code>LateUpdate()</code> before it is deactivated, even when another variant wins on this screen. The layout that is activated by the switch receives <code>Awake()</code> and <code>OnEnable()</code> during the scaler pass and <code>Start()</code> and its first <code>Update()</code> in the next frame.</p>
+<p>When the scripts in your layouts must only run in the layout that is used, deactivate all layouts before saving the scene. The Aspect Switch then only activates the layout that is used. In the &quot;Fitted Reference Resolution&quot; and &quot;Reference Resolution&quot; scaling modes, the UI Scaler then looks empty until a layout is shown with an &quot;Edit Layout&quot; button.</p>
+<h2 id="edit-mode">Edit Mode</h2>
+<p>All components run in Edit Mode too, so the layout looks the same as in Play Mode. The scaler pass runs whenever the editor redraws the canvases, for example when the Game view is resized or a value is changed in the Inspector. The &quot;Scaling Mode&quot; of the <a href="smart_ui_scaler_editor_window.html">Smart UI Scaler window</a> decides the size of UI Scalers in Edit Mode, and the Smart UI Aspect Switch only switches layouts in the &quot;Preview&quot; scaling mode.</p>
+<p>In Play Mode the World Follower smooths its framing changes with unscaled time, so they also play while <code>Time.timeScale</code> is 0, for example in a pause menu.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.2.0
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -89,7 +89,7 @@
 
 
   <h1 id="SmartUIScaler_UIScalerOptions" data-uid="SmartUIScaler.UIScalerOptions" class="text-break">
-Struct UIScalerOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Struct UIScalerOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -131,7 +131,7 @@ public struct UIScalerOptions : IEquatable&lt;UIScalerOptions&gt;</code></pre>
 
   <h3 id="SmartUIScaler_UIScalerOptions_Alignment" data-uid="SmartUIScaler.UIScalerOptions.Alignment">
   Alignment
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Controls the alignment of UIScaler inside provided screen area.</p>
@@ -162,7 +162,7 @@ public struct UIScalerOptions : IEquatable&lt;UIScalerOptions&gt;</code></pre>
 
   <h3 id="SmartUIScaler_UIScalerOptions_ContentScale" data-uid="SmartUIScaler.UIScalerOptions.ContentScale">
   ContentScale
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Controls the scale of the objects inside UIScalers. Recommended scale is [0.1, 1.0].</p>
@@ -193,7 +193,7 @@ public struct UIScalerOptions : IEquatable&lt;UIScalerOptions&gt;</code></pre>
 
   <h3 id="SmartUIScaler_UIScalerOptions_ExpandProgress" data-uid="SmartUIScaler.UIScalerOptions.ExpandProgress">
   ExpandProgress
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Controls UIScaler occupied space between reference resolution and max allowed screen space. Allowed value is [0.0, 1.0].</p>
@@ -225,7 +225,7 @@ public float ExpandProgress</code></pre>
 
   <h3 id="SmartUIScaler_UIScalerOptions_ReferenceResolution" data-uid="SmartUIScaler.UIScalerOptions.ReferenceResolution">
   ReferenceResolution
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The resolution the UI layout is designed for.</p>
@@ -254,9 +254,42 @@ public float ExpandProgress</code></pre>
 
 
 
+  <h3 id="SmartUIScaler_UIScalerOptions_SafeAreaSymmetry" data-uid="SmartUIScaler.UIScalerOptions.SafeAreaSymmetry">
+  SafeAreaSymmetry
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Mirrors the larger safe area inset of the chosen axes to the opposite side, so the UIScaler stays centered
+on the screen and split screen UIScalers keep the same scale when the safe area is one-sided. Used only when
+<a class="xref" href="SmartUIScaler.UIScalerOptions.html#SmartUIScaler_UIScalerOptions_UseSafeArea">UseSafeArea</a> is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SafeAreaSymmetry SafeAreaSymmetry</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SmartUIScaler.SafeAreaSymmetry.html">SafeAreaSymmetry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="SmartUIScaler_UIScalerOptions_UseSafeArea" data-uid="SmartUIScaler.UIScalerOptions.UseSafeArea">
   UseSafeArea
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Should UIScaler use only the screens safe area or whole provided screen area.</p>
@@ -292,7 +325,7 @@ public float ExpandProgress</code></pre>
 
   <h3 id="SmartUIScaler_UIScalerOptions_Default" data-uid="SmartUIScaler.UIScalerOptions.Default">
   Default
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default UIScaler options.</p>
@@ -328,7 +361,7 @@ public float ExpandProgress</code></pre>
 
   <h3 id="SmartUIScaler_UIScalerOptions_Equals_SmartUIScaler_UIScalerOptions_" data-uid="SmartUIScaler.UIScalerOptions.Equals(SmartUIScaler.UIScalerOptions)">
   Equals(UIScalerOptions)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if all options are equal to the options of another instance.</p>
@@ -367,7 +400,7 @@ public float ExpandProgress</code></pre>
 
   <h3 id="SmartUIScaler_UIScalerOptions_Equals_System_Object_" data-uid="SmartUIScaler.UIScalerOptions.Equals(System.Object)">
   Equals(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the object is UIScaler options with all options equal to this instance.</p>
@@ -406,7 +439,7 @@ public float ExpandProgress</code></pre>
 
   <h3 id="SmartUIScaler_UIScalerOptions_GetHashCode" data-uid="SmartUIScaler.UIScalerOptions.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerOptions.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Hash code combined from all options.</p>
@@ -452,7 +485,7 @@ public float ExpandProgress</code></pre>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

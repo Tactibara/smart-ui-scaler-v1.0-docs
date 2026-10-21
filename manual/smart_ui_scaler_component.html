@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Smart UI Scaler component | Smart UI Scaler plugin </title>
+      <title>Smart UI Canvas Scaler component | Smart UI Scaler plugin </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Smart UI Scaler component | Smart UI Scaler plugin ">
+      <meta name="title" content="Smart UI Canvas Scaler component | Smart UI Scaler plugin ">
       
       
       <link rel="icon" href="../resources/favicon.ico">
@@ -85,14 +85,14 @@
         </div>
 
         <article data-uid="">
-<h1 id="smart-ui-scaler-component">Smart UI Scaler component</h1>
+<h1 id="smart-ui-canvas-scaler-component">Smart UI Canvas Scaler component</h1>
 
-<p>The main component of this plugin that replaces the built-in Canvas Scaler component.</p>
-<img src="../resources/smart_ui_scaler_component_1.png" style="width:70%">
+<p>The main component of this plugin that replaces the built-in Canvas Scaler component. It is placed on a child of a Canvas.</p>
+<img src="../resources/smart_ui_scaler_component_1.png">
 <h2 id="group-field">Group field</h2>
-<p>Used to assign this Smart UI Scaler into a shared group with shared options. For more information see <a href="ui_scaler_groups.html">UI Scaler groups</a>.</p>
+<p>Used to assign this UI Scaler into a shared group with shared options. For more information see <a href="ui_scaler_groups.html">UI Scaler groups</a>.</p>
 <h2 id="options-fields">Options fields</h2>
-<p>These options are used when this Smart UI Scaler is not assigned into a group.</p>
+<p>These options are used when this UI Scaler is not assigned into a group.</p>
 <table>
 <thead>
 <tr>
@@ -103,11 +103,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Reference Resolution</td>
-<td style="text-align: left;">The resolution your UI layout is designed for. In Edit Mode the UI Scaler has exactly this size.</td>
+<td style="text-align: left;">The resolution your UI layout is designed for. In Edit Mode the UI Scaler has exactly this size. Minimum is 100 on each axis.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Use Safe Area</td>
 <td style="text-align: left;">Fit into the screen's safe area instead of the whole screen area.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Safe Area Symmetry</td>
+<td style="text-align: left;">Shown when Use Safe Area is on. Mirrors the safe area inset of one side to the opposite side, so the UI Scaler stays centered: None uses the safe area as reported, Horizontal applies the larger of the left and right insets to both sides, Vertical the larger of the top and bottom insets, Both mirrors both axes. Split screen UI Scalers with Horizontal keep the same scale when only one side has an inset.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Alignment</td>
@@ -119,14 +123,14 @@
 </tr>
 <tr>
 <td style="text-align: left;">Expand Progress</td>
-<td style="text-align: left;">How far the UI Scaler grows from the reference resolution (0) towards the whole available area (1). Allowed range is 0 to 1.</td>
+<td style="text-align: left;">How far the UI Scaler grows from the reference resolution (0) toward the whole available area (1). Allowed range is 0 to 1.</td>
 </tr>
 </tbody>
 </table>
 <br>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>This UI Scaler only works in Canvases with &quot;Overlay Screen Space&quot; Render Mode or &quot;Camera Screen Space&quot; Render Mode where attached camera is rendering directly to the screen. When the attached camera renders to a Render Texture this UI Scaler cannot know the screen space area of the rendered image and this information has to be <a href="custom_ui_scaler.html">additionally provided</a>.</p>
+<p>This UI Scaler only works in Canvases with &quot;Screen Space Overlay&quot; Render Mode or &quot;Screen Space Camera&quot; Render Mode where attached camera is rendering directly to the screen. When the attached camera renders to a Render Texture this UI Scaler cannot know the screen space area of the rendered image and this information has to be <a href="custom_ui_scaler.html">additionally provided</a>.</p>
 </div>
 
 </article>
@@ -146,7 +150,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

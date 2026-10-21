@@ -107,7 +107,7 @@ Created automatically and must not be added to a GameObject manually.</p>
     <pre><code class="lang-csharp hljs">[InitializeOnLoad]
 [AddComponentMenu(&quot;&quot;)]
 [DisallowMultipleComponent]
-public class SmartUIManager : MonoBehaviour</code></pre>
+public sealed class SmartUIManager : MonoBehaviour</code></pre>
   </div>
 
 
@@ -140,11 +140,12 @@ public class SmartUIManager : MonoBehaviour</code></pre>
 
   <h3 id="SmartUIScaler_SmartUIManager_AfterScalersUpdatedEvent" data-uid="SmartUIScaler.SmartUIManager.AfterScalersUpdatedEvent">
   AfterScalersUpdatedEvent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIManager.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIManager.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invoked every frame after UIScalers are updated. Read UIScaler sizes and positions here so
-external UI stays in sync within the same frame.</p>
+  <div class="markdown level1 summary"><p>Invoked every frame after UIScalers are updated, and after the SmartUIMeshFitter and
+SmartUIWorldFollower components have placed their objects and cameras. Read UIScaler sizes and positions
+here so external UI stays in sync within the same frame.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -186,7 +187,7 @@ external UI stays in sync within the same frame.</p>
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

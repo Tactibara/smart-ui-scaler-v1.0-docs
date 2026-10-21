@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SmartUIAspectSwitch | Smart UI Scaler plugin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SmartUIAspectSwitch | Smart UI Scaler plugin ">
+      
+      <meta name="description" content="Switches aspect variants by the aspect ratio of a UIScaler screen area. Listens to the UIScaler on the same object, or the first parent one, and on every resize activates the layout of the matching variant and deactivates the layouts of the other variants. Objects that are not listed as layouts are left untouched. When the active variant changes the deactivated and activated events of the variants are invoked, then the Active Variant Changed event with the name of the new variant, then the listeners added with , so any other way of switching can be wired in the inspector or from code. In the editor layouts are switched and the inspector events invoked only in Preview scaling mode, the active variant is resolved in every mode.">
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/new/main/apiSpec/new?filename=SmartUIScaler_SmartUIAspectSwitch.md&amp;value=---%0Auid%3A%20SmartUIScaler.SmartUIAspectSwitch%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SmartUIScaler.SmartUIAspectSwitch">
+
+
+
+  <h1 id="SmartUIScaler_SmartUIAspectSwitch" data-uid="SmartUIScaler.SmartUIAspectSwitch" class="text-break">
+Class SmartUIAspectSwitch  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIAspectSwitch.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SmartUIScaler.html">SmartUIScaler</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SmartUIScaler.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Switches aspect variants by the aspect ratio of a UIScaler screen area. Listens to the UIScaler on the same
+object, or the first parent one, and on every resize activates the layout of the matching variant and
+deactivates the layouts of the other variants. Objects that are not listed as layouts are left untouched.
+When the active variant changes the deactivated and activated events of the variants are invoked, then the
+Active Variant Changed event with the name of the new variant, then the listeners added with
+<a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_AddActiveVariantChangedListener_System_Action_SmartUIScaler_UIScalerAspectVariant__System_Boolean_">AddActiveVariantChangedListener(Action&lt;UIScalerAspectVariant&gt;, bool)</a>, so any other way of switching can be wired in the inspector or
+from code. In the editor layouts are switched and the inspector events invoked only in Preview scaling mode,
+the active variant is resolved in every mode.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExecuteAlways]
+[DisallowMultipleComponent]
+public sealed class SmartUIAspectSwitch : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/2022.3/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">SmartUIAspectSwitch</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SmartUIScaler_SmartUIAspectSwitch_ActiveVariant_" data-uid="SmartUIScaler.SmartUIAspectSwitch.ActiveVariant*"></a>
+
+  <h3 id="SmartUIScaler_SmartUIAspectSwitch_ActiveVariant" data-uid="SmartUIScaler.SmartUIAspectSwitch.ActiveVariant">
+  ActiveVariant
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIAspectSwitch.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Active aspect variant, the default variant with a null <a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_Name">Name</a> when there
+are no variants or the UIScaler was not resized yet. Resolved immediately on enable when the UIScaler was
+resized before.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIScalerAspectVariant ActiveVariant { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html">UIScalerAspectVariant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_SmartUIAspectSwitch_ActiveVariantIndex_" data-uid="SmartUIScaler.SmartUIAspectSwitch.ActiveVariantIndex*"></a>
+
+  <h3 id="SmartUIScaler_SmartUIAspectSwitch_ActiveVariantIndex" data-uid="SmartUIScaler.SmartUIAspectSwitch.ActiveVariantIndex">
+  ActiveVariantIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIAspectSwitch.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Index of <a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_ActiveVariant">ActiveVariant</a> in the variants, -1 when none is active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ActiveVariantIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_SmartUIAspectSwitch_ActiveVariantName_" data-uid="SmartUIScaler.SmartUIAspectSwitch.ActiveVariantName*"></a>
+
+  <h3 id="SmartUIScaler_SmartUIAspectSwitch_ActiveVariantName" data-uid="SmartUIScaler.SmartUIAspectSwitch.ActiveVariantName">
+  ActiveVariantName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIAspectSwitch.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of <a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_ActiveVariant">ActiveVariant</a>, null when none is active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ActiveVariantName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_SmartUIAspectSwitch_PreviousVariant_" data-uid="SmartUIScaler.SmartUIAspectSwitch.PreviousVariant*"></a>
+
+  <h3 id="SmartUIScaler_SmartUIAspectSwitch_PreviousVariant" data-uid="SmartUIScaler.SmartUIAspectSwitch.PreviousVariant">
+  PreviousVariant
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIAspectSwitch.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Variant that was active before the last change of <a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_ActiveVariant">ActiveVariant</a>, the default variant with a
+null <a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_Name">Name</a> when none was active before.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIScalerAspectVariant PreviousVariant { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html">UIScalerAspectVariant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_SmartUIAspectSwitch_VariantCount_" data-uid="SmartUIScaler.SmartUIAspectSwitch.VariantCount*"></a>
+
+  <h3 id="SmartUIScaler_SmartUIAspectSwitch_VariantCount" data-uid="SmartUIScaler.SmartUIAspectSwitch.VariantCount">
+  VariantCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIAspectSwitch.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of aspect variants.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VariantCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SmartUIScaler_SmartUIAspectSwitch_AddActiveVariantChangedListener_" data-uid="SmartUIScaler.SmartUIAspectSwitch.AddActiveVariantChangedListener*"></a>
+
+  <h3 id="SmartUIScaler_SmartUIAspectSwitch_AddActiveVariantChangedListener_System_Action_SmartUIScaler_UIScalerAspectVariant__System_Boolean_" data-uid="SmartUIScaler.SmartUIAspectSwitch.AddActiveVariantChangedListener(System.Action{SmartUIScaler.UIScalerAspectVariant},System.Boolean)">
+  AddActiveVariantChangedListener(Action&lt;UIScalerAspectVariant&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIAspectSwitch.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a listener invoked with the new <a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_ActiveVariant">ActiveVariant</a> when it changes, after the layouts were
+switched and the variant events were invoked, before the canvas layout is rebuilt. Read
+<a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_PreviousVariant">PreviousVariant</a> in the listener to know which variant was active before. A listener that
+throws is logged and does not stop the other listeners.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddActiveVariantChangedListener(Action&lt;UIScalerAspectVariant&gt; listener, bool invokeIfResolved = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html">UIScalerAspectVariant</a>&gt;</dt>
+    <dd><p>Listener to add, invoked with the new active variant.</p>
+</dd>
+    <dt><code>invokeIfResolved</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Invoke the listener immediately when the active variant was resolved at least once, so a listener added
+after that does not wait for the next change.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_SmartUIAspectSwitch_GetVariant_" data-uid="SmartUIScaler.SmartUIAspectSwitch.GetVariant*"></a>
+
+  <h3 id="SmartUIScaler_SmartUIAspectSwitch_GetVariant_System_Int32_" data-uid="SmartUIScaler.SmartUIAspectSwitch.GetVariant(System.Int32)">
+  GetVariant(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIAspectSwitch.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the aspect variant at <code class="paramref">index</code>, from 0 to <a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_VariantCount">VariantCount</a> - 1, to read
+its name, aspect ratio or layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIScalerAspectVariant GetVariant(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html">UIScalerAspectVariant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_SmartUIAspectSwitch_RemoveActiveVariantChangedListener_" data-uid="SmartUIScaler.SmartUIAspectSwitch.RemoveActiveVariantChangedListener*"></a>
+
+  <h3 id="SmartUIScaler_SmartUIAspectSwitch_RemoveActiveVariantChangedListener_System_Action_SmartUIScaler_UIScalerAspectVariant__" data-uid="SmartUIScaler.SmartUIAspectSwitch.RemoveActiveVariantChangedListener(System.Action{SmartUIScaler.UIScalerAspectVariant})">
+  RemoveActiveVariantChangedListener(Action&lt;UIScalerAspectVariant&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/SmartUIAspectSwitch.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a listener added with <a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_AddActiveVariantChangedListener_System_Action_SmartUIScaler_UIScalerAspectVariant__System_Boolean_">AddActiveVariantChangedListener(Action&lt;UIScalerAspectVariant&gt;, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveActiveVariantChangedListener(Action&lt;UIScalerAspectVariant&gt; listener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html">UIScalerAspectVariant</a>&gt;</dt>
+    <dd><p>Listener to remove.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.2.0
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

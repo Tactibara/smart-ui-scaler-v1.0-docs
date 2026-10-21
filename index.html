@@ -87,7 +87,7 @@
         <article data-uid="">
 <h1 id="introduction">Introduction</h1>
 
-<p><strong>Smart UI Scaler</strong> makes one Unity UI (uGUI) layout fit every screen. Design your UI once at a reference resolution, and Smart UI Scaler fits it into any screen size, aspect ratio, safe area or camera viewport, growing it towards the edges exactly as far as you allow. No more choosing between a layout that is cut off on phones and one that floats in the middle of an ultra wide monitor.</p>
+<p><strong>Smart UI Scaler</strong> makes one Unity UI (uGUI) layout fit every screen. Design your UI once at a reference resolution, and Smart UI Scaler fits it into any screen size, aspect ratio, safe area or camera viewport, growing it toward the edges exactly as far as you allow. No more choosing between a layout that is cut off on phones and one that floats in the middle of an ultra wide monitor.</p>
 <h2 id="why-not-the-canvas-scaler">Why not the Canvas Scaler?</h2>
 <p>Unity's Canvas Scaler scales the whole canvas by one rule. Everything stretches or shrinks together, wide screens get empty margins or cropped edges, the safe area is your problem, and a single canvas cannot serve a split screen. Smart UI Scaler works per Rect Transform instead: each scaler is a rectangle with its own reference resolution and its own rules, and you can have as many of them as your screen needs.</p>
 <h2 id="what-you-get">What you get</h2>
@@ -98,15 +98,23 @@ Build the UI at your reference resolution and keep it readable from a phone in p
 </li>
 <li><p>🛡️ <strong>Safe area done for you</strong>
 <br>
-The UI stays inside the notch and home indicator insets, follows rotation, and the Smart UI Expander lets bars and backgrounds still reach the real screen edges.</p>
+The UI stays inside the notch and home indicator insets, follows rotation and can stay centered when the inset is only on one side, while bars and backgrounds still reach the real screen edges.</p>
 </li>
 <li><p>📏 <strong>You decide how the UI expands</strong>
 <br>
-Expand Progress sets how far the layout grows from the reference resolution to the full screen, Alignment sets where it sits, and the Smart UI Size Limiter keeps a layout between two aspect ratios.</p>
+Choose how far the layout grows from its designed size toward the full screen and where it sits on the screen, and keep parts of it, such as a lobby or a card grid, between two aspect ratios.</p>
+</li>
+<li><p>🔀 <strong>A layout per screen shape</strong>
+<br>
+When one layout cannot serve every screen, give phones in portrait, tablets and wide monitors each a layout of their own. The right one is picked by the shape of the screen, and you edit each layout in its real shape. Images and backgrounds keep their proportions on every screen, never stretched.</p>
+</li>
+<li><p>🧊 <strong>3D objects in the UI</strong>
+<br>
+Lit 3D backgrounds, titles, spinning items and characters keep their place and size on every screen, like any other UI element. A character or an item can also be shown through a camera of its own, and it stays framed while it animates or changes equipment.</p>
 </li>
 <li><p>🎚️ <strong>A UI scale slider for your players</strong>
 <br>
-Content Scale shrinks the UI while it keeps covering the same area. Bind it to a settings slider and the whole HUD follows.</p>
+Let players make the UI smaller or larger while it keeps covering the same area. Bind it to a settings slider and the whole HUD follows.</p>
 </li>
 <li><p>🧩 <strong>Several scalers on one screen</strong>
 <br>
@@ -126,15 +134,16 @@ Scalers resize only when the screen, the safe area or their options change. In a
 </li>
 <li><p>🔌 <strong>Extensible</strong>
 <br>
-Write custom scalers for render textures, read scaler sizes in the same frame through an update event, and learn from twelve demo scenes that cover every feature.</p>
+Write custom scalers for render textures, read scaler sizes in the same frame through an update event, and learn from seventeen demo scenes that cover every feature.</p>
 </li>
 </ul>
 <h2 id="what-is-included">What is included</h2>
 <ul>
-<li>Smart UI Scaler, Smart UI Expander and Smart UI Size Limiter components</li>
+<li>Smart UI Canvas Scaler, Smart UI Expander, Smart UI Size Limiter, Smart UI Aspect Fitter and Smart UI Aspect Switch components</li>
+<li>Smart UI Mesh Fitter, Smart UI World Follower and Smart UI Framing Bounds components for 3D objects in the UI</li>
 <li>UI Scaler Groups with runtime API and PlayerPrefs persistence</li>
 <li>Smart UI Scaler editor window with safe area simulation and presets</li>
-<li>Twelve demo scenes, from a single scaler to split screen and custom scalers</li>
+<li>Seventeen demo scenes, from a single scaler to 3D objects in the UI and custom scalers</li>
 <li>Full source code, online manual and scripting API, offline PDFs</li>
 </ul>
 <h2 id="requirements">Requirements</h2>
@@ -160,7 +169,7 @@ Write custom scalers for render textures, read scaler sizes in the same frame th
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

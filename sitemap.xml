@@ -2,127 +2,253 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.CoreUIScaler.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.FramingShape.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.MeshFitMode.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SafeAreaSymmetry.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SmartUIAspectFitter.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SmartUIAspectSwitch.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SmartUICanvasScaler.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SmartUIExpander.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SmartUIFramingBounds.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SmartUIManager.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SmartUIMeshFitter.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SmartUISizeLimiter.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.SmartUIWorldFollower.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.UIScalerAlignment.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.UIScalerAspectVariant.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.UIScalerBehaviour.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.UIScalerGroupSo.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.UIScalerGroups.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.UIScalerGroupsPersistenceManager.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.UIScalerGroupsSaveData.UIScalerGroupOptions.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.UIScalerGroupsSaveData.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.UIScalerOptions.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/api/SmartUIScaler.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/index.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/3d_objects_in_ui.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/custom_ui_scaler.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/demos.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/getting_started.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/lifecycle_and_update_order.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/release_notes.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/scripting_define.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_aspect_fitter_component.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_aspect_switch_component.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_expander_component.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_framing_bounds_component.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_manager.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_mesh_fitter_component.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_scaler_component.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_scaler_editor_window.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_size_limiter_component.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/smart_ui_world_follower_component.html</loc>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tactibara.github.io/smart-ui-scaler-v1.0-docs/manual/ui_scaler_groups.html</loc>
-    <lastmod>2026-10-11T11:34:24+03:00</lastmod>
+    <lastmod>2026-10-19T03:06:16+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

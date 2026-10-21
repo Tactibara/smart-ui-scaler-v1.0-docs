@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct UIScalerAspectVariant | Smart UI Scaler plugin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct UIScalerAspectVariant | Smart UI Scaler plugin ">
+      
+      <meta name="description" content="Named aspect ratio band of a . The variant with the largest  that is not wider than the UIScaler screen area becomes active; a screen area thinner than every variant activates the thinnest one. The  object is the default way of switching, the events allow any other reaction to be wired in the inspector.">
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/new/main/apiSpec/new?filename=SmartUIScaler_UIScalerAspectVariant.md&amp;value=---%0Auid%3A%20SmartUIScaler.UIScalerAspectVariant%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SmartUIScaler.UIScalerAspectVariant">
+
+
+
+  <h1 id="SmartUIScaler_UIScalerAspectVariant" data-uid="SmartUIScaler.UIScalerAspectVariant" class="text-break">
+Struct UIScalerAspectVariant  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerAspectVariant.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SmartUIScaler.html">SmartUIScaler</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SmartUIScaler.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Named aspect ratio band of a <a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html">SmartUIAspectSwitch</a>. The variant with the largest
+<a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_MinAspectRatio">MinAspectRatio</a> that is not wider than the UIScaler screen area becomes active; a screen area
+thinner than every variant activates the thinnest one. The <a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_Layout">Layout</a> object is the default way of
+switching, the events allow any other reaction to be wired in the inspector.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct UIScalerAspectVariant : IEquatable&lt;UIScalerAspectVariant&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html">UIScalerAspectVariant</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SmartUIScaler_UIScalerAspectVariant_Layout_" data-uid="SmartUIScaler.UIScalerAspectVariant.Layout*"></a>
+
+  <h3 id="SmartUIScaler_UIScalerAspectVariant_Layout" data-uid="SmartUIScaler.UIScalerAspectVariant.Layout">
+  Layout
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerAspectVariant.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Object activated while this variant is active and deactivated otherwise, optional.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject Layout { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/2022.3/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_UIScalerAspectVariant_MinAspectRatio_" data-uid="SmartUIScaler.UIScalerAspectVariant.MinAspectRatio*"></a>
+
+  <h3 id="SmartUIScaler_UIScalerAspectVariant_MinAspectRatio" data-uid="SmartUIScaler.UIScalerAspectVariant.MinAspectRatio">
+  MinAspectRatio
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerAspectVariant.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Smallest aspect ratio of the screen area this variant applies to, as width and height, for example 16:9.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int MinAspectRatio { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Vector2Int.html">Vector2Int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_UIScalerAspectVariant_Name_" data-uid="SmartUIScaler.UIScalerAspectVariant.Name*"></a>
+
+  <h3 id="SmartUIScaler_UIScalerAspectVariant_Name" data-uid="SmartUIScaler.UIScalerAspectVariant.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerAspectVariant.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name reported by <a class="xref" href="SmartUIScaler.SmartUIAspectSwitch.html#SmartUIScaler_SmartUIAspectSwitch_ActiveVariantName">ActiveVariantName</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_UIScalerAspectVariant_Ratio_" data-uid="SmartUIScaler.UIScalerAspectVariant.Ratio*"></a>
+
+  <h3 id="SmartUIScaler_UIScalerAspectVariant_Ratio" data-uid="SmartUIScaler.UIScalerAspectVariant.Ratio">
+  Ratio
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerAspectVariant.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_MinAspectRatio">MinAspectRatio</a> as a single width divided by height value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Ratio { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SmartUIScaler_UIScalerAspectVariant_Equals_" data-uid="SmartUIScaler.UIScalerAspectVariant.Equals*"></a>
+
+  <h3 id="SmartUIScaler_UIScalerAspectVariant_Equals_SmartUIScaler_UIScalerAspectVariant_" data-uid="SmartUIScaler.UIScalerAspectVariant.Equals(SmartUIScaler.UIScalerAspectVariant)">
+  Equals(UIScalerAspectVariant)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerAspectVariant.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>True when <code class="paramref">other</code> has the same <a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_Name">Name</a>, <a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_MinAspectRatio">MinAspectRatio</a> and
+<a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_Layout">Layout</a>; the events are not compared.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(UIScalerAspectVariant other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html">UIScalerAspectVariant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_UIScalerAspectVariant_Equals_" data-uid="SmartUIScaler.UIScalerAspectVariant.Equals*"></a>
+
+  <h3 id="SmartUIScaler_UIScalerAspectVariant_Equals_System_Object_" data-uid="SmartUIScaler.UIScalerAspectVariant.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerAspectVariant.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>True when <code class="paramref">other</code> has the same <a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_Name">Name</a>, <a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_MinAspectRatio">MinAspectRatio</a> and
+<a class="xref" href="SmartUIScaler.UIScalerAspectVariant.html#SmartUIScaler_UIScalerAspectVariant_Layout">Layout</a>; the events are not compared.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SmartUIScaler_UIScalerAspectVariant_GetHashCode_" data-uid="SmartUIScaler.UIScalerAspectVariant.GetHashCode*"></a>
+
+  <h3 id="SmartUIScaler_UIScalerAspectVariant_GetHashCode" data-uid="SmartUIScaler.UIScalerAspectVariant.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SimonasZab/UiScaler/blob/main/Assets/Plugins/SmartUIScaler/Scripts/Core/UIScalerAspectVariant.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.2.0
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

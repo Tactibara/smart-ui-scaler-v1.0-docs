@@ -87,19 +87,38 @@
         <article data-uid="">
 <h1 id="smart-ui-expander-component">Smart UI Expander component</h1>
 
-<p>Used to expand Rect Transform outside of the parent UI Scaler to match parent Canvas borders.</p>
-<img src="../resources/smart_expander_component_1.png" style="width:70%">
+<p>Used to expand a Rect Transform outside of the parent UI Scaler to the Canvas borders.</p>
+<img src="../resources/smart_expander_component_1.png">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Expand To Top Border, Bottom, Left, Right</td>
+<td style="text-align: left;">The edges that are moved to the Canvas borders.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="how-it-works">How it works</h2>
-<p>Smart UI Expander component depends on parent Rect Transform. It follows the parent Rect Transform's size and uses it as the base from which to expand to the Canvas borders. The four expansion fields are used to tell the Smart UI Expander to what directions it should expand.</p>
+<p>The Smart UI Expander follows the parent Rect Transform and uses its rectangle as the base from which to expand to the Canvas borders. The four expansion fields choose the edges that reach the borders; the other edges stay on the edges of the parent. The whole Rect Transform is set by the component and recalculated on every resize, so it is greyed out in the Inspector, and turning an edge off simply puts it back on the edge of the parent.</p>
+<p>Place the Smart UI Expander on a child of the element it extends, for example the background of a header: the header Rect Transform defines the size inside the safe area, and the background child with the Smart UI Expander covers the header and reaches past it to the screen borders. Keep the header content, such as titles and buttons, next to the background, not under it, so it stays inside the safe area.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>On screens with a large safe area margin, an expanded background gets taller or wider than designed. Use an Image with the Sliced or Tiled image type, or keep gradients and details inside the sprite's border, so the extra space is filled with the plain middle of the sprite instead of a stretched gradient.</p>
+</div>
 <h2 id="showcase">Showcase</h2>
-<p>Here is a simple example. The black rectangle represents the safe area, it goes up all the way to the top border of the screen. The header is at the top and its background with teal color has the Smart UI Expander component.</p>
-<p>In the first image you can see that the header is inside the safe area and the Smart UI Expander does not do anything as no expansion field is selected.
-<br><br>
-<img src="../resources/smart_expander_component_2.png" style="width:70%"></p>
-<p>After we set the expansion to left and right borders of the screen we can now see that the header expands outside the safe area to full length of the screen.</p>
-<img src="../resources/smart_expander_component_3.png" style="width:70%">
-<br><br>
-You can find the implementation of this example inside the Demo 6 of the plugin.
+<p>Here is a simple example in the Device Simulator on a phone with a notch. The magenta outline is the safe area border of the Smart UI Scaler window, and the UI Scaler fits inside it. The header is at the top and its purple background has the Smart UI Expander component.</p>
+<p>In the first image you can see that the header is inside the safe area and the Smart UI Expander does not do anything as no expansion field is selected.</p>
+<img src="../resources/smart_expander_component_2.png">
+<p>After the expansion to the top, left and right borders is turned on, the header background reaches past the safe area to the screen edges, while the title and buttons stay inside the safe area.</p>
+<img src="../resources/smart_expander_component_3.png">
+<p>You can find the implementation of this example inside the Demo 7 of the plugin.</p>
+<h2 id="placing-elements-against-the-screen-edge">Placing elements against the screen edge</h2>
+<p>UI Scalers keep their content inside the safe area. To place an element against the real screen edge and still scale it with the UI, for example a corner decoration, put it under a Rect Transform with a Smart UI Expander that expands to all four borders, directly under the UI Scaler.</p>
 
 </article>
 
@@ -118,7 +137,7 @@ You can find the implementation of this example inside the Demo 6 of the plugin.
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

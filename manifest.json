@@ -37,6 +37,118 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.FramingShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.FramingShape.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.FramingShape",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.FramingShape.yml\" sourcestartlinenumber=\"1\">Shape of the volume described by SmartUIFramingBounds.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.MeshFitMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.MeshFitMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.MeshFitMode",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.MeshFitMode.yml\" sourcestartlinenumber=\"1\">How SmartUIMeshFitter sizes an object inside the parent RectTransform.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SafeAreaSymmetry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SafeAreaSymmetry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SafeAreaSymmetry",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SafeAreaSymmetry.yml\" sourcestartlinenumber=\"1\">Controls which safe area insets are mirrored to the opposite side of the screen.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SmartUIAspectFitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SmartUIAspectFitter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SmartUIAspectFitter",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SmartUIAspectFitter.yml\" sourcestartlinenumber=\"1\">Fits its RectTransform into the parent RectTransform with a fixed aspect ratio or the aspect ratio of its\nImage or RawImage, anywhere between fitting inside the parent and covering it.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SmartUIAspectSwitch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SmartUIAspectSwitch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SmartUIAspectSwitch",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SmartUIAspectSwitch.yml\" sourcestartlinenumber=\"1\">Switches aspect variants by the aspect ratio of a UIScaler screen area. Listens to the UIScaler on the same\nobject, or the first parent one, and on every resize activates the layout of the matching variant and\ndeactivates the layouts of the other variants. Objects that are not listed as layouts are left untouched.\nWhen the active variant changes the deactivated and activated events of the variants are invoked, then the\nActive Variant Changed event with the name of the new variant, then the listeners added with\n<xref href=\"SmartUIScaler.SmartUIAspectSwitch.AddActiveVariantChangedListener(System.Action%7bSmartUIScaler.UIScalerAspectVariant%7d%2cSystem.Boolean)\" data-throw-if-not-resolved=\"false\"></xref>, so any other way of switching can be wired in the inspector or\nfrom code. In the editor layouts are switched and the inspector events invoked only in Preview scaling mode,\nthe active variant is resolved in every mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SmartUICanvasScaler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SmartUICanvasScaler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SmartUICanvasScaler",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SmartUICanvasScaler.yml\" sourcestartlinenumber=\"1\">UIScaler that fits its RectTransform into the pixel area of the Canvas it is placed under.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SmartUIExpander.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SmartUIExpander.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SmartUIExpander",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SmartUIExpander.yml\" sourcestartlinenumber=\"1\">Expands its RectTransform from the parent RectTransform to the chosen borders of the Canvas. The whole\nRectTransform is driven by this component and recalculated on every resize: it covers the parent rectangle,\nand the chosen edges reach the Canvas borders.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SmartUIFramingBounds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SmartUIFramingBounds.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SmartUIFramingBounds",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SmartUIFramingBounds.yml\" sourcestartlinenumber=\"1\">Describes the volume of a character or an object that a SmartUIWorldFollower keeps inside its target\nrectangle, or that a SmartUIMeshFitter fits into its parent RectTransform instead of measuring the Renderers.\nThe volume is typed in by hand, so it can cover the animations and poses the object will use and does not\nchange while they play. The values are in the space of the nearest SmartUIWorldFollower or SmartUIMeshFitter\nfound on this GameObject or its parents, so framing bounds on equipment held in an animated hand stay still.\nAll enabled framing bounds on that GameObject and its children are combined: equipping an item that has\nframing bounds of its own widens the framing, and removing it narrows the framing again. The values can be\nchanged at runtime, also by animation clips.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.SmartUIManager.yml",
       "output": {
         ".html": {
@@ -51,6 +163,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SmartUIMeshFitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SmartUIMeshFitter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SmartUIMeshFitter",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SmartUIMeshFitter.yml\" sourcestartlinenumber=\"1\">Sizes and places a 3D object, for example a mesh or a whole model, inside the parent RectTransform, so it\nscales with the UI like any UI element. The bounds of all enabled Renderers on this GameObject and its\nchildren are fitted into the parent rectangle after the UIScalers are updated each frame. When\nSmartUIFramingBounds are found on this GameObject or its children, their typed-in volume is fitted instead, so\nan animated model keeps the same size while it moves. The back of the bounds is placed on the parent rectangle\nand moved toward the camera by Depth Offset, measured in UI units, so the depth and the offset scale together\nwith the width and the height. Position and scale of the Transform are set by this component. Rotate a child\nobject instead of this one: rotating this one around X or Y can skew it, because UIScalers do not scale depth.\n3D objects are drawn under Screen Space Camera and World Space canvases, not under Screen Space Overlay\ncanvases.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SmartUISizeLimiter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SmartUISizeLimiter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SmartUISizeLimiter",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SmartUISizeLimiter.yml\" sourcestartlinenumber=\"1\">Fits its RectTransform into the parent RectTransform with a fixed reference height and a limited aspect ratio.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.SmartUIWorldFollower.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.SmartUIWorldFollower.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.SmartUIWorldFollower",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.SmartUIWorldFollower.yml\" sourcestartlinenumber=\"1\">Shows a world object inside a RectTransform through a camera of its own, for example a 3D model in a shop slot\nthat lives inside a UIScaler. After the UIScalers are updated each frame the camera projection is shifted so the\nobject's focus point lands in the center of the target rectangle and the camera's field of view (or orthographic\nsize) covers the target height. With Move Camera on, the camera is also placed Distance behind the focus point\nalong its forward direction, so the object is seen head-on. With Move Camera off, the camera transform is left\nto something else, for example Cinemachine, and only the projection follows the target. With Clip To Target on,\nthe camera viewport is set to the on-screen part of the target, so nothing outside the target is drawn and a\ntarget partly off-screen is cut, not squeezed. Turn it off for an overlay camera in a URP camera stack, which\nignores its own viewport: the camera then draws its whole viewport and its culling mask must show only the\nobject. The camera belongs to this follower: give it a higher depth than the main camera or add it to the camera\nstack, and depth only clearing. A target with zero width or height is a point: the object is placed on it and\nthe field of view (or orthographic size) covers the camera viewport height as usual. A camera with a target\ntexture works in that texture's pixels, so the object can be shown in a target inside a Screen Space Camera\ncanvas that renders into the same texture. When SmartUIFramingBounds are found on this GameObject or its\nchildren, the projection is also zoomed so their combined volume fits the target, Framing Padding away from\nits edges, and the center of that volume is used instead of the focus point. The camera's position, rotation\nand field of view then only decide the viewing angle and the perspective, not the size of the object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SmartUIScaler.UIScalerAlignment.yml",
       "output": {
         ".html": {
@@ -62,6 +216,20 @@
       "IsMRef": true,
       "Title": "SmartUIScaler.UIScalerAlignment",
       "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerAlignment.yml\" sourcestartlinenumber=\"1\">Used for aligning UIScaler inside provided screen area.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.UIScalerAspectVariant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.UIScalerAspectVariant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.UIScalerAspectVariant",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerAspectVariant.yml\" sourcestartlinenumber=\"1\">Named aspect ratio band of a <xref href=\"SmartUIScaler.SmartUIAspectSwitch\" data-throw-if-not-resolved=\"false\"></xref>. The variant with the largest\n<xref href=\"SmartUIScaler.UIScalerAspectVariant.MinAspectRatio\" data-throw-if-not-resolved=\"false\"></xref> that is not wider than the UIScaler screen area becomes active; a screen area\nthinner than every variant activates the thinnest one. The <xref href=\"SmartUIScaler.UIScalerAspectVariant.Layout\" data-throw-if-not-resolved=\"false\"></xref> object is the default way of\nswitching, the events allow any other reaction to be wired in the inspector.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -104,6 +272,20 @@
       "IsMRef": true,
       "Title": "SmartUIScaler.UIScalerGroups",
       "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerGroups.yml\" sourcestartlinenumber=\"1\">UIScaler groups manager.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SmartUIScaler.UIScalerGroupsPersistenceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SmartUIScaler.UIScalerGroupsPersistenceManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SmartUIScaler.UIScalerGroupsPersistenceManager",
+      "Summary": "<p sourcefile=\"api/SmartUIScaler.UIScalerGroupsPersistenceManager.yml\" sourcestartlinenumber=\"1\">Loads the UIScaler group options from PlayerPrefs on Awake and saves them when the application is paused or\nquit.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -186,6 +368,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/3d_objects_in_ui.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/3d_objects_in_ui.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/custom_ui_scaler.md",
       "output": {
         ".html": {
@@ -216,10 +408,50 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/lifecycle_and_update_order.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/lifecycle_and_update_order.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/release_notes.md",
       "output": {
         ".html": {
           "relative_path": "manual/release_notes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/scripting_define.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/scripting_define.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/smart_ui_aspect_fitter_component.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/smart_ui_aspect_fitter_component.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/smart_ui_aspect_switch_component.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/smart_ui_aspect_switch_component.html"
         }
       },
       "version": ""
@@ -236,10 +468,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/smart_ui_framing_bounds_component.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/smart_ui_framing_bounds_component.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/smart_ui_manager.md",
       "output": {
         ".html": {
           "relative_path": "manual/smart_ui_manager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/smart_ui_mesh_fitter_component.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/smart_ui_mesh_fitter_component.html"
         }
       },
       "version": ""
@@ -270,6 +522,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/smart_ui_size_limiter_component.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/smart_ui_world_follower_component.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/smart_ui_world_follower_component.html"
         }
       },
       "version": ""
@@ -379,6 +641,66 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/smart_aspect_fitter_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_aspect_fitter_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_aspect_fitter_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_aspect_fitter_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_aspect_switch_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_aspect_switch_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_aspect_switch_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_aspect_switch_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_aspect_switch_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_aspect_switch_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_aspect_switch_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_aspect_switch_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/smart_expander_component_1.png",
       "output": {
         "resource": {
@@ -403,6 +725,76 @@
       "output": {
         "resource": {
           "relative_path": "resources/smart_expander_component_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_framing_bounds_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_framing_bounds_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_framing_bounds_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_framing_bounds_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_framing_bounds_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_framing_bounds_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_framing_bounds_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_framing_bounds_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_mesh_fitter_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_mesh_fitter_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_mesh_fitter_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_mesh_fitter_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_mesh_fitter_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_mesh_fitter_3.png"
         }
       },
       "version": ""
@@ -453,6 +845,26 @@
       "output": {
         "resource": {
           "relative_path": "resources/smart_ui_scaler_window_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_world_follower_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_world_follower_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/smart_world_follower_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/smart_world_follower_2.png"
         }
       },
       "version": ""

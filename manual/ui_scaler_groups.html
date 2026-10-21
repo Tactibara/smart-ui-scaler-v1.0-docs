@@ -88,29 +88,23 @@
 <h1 id="ui-scaler-groups">UI Scaler groups</h1>
 
 <p>UI Scaler Groups are used to share and control UI Scaler options between UI Scalers. UI Scaler Groups are controlled through their scriptable objects. To create a UI Scaler Group scriptable object Right Click on Project Window then navigate to &quot;SmartUIScaler&quot; &gt; &quot;UIScalerGroup&quot;.</p>
-<img src="../resources/ui_scaler_groups_1.png" style="width:70%">
-<br><br>
-The UI Scaler Group scriptable object has a "Default Options" dropdown with the same fields as the Smart UI Scaler component. These are the options every UI Scaler in the group starts with. At runtime they can be changed through the scripting API and the changed values apply to all UI Scalers in the group.
-<br><br>
-<img src="../resources/ui_scaler_groups_2.png" style="width:70%">
-<br><br>
-To assign a Smart UI Scaler to this group drag UI Scaler Group scriptable object into Smart UI Scaler "Group" field. The Smart UI Scaler "Options" field disappears, as the group options are used instead.
-<br><br>
-<img src="../resources/ui_scaler_groups_3.png" style="width:70%">
-<br><br>
-UI Scaler Group options can be changed through scripting API using the UI Scaler Group scriptable object reference (<a class="xref" href="../api/SmartUIScaler.UIScalerGroupSo.html">UIScalerGroupSo</a> API). Once the options are changed - all active UI Scalers will automatically update. Check out the Demo 9 inside the plugin, where a complete UI Scaler Group example is showcased.
+<img src="../resources/ui_scaler_groups_1.png">
+<p>The UI Scaler Group scriptable object has a &quot;Default Options&quot; foldout with the same fields as the Smart UI Canvas Scaler component. These are the options every UI Scaler in the group starts with. At runtime Content Scale and Expand Progress can be changed through the scripting API, and the changed values apply to all UI Scalers in the group. Reference Resolution, Use Safe Area, Safe Area Symmetry and Alignment are fixed for the group.</p>
+<img src="../resources/ui_scaler_groups_2.png">
+<p>To assign a Smart UI Canvas Scaler to this group drag the UI Scaler Group scriptable object into its &quot;Group&quot; field. The &quot;Options&quot; field disappears, as the group options are used instead.</p>
+<img src="../resources/ui_scaler_groups_3.png">
+<p>Use one group for UI Scalers that should look like one UI, even when they sit on different canvases: the canvases of a camera stack, a HUD split over several canvases, or popups on a canvas of their own. A change of Content Scale or Expand Progress then applies to all of them at once, and they are saved as one group.</p>
+<p>Content Scale and Expand Progress are changed with the <code>SetContentScale</code> and <code>SetExpandProgress</code> methods of the UI Scaler Group scriptable object (<a class="xref" href="../api/SmartUIScaler.UIScalerGroupSo.html">UIScalerGroupSo</a> API). Once the options are changed, all active UI Scalers update automatically. Check out the Demo 6 inside the plugin, where a complete UI Scaler Group example is showcased.</p>
 <h2 id="save-id-field">Save Id field</h2>
 <p>The &quot;Save Id&quot; field identifies the group in saved data. It is generated when the scriptable object is created, so renaming or moving the asset does not affect saved settings. The &quot;New&quot; button generates a fresh Save Id, which detaches the group from any settings saved under the old one.</p>
 <p>The editor keeps Save Ids unique across the project and shows a warning when two groups share one, because only one of them would be saved.</p>
 <h2 id="persistence">Persistence</h2>
-<p>Initially UI Scaler Group options are not saved and loaded. To have persistent UI Scaler Group options the easiest way is to use UI Scaler Groups Persistence Manager component. Just add this component to an empty GameObject in the first scene in your project. It loads the options from PlayerPrefs when it awakes and saves them when the game is paused or closed. The &quot;Save Key&quot; field is the PlayerPrefs key used for this.
-<br><br>
-<img src="../resources/ui_scaler_groups_4.png" style="width:70%">
-<br><br>
-For more advanced scenarios a custom saving and loading can be implemented through <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html">UIScalerGroups</a> class <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_GetSaveData">GetSaveData()</a> and <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetSaveData_SmartUIScaler_UIScalerGroupsSaveData_">SetSaveData(UIScalerGroupsSaveData)</a> static methods.</p>
+<p>Initially UI Scaler Group options are not saved and loaded. To have persistent UI Scaler Group options the easiest way is to use UI Scaler Groups Persistence Manager component. Just add this component to an empty GameObject in the first scene in your project. It keeps its GameObject alive across scene loads, and a second Persistence Manager loaded later removes itself. It loads the options from PlayerPrefs when it awakes and saves them when the game is paused or closed. The &quot;Save Key&quot; field is the PlayerPrefs key used for this.</p>
+<img src="../resources/ui_scaler_groups_4.png">
+<p>For more advanced scenarios a custom saving and loading can be implemented through <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html">UIScalerGroups</a> class <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_GetSaveData">GetSaveData()</a> and <a class="xref" href="../api/SmartUIScaler.UIScalerGroups.html#SmartUIScaler_UIScalerGroups_SetSaveData_SmartUIScaler_UIScalerGroupsSaveData_">SetSaveData(UIScalerGroupsSaveData)</a> static methods.</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>Settings saved by version 1.0 are not restored after upgrading to 1.1.0. Version 1.0 identified groups differently, so each group starts from its &quot;Default Options&quot; once and is saved in the new format from then on.</p>
+<p>Settings saved by version 1.0 are not restored after upgrading to 1.1.0 or later. Version 1.0 identified groups differently, so each group starts from its &quot;Default Options&quot; once and is saved in the new format from then on.</p>
 </div>
 
 </article>
@@ -130,7 +124,7 @@ For more advanced scenarios a custom saving and loading can be implemented throu
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          Smart UI Scaler plugin v1.0
+          Smart UI Scaler plugin v1.2.0
         </div>
       </div>
     </footer>

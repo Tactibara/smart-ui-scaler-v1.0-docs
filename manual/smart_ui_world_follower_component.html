@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Smart UI World Follower component | Smart UI Scaler plugin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Smart UI World Follower component | Smart UI Scaler plugin ">
+      
+      
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/blob/main/Documentation-v1.0/manual/smart_ui_world_follower_component.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="smart-ui-world-follower-component">Smart UI World Follower component</h1>
+
+<p>Shows a world object, for example a 3D model, inside a Rect Transform of your UI through a camera of its own. Typical uses are a character in a menu slot or an item in a shop slot that has to stay in place on every screen size.</p>
+<p>Add the component to the world object and assign the Target and the Camera.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Not sure whether you need the World Follower or the Smart UI Mesh Fitter? See <a href="3d_objects_in_ui.html">3D objects in the UI</a>.</p>
+</div>
+<img src="../resources/smart_world_follower_1.png">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Target</td>
+<td style="text-align: left;">The Rect Transform the object is shown in, usually inside a UI Scaler. A Rect Transform with zero width or height works as a point: the object is placed on it and keeps the size the camera alone gives it.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Camera</td>
+<td style="text-align: left;">The camera that shows the object. The follower drives its projection, and with Move Camera on also its position, so two followers must not share one camera.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Clip To Target</td>
+<td style="text-align: left;">On: the camera only draws the on-screen part of the Target, so nothing outside the Target appears and a Target partly off-screen is cut, not squeezed. Turn it off when the camera must keep drawing its whole viewport: the main scene camera, or an Overlay camera in a URP camera stack, which ignores its own Viewport Rect. The camera then draws everything in its Culling Mask, so a camera that belongs to one object must show only that object.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Move Camera</td>
+<td style="text-align: left;">On: the follower places the camera Distance behind the focus point, so the object is seen head-on. Off: the camera position and rotation are left to something else, for example Cinemachine or an animation, and the follower only shifts the projection so the focus point stays in the center of the Target.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Distance</td>
+<td style="text-align: left;">With Move Camera on, how far the camera stays behind the focus point, along the camera's forward direction. Together with the camera's Field of View (or Size for an orthographic camera) it decides how big the object looks: the field of view covers the height of the Target.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Focus Point</td>
+<td style="text-align: left;">The point of the object, in its local space, that is kept in the center of the Target. Use it when the object's pivot is not where its middle is, for example a character with its pivot at the feet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Framing Padding, Fit Height Only, Framing Transition Time</td>
+<td style="text-align: left;">Used when the object has <a href="smart_ui_framing_bounds_component.html">Smart UI Framing Bounds</a>. The projection is then zoomed so the framing bounds fit the Target, and their center replaces the Focus Point.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-it-works">How it works</h2>
+<p>After the UI Scalers are updated each frame, the follower shifts the camera's projection so that the focus point lands in the center of the Target. With Move Camera on it also places the camera Distance behind the focus point first. With Clip To Target on, the camera's Viewport Rect is set to the on-screen part of the Target, so the object can be partly off-screen together with its Target without being squeezed.</p>
+<p>Set up the camera like this:</p>
+<ul>
+<li>Clear Flags: Depth only, so the UI and the main camera image stay visible around the object.</li>
+<li>Culling Mask: only the layer of the object.</li>
+<li>A higher Depth than the main camera, so it draws after it. In a URP camera stack, make it an Overlay camera, turn Clip To Target off and keep its Viewport Rect the same as the main camera's.</li>
+</ul>
+<p>Three shop cards, each showing a 3D model through a World Follower and a camera of its own. The models stay in their cards on every screen shape.</p>
+<img src="../resources/smart_world_follower_2.png">
+<h2 id="render-textures">Render textures</h2>
+<p>When the Target is inside a Screen Space Camera canvas that renders into a Render Texture, for example with a <a href="custom_ui_scaler.html">custom UI Scaler</a>, give the follower camera the same Target Texture. The follower then works in the texture's pixels, and the object becomes part of the image wherever that image is shown.</p>
+<p>The follower camera clears only the depth, and only inside its own viewport. Make sure a camera with a lower Depth clears the whole texture every frame, for example the camera of that canvas with Clear Flags set to Solid Color. Otherwise pixels from earlier frames stay where the object was before its Target moved.</p>
+<h2 id="a-character-in-the-free-space-of-a-menu">A character in the free space of a menu</h2>
+<p>In a lobby or character screen the 3D scene is usually the background, with the character standing in the space the menu panels leave free. That free space moves with the screen shape: on a phone or a tablet the panels take more or less room, and on an ultrawide screen the character would drift away from the panels. Put the follower on the main scene camera to keep the character in that space:</p>
+<ul>
+<li>Add a Rect Transform to the UI layout where the character should stand, for example between the side panels.</li>
+<li>Add the follower to the character, assign that Rect Transform as the Target and the main scene camera as the Camera.</li>
+<li>Turn Clip To Target off, so the camera still draws the whole screen.</li>
+<li>Turn Move Camera off and place the camera yourself, or with Cinemachine.</li>
+</ul>
+<p>The follower then shifts the camera's picture so the character lands on the Target, like the lens shift of a real camera, without moving or turning the camera. With a Target of zero size only the position follows the layout and the camera keeps its own framing, which usually looks most natural. With a sized Target the character's height also follows the Target height, and the background shows a wider view when the Target is small.</p>
+<h2 id="good-to-know">Good to know</h2>
+<ul>
+<li>Each follower uses a camera of its own, which is one more camera to render. A few followers are fine, for a grid of many items rendering each item once into a texture is cheaper.</li>
+<li>The follower camera sees the scene lights and post processing like any other camera. To light an object differently, use layers and the lights' culling masks.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A Screen Space Overlay canvas is always drawn on top of all cameras. To place the object between UI layers, use Screen Space Camera canvases in a camera stack.</p>
+</div>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.2.0
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

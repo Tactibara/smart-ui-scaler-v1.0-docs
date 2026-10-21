@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>3D objects in the UI | Smart UI Scaler plugin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="3D objects in the UI | Smart UI Scaler plugin ">
+      
+      
+      <link rel="icon" href="../resources/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SimonasZab/UiScaler/blob/main/Documentation-v1.0/manual/3d_objects_in_ui.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="3d-objects-in-the-ui">3D objects in the UI</h1>
+
+<p>Smart UI Scaler has two components that bring 3D objects into a layout that follows every screen shape, and one component that describes the volume they fit. They look similar, but each one changes something different. This page helps you choose.</p>
+<h2 id="which-one-do-i-need">Which one do I need?</h2>
+<p>The <a href="smart_ui_mesh_fitter_component.html">Smart UI Mesh Fitter</a> makes the 3D object part of the UI: it is placed and sized inside a Rect Transform like any other UI element and drawn by the camera of the canvas. The <a href="smart_ui_world_follower_component.html">Smart UI World Follower</a> turns a Rect Transform into a window into a 3D world: the object stays where it is in its scene, and its own camera shows it in the Rect Transform.</p>
+<p>Many objects, such as an item in an inventory, work with both. These questions decide:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">If yes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Is the canvas Screen Space Overlay?</td>
+<td style="text-align: left;">Smart UI World Follower. The Mesh Fitter cannot draw 3D objects on Screen Space Overlay canvases.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Should the object be lit by lights of its own or use camera effects of its own, separate from the UI? Or does it belong to a scene, such as a character standing in a room?</td>
+<td style="text-align: left;">Smart UI World Follower</td>
+</tr>
+<tr>
+<td style="text-align: left;">Otherwise: the canvas is Screen Space Camera or World Space, and the object is lit together with the UI</td>
+<td style="text-align: left;">Smart UI Mesh Fitter. It needs no extra camera, so it also suits many objects at once.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../resources/smart_mesh_fitter_2.png" style="width:45%"> <img src="../resources/smart_framing_bounds_3.png" style="width:45%"></p>
+<p>Left, part of the UI: two Smart UI Mesh Fitters size the 3D objects like UI elements. The tiled wall is set to Envelope and covers the whole screen at the proportions of its texture, resizing with every screen shape, and the emblem is set to Fit in a slot that stays in the center of the UI Scaler. The canvas is Screen Space Camera, so both are lit together with the rest of the UI and the emblem casts its shadow on the wall. Right, a window into a 3D world: the character belongs to a room with lights of its own, so a Smart UI World Follower shows it through its own camera in the free space between the menu panels.</p>
+<p>Then, if the object changes its size through animations, poses or equipment, add <a href="smart_ui_framing_bounds_component.html">Smart UI Framing Bounds</a> to describe the volume that must always fit. It is not a third choice: it adds to either component.</p>
+<h2 id="comparison">Comparison</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Smart UI Mesh Fitter</th>
+<th style="text-align: left;">Smart UI World Follower</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">What it changes</td>
+<td style="text-align: left;">The object: its position and scale</td>
+<td style="text-align: left;">The camera's projection, and with Move Camera also its position</td>
+</tr>
+<tr>
+<td style="text-align: left;">Where the object lives</td>
+<td style="text-align: left;">Under a Rect Transform inside the canvas</td>
+<td style="text-align: left;">Anywhere in the scene</td>
+</tr>
+<tr>
+<td style="text-align: left;">Camera</td>
+<td style="text-align: left;">The camera of the canvas</td>
+<td style="text-align: left;">A camera of its own, or the scene camera</td>
+</tr>
+<tr>
+<td style="text-align: left;">Size of the object in its scene</td>
+<td style="text-align: left;">Changes with the UI</td>
+<td style="text-align: left;">Stays the same, the view zooms instead</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lights</td>
+<td style="text-align: left;">Lit together with the rest of the UI</td>
+<td style="text-align: left;">Lit by its own scene or lights of its own</td>
+</tr>
+<tr>
+<td style="text-align: left;">Screen Space Overlay canvas</td>
+<td style="text-align: left;">Not drawn</td>
+<td style="text-align: left;">Works</td>
+</tr>
+<tr>
+<td style="text-align: left;">Extra rendering cost</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">One camera per follower, unless the scene camera is used</td>
+</tr>
+<tr>
+<td style="text-align: left;">With Smart UI Framing Bounds</td>
+<td style="text-align: left;">The typed-in volume is fitted instead of the measured Renderer bounds, so an animated model keeps its size</td>
+<td style="text-align: left;">The view zooms so the typed-in volume fits the Target, including equipment with framing bounds of its own</td>
+</tr>
+<tr>
+<td style="text-align: left;">Typical use</td>
+<td style="text-align: left;">Lit backgrounds, emblems, 3D icons, coins, chests, items in slots and item inspectors</td>
+<td style="text-align: left;">Character screens, a character in a room between menu panels, item inspectors with lights of their own</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">You want</th>
+<th style="text-align: left;">Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">A lit background that covers the screen at the proportions of its texture</td>
+<td style="text-align: left;">Mesh Fitter set to Envelope, on a quad with the aspect ratio of its texture</td>
+</tr>
+<tr>
+<td style="text-align: left;">A 3D logo on that background that casts a shadow on it</td>
+<td style="text-align: left;">Mesh Fitter set to Fit, with a Depth Offset</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rotating 3D icons, such as a coin next to the coin counter or an item in each slot of a shop grid</td>
+<td style="text-align: left;">Mesh Fitter with Use Bounding Sphere in each slot, rotating a child object. On a Screen Space Overlay canvas: World Follower with a camera of its own per slot</td>
+</tr>
+<tr>
+<td style="text-align: left;">An item inspector where the player rotates and zooms an item, as in an RPG inventory</td>
+<td style="text-align: left;">Mesh Fitter with Use Bounding Sphere, rotating a child object, zoomed by resizing its slot. On a Screen Space Overlay canvas or with lights of its own: World Follower with Framing Bounds set to Sphere, zoomed by changing the Radius</td>
+</tr>
+<tr>
+<td style="text-align: left;">A 3D title, tilted or gently swaying</td>
+<td style="text-align: left;">Mesh Fitter set to Fit in the title slot, rotating a child object. For a swaying title, Framing Bounds set to Box around its movement; Use Bounding Sphere would shrink a wide title</td>
+</tr>
+<tr>
+<td style="text-align: left;">A character in a room that stays between the menu panels and fully visible while it equips a long sword</td>
+<td style="text-align: left;">World Follower on the scene camera with Clip To Target and Move Camera off, plus Framing Bounds on the character and on the sword</td>
+</tr>
+</tbody>
+</table>
+<h2 id="combining-them">Combining them</h2>
+<ul>
+<li><strong>Mesh Fitter and World Follower</strong> are not used on the same object. A scene can use both: a lit background with a Mesh Fitter behind the menu, and a character in a 3D room through a World Follower.</li>
+<li><strong>Smart UI Aspect Fitter</strong> is the 2D counterpart: it keeps images and Rect Transforms at their aspect ratio. The Fit and Envelope modes of the Mesh Fitter do the same for 3D objects.</li>
+</ul>
+<h2 id="demo-scenes">Demo scenes</h2>
+<ul>
+<li><strong>Demo 13 - Mesh Fitter</strong>: a lit tiled wall and an emblem that casts a shadow on it.</li>
+<li><strong>Demo 14 - World Follower</strong>: objects in shop cards, each through a camera of its own.</li>
+<li><strong>Demo 15 - Character Framing</strong>: a dress-up screen with a character in a room, equipment and framing bounds.</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Smart UI Scaler plugin v1.2.0
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
